@@ -1,12 +1,17 @@
 .hero {
 display: flex;
 justify-content: space-between;
-height: 100vh;
+height: 90vh;
+margin-top: 150px;
 
 }
 
 .heroLeft {
     flex: 1;
+}
+
+.heroName {
+    margin: 20px 0px;
 }
 
 .heroRight {
@@ -26,10 +31,11 @@ height: 100vh;
 
  .titleItem p {
      font-size: 3rem;
+     
  }
 
  .buttonContainer {
-     margin-top: 2.5rem;
+     margin-top: 4rem;
      display: flex;
      justify-content: space-between;
  }

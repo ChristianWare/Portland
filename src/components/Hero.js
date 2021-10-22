@@ -13,15 +13,14 @@ function Hero() {
             <div className={styles.titleWrapper}>
               <div className={styles.titleItem}>
                 <p>
-                  I build sematically structured websites by thinking outside
-                  the div.
+                  I build sematically structured web applications by thinking
+                  outside the div.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
                 <Link href='#about'>
                   <a className={styles.button1}>Learn More</a>
                 </Link>
-
               </div>
             </div>
           </div>
