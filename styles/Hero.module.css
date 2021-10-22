@@ -1,0 +1,63 @@
+.hero {
+display: flex;
+justify-content: space-between;
+height: 100vh;
+
+}
+
+.heroLeft {
+    flex: 1;
+}
+
+.heroRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+ .heroLeftWrapper {
+     padding: 50px 50px 50px 0px;
+     height: 50%;
+ }
+
+ .titleItem {
+          display: flex;
+          flex-direction: column;
+ }
+
+ .titleItem p {
+     font-size: 2.5rem;
+ }
+
+ .buttonContainer {
+     margin-top: 2rem;
+     display: flex;
+     justify-content: space-between;
+ }
+
+.button1, .button2 {
+      display: grid;
+      height: 60px;
+      width: 240px;
+      border: 1px solid var(--light);
+      place-items: center;
+      color: var(--light);
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      border-radius: 5px;
+  }
+
+.button1 {
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.button1:hover {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.button2:hover {
+    color: var(--dark);
+    background-color: var(--light);
+}

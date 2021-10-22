@@ -1,5 +1,6 @@
 .header {
     border-bottom: 1px solid var(--light);
+    z-index: 999;
 }
 
 .navbar {
@@ -10,16 +11,23 @@
     padding: 1rem 1.5rem;
 }
 
+.navbar .navbarLogo {
+    cursor: pointer;
+}
+
 .navbarLogo a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    position: relative;
+    left: -1.2rem
 }
 
 .navbarIcon {
-    font-size: 2.5rem;
-    position: relative;
+    font-size: 2rem;
     margin-right: 1rem;
-    top: 0.6rem;
+    position: relative;
+    top: 0.3rem;
+    left: -1.2rem
 }
 
 .hamburger {
@@ -41,6 +49,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    z-index: 999;
 }
 
 .navitem {
@@ -48,7 +57,6 @@
 }
 
 .navitem a {
-        font-size: 2.1rem;
         display: inline-block;
         padding-bottom: 0.25rem;
         position: relative;
@@ -57,7 +65,6 @@
 .navitem a::before{
     content: "";
     position: absolute;
-    /* left: 0; */
     right: 0;
     bottom: 0;
     width: 0;
