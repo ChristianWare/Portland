@@ -11,6 +11,7 @@
     padding: 1rem 1.5rem;
 }
 
+
 .navbar .navbarLogo {
     cursor: pointer;
 }
@@ -69,7 +70,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--light);
+    background-color: var(--accent2);
     transition: width 0.25s ease-out;
 }
 

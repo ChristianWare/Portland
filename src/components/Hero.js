@@ -18,12 +18,10 @@ function Hero() {
                 </p>
               </div>
               <div className={styles.buttonContainer}>
-                <Link href='/'>
+                <Link href='#about'>
                   <a className={styles.button1}>Learn More</a>
                 </Link>
-                <Link href='/'>
-                  <a className={styles.button2}>Contact Me</a>
-                </Link>
+
               </div>
             </div>
           </div>

@@ -3,6 +3,9 @@
 :root {
   --light: #f5e6ca ;
   --dark: #343f56 ;
+  --accent1: #d62828;
+  --accent2: #f77f00;
+  --accent3: #fcbf49;
 }
 
 * {

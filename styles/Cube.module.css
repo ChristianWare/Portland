@@ -4,8 +4,8 @@
     position: relative;
     top: 90px;
     padding: 100px;
+    cursor: pointer;
 }
-
 
 .cube {
     position: absolute;
@@ -55,10 +55,18 @@
     transform: rotateY(0deg) translateZ(100px);
 }
 
+.cube .front:hover{
+    background-color: var(--accent1);
+}
+
 .cube .back {
     background-color: var(--dark);
     border: 1px solid var(--light);
     transform: rotateX(180deg) translateZ(100px);
+}
+
+.cube .back:hover {
+    background-color: var(--accent2);
 }
 
 .cube .right {
@@ -67,10 +75,18 @@
     transform: rotateY(90deg) translateZ(100px);
 }
 
+.cube .right:hover {
+    background-color: var(--accent3);
+}
+
 .cube .left {
     background-color: var(--dark);
     border: 1px solid var(--light);
     transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube .left:hover {
+    background-color: var(--accent1);
 }
 
 .cube .top {
@@ -79,10 +95,18 @@
     transform: rotateX(90deg) translateZ(100px);
 }
 
+.cube .top:hover {
+    background-color: var(--accent2);
+}
+
 .cube .bottom {
     background-color: var(--dark);
     border: 1px solid var(--light);
     transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube .bottom:hover {
+    background-color: var(--accent3);
 }
 
 
