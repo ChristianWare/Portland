@@ -5,7 +5,7 @@ function About() {
     return (
       <div className={styles.a}>
         <div className={styles.aLeft}>
-          <div className={styles.triContainer}>
+          <div className={styles.cubeContainer}>
             <Cube>
               About 
             </Cube>
@@ -20,7 +20,7 @@ function About() {
           <p className={styles.aDescription}>
             Becasue of my background in design, and finance, I understand the
             asthetic and business side to any project. While websites have to
-            make good impressions on it's visitors, they also motivate them to action. 
+            make good impressions on it's visitors, they should also motivate them to action. 
           </p>
           <p className={styles.aDescription}>
          I am looking for an opportunity to apply these principles in a role as a Front End Developer.

@@ -1,14 +1,16 @@
-import styles from '../styles/Home.module.css'
-import Navbar from '../src/components/Navbar'
-import Hero from '../src/components/Hero'
-import About from '../src/components/About'
+import styles from "../styles/Home.module.css";
+import Navbar from "../src/components/Navbar";
+import Hero from "../src/components/Hero";
+import About from "../src/components/About";
+import Projects from "../src/components/Projects";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-    <Navbar />
-    <Hero />
-    <About />
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
     </div>
-  )
+  );
 }

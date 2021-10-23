@@ -22,7 +22,7 @@
     height: 100%;
     display: block;
     border: none;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-align: center;
     line-height: 200px;
@@ -87,7 +87,7 @@
 }
 
 .cube .left:hover {
-    background-color: var(--accent1);
+    background-color: var(--accent4);
 }
 
 .cube .top {
@@ -97,7 +97,7 @@
 }
 
 .cube .top:hover {
-    background-color: var(--accent2);
+    background-color: var(--accent5);
 }
 
 .cube .bottom {
@@ -107,7 +107,7 @@
 }
 
 .cube .bottom:hover {
-    background-color: var(--accent3);
+    background-color: var(--accent6);
 }
 
 
