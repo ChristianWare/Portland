@@ -1,6 +1,7 @@
 .header {
     border-bottom: 1px solid var(--light);
     z-index: 999;
+    background-color: transparent;
 }
 
 .navbar {

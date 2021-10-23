@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Navbar />
       <Hero />
-      <About />
+      <About /> 
       <Projects />
     </div>
   );

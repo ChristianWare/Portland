@@ -1,3 +1,31 @@
-.p {
-    height: 100vh;
+.pSection {
+    height: 85vh;
+    background-color: transparent;
+}
+
+
+
+
+/* .pSub {
+    position: relative;
+    top: -300px;
+    margin: 20px 0px;
+    font-weight: 500;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    padding-top: .5rem;
+    border-left: 2px solid;
+} */
+
+.pContent h5 {
+    display: inline-block;
+    width: 40%;
+    margin: 12rem 0;
+    font-weight: 500;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    padding-top: .5rem;
+    border-left: 2px solid;
 }
