@@ -11,11 +11,34 @@
     height: 100px;
     transform-style: preserve-3d;
     transition: 2s;
-    transform: perspective(1000px) rotateX(50deg);
+    transform: perspective(1000px) rotateX(40deg);
+    animation: rotateCube 4s infinite linear;
+}
+
+@keyframes rotateCube {
+    0% {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+
+    25% {
+        transform: perspective(1000px) rotateX(90deg);
+    }
+
+    50% {
+        transform: perspective(1000px) rotateX(180deg);
+    }
+
+    75% {
+        transform: perspective(1000px) rotateX(270deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateX(360deg);
+    }
 }
 
 .container a:hover {
-    transform: perspective(1000px) rotateX(360deg) ;
+    transform: perspective(1000px) rotateX(360deg);
 }
 
 .container a span {
@@ -29,12 +52,12 @@
     align-items: center;
     color: var(--light);
     background: var(--dark);
-    text-transform: uppercase;
     font-weight: 500;
     font-size: 2.5rem;
     letter-spacing: 2px;
     transition: 0.5s;
     border: 1px solid var(--light);
+    user-select: none;
 }
 
 .container a span:hover:nth-child(1) {
