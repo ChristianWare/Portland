@@ -1,4 +1,4 @@
-import styles from "../../styles/ProjectsCube.module.css";
+import styles from "../../../styles/ProjectsCube.module.css";
 import Link from 'next/link'
 
 function ProjectsCube({ children }) {

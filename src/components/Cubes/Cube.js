@@ -1,4 +1,4 @@
-import styles from "../../styles/Cube.module.css";
+import styles from "../../../styles/Cube.module.css";
 
 function Cube({ children }) {
   return (

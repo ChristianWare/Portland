@@ -1,5 +1,5 @@
 import styles from "../../styles/About.module.css";
-import Cube from './Cube'
+import Cube from '../components/Cubes/Cube'
 
 function About() {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/Hero.module.css";
 import Link from "next/link";
-import Cube from "./Cube";
+import Cube from "../components/Cubes/Cube";
 
 function Hero() {
   return (

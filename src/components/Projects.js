@@ -1,6 +1,5 @@
 import styles from "../../styles/Projects.module.css";
-import Cube from "./Cube";
-import ProjectsCube from "./ProjectsCube";
+import ProjectsCube from "../components/Cubes/ProjectsCube";
 
 function Projects() {
   return (
