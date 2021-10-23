@@ -1,14 +1,18 @@
 import styles from "../../styles/About.module.css";
+import Cube from './Cube'
 
 function About() {
     return (
       <div className={styles.a}>
         <div className={styles.aLeft}>
-          <div className={styles.triContainer}>Triangle</div>
+          <div className={styles.triContainer}>
+            <Cube>
+              About 
+            </Cube>
+          </div>
         </div>
 
         <div className={styles.aRight}>
-          <h1 className={styles.aTitle}>About Me</h1>
           <h5 className={styles.aSub}>
             I am a front end developer who specializes in building web
             applications with NextJS and React.

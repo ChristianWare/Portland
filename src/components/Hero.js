@@ -12,10 +12,10 @@ function Hero() {
           <div className={styles.heroTitle}>
             <div className={styles.titleWrapper}>
               <div className={styles.titleItem}>
-                <p>
+                <h5>
                   I build sematically structured web applications by thinking
                   outside the div.
-                </p>
+                </h5>
               </div>
               <div className={styles.buttonContainer}>
                 <Link href='#about'>
@@ -27,7 +27,9 @@ function Hero() {
         </div>
       </div>
       <div className={styles.heroRight}>
-        <Cube />
+        <Cube>
+          div
+        </Cube>
       </div>
     </header>
   );

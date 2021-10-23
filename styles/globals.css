@@ -3,9 +3,9 @@
 :root {
   --light: #f5e6ca ;
   --dark: #343f56 ;
-  --accent1: #d62828;
-  --accent2: #f77f00;
-  --accent3: #fcbf49;
+  --accent1: #e76f51;
+  --accent2: #ee9b00;
+  --accent3: #2a9d8f;
 }
 
 * {
@@ -70,8 +70,8 @@ p, input{
 
 
 ::selection {
-  color: var(--dark);
-  background: var(--light);
+  color: var(--light);
+  background: var(--accent3);
 }
 
 @media screen and (max-width: 768px) {
