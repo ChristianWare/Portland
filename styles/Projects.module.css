@@ -1,31 +1,70 @@
 .pSection {
-    height: 85vh;
+    height: 200vh;
     background-color: transparent;
 }
 
 
 
+.projectCubes {
+    padding-left: 1.5rem;
+}
 
-/* .pSub {
+.projectTitle {
+position: relative;
+top: 200px;
+width: 40%;
+
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectInfo {
     position: relative;
-    top: -300px;
+    position: relative;
+    top: 250px;
+    width: 45%;
+}
+
+.pSub {
+    display: flex;
+    justify-content: flex-start;
     margin: 20px 0px;
     font-weight: 500;
-    position: relative;
-    float: left;
-    padding: 0 10px;
-    padding-top: .5rem;
-    border-left: 2px solid;
-} */
-
-.pContent h5 {
-    display: inline-block;
-    width: 40%;
-    margin: 12rem 0;
-    font-weight: 500;
-    position: relative;
-    float: left;
-    padding: 0 10px;
-    padding-top: .5rem;
+    padding-left: 1.5rem;
     border-left: 2px solid;
 }
+
+.aDescription {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-left: 1.5rem;
+}
+
+ .buttonContainer {
+     margin-top: 4rem;
+     display: flex;
+     justify-content: space-between;
+     padding-left: 1.5rem;
+ }
+
+ .button1 {
+     display: grid;
+     height: 60px;
+     width: 240px;
+     place-items: center;
+     color: var(--dark);
+     background-color: var(--light);
+     font-weight: 500;
+     font-size: 2.5rem;
+     letter-spacing: 1.5px;
+     border-radius: 5px;    
+ }
+
+ .button1:hover {
+     color: var(--light);
+     background-color: var(--accent4);
+ }

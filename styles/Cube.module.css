@@ -5,6 +5,7 @@
     top: 90px;
     padding: 100px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .cube {
@@ -14,6 +15,7 @@
     transform-style: preserve-3d;
     animation: rotateCube 10s infinite;
     user-select: none;
+    background-color: transparent;
 }
 
 .cube div {
