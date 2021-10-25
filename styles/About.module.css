@@ -37,7 +37,7 @@
     font-weight: 500;
     padding-top: 1rem;
     border-top: 2px solid;
-    text-align: justify;
+    /* text-align: justify; */
     letter-spacing: .1rem;
 }
 
@@ -46,5 +46,6 @@
     font-weight: 300;
     margin-bottom: 20px;
     text-align: justify;
-    letter-spacing: .1rem;
+       letter-spacing: .1rem;
+       word-spacing: .1rem;
 }

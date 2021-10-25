@@ -3,4 +3,6 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 150px;
+    position: relative;
+    right: 60px;
 }

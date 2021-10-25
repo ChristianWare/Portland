@@ -1,5 +1,5 @@
 .aContainer {
-    height: 60vh;
+    height: 85vh;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -12,7 +12,7 @@
 }
 
 .cubeContainer {
-    margin-top: -30px;
+    margin-top: -150px;
     margin-left: 100px;
     background-color: transparent;
 }
@@ -47,7 +47,8 @@
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
-    text-align: justify;
-    text-align: justify;
+    /* text-align: justify; */
+    /* text-align: justify; */
     letter-spacing: .1rem;
+    word-spacing: .1rem;
 }
