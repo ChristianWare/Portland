@@ -4,7 +4,7 @@ import Link from 'next/link'
 function ProjectsCube({ children }) {
     return (
       <div className={styles.container}>
-        <Link href='#projects'>
+        <Link href='#1'>
           <a>
             <span>{children}</span>
             <span>{children}</span>

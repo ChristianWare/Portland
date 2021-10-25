@@ -3,39 +3,38 @@ import ProjectsCube from "../components/Cubes/ProjectsCube";
 import Cube from "../../src/components/Cubes/Cube";
 import Link from 'next/link'
 
-function Projects() {
+function Projects({ id, title, subheading, description,skills, gitHubUrl, sampleUrl }) {
   return (
-    <section className={styles.pSection}>
-      <div className={styles.projectCubes}>
-        <ProjectsCube>Projects</ProjectsCube>
-      </div>
-      <div className={styles.projectText}>
-        <div className={styles.projectTitle}>
-          <ProjectsCube>Project1</ProjectsCube>
+    <>
+      <section className={styles.pSection}>
+        <div className={styles.projectCubes}>
+          <ProjectsCube>{title}</ProjectsCube>
         </div>
-        <div className={styles.projectInfo}>
-          <h5 className={styles.pSub}>
-            My first project is my personal portfolio site, which you are
-            currently viweing. I built it using NextJS and CSS Modules.
-          </h5>
-          <p className={styles.aDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-            voluptatum quasi sapiente soluta, nemo praesentium cum molestias in
-            exercitationem, incidunt dicta quia accusantium! Distinctio sint,
-            accusamus perspiciatis aut dolorem ullam.
-          </p>
-          <p className={styles.aDescription}>
-            Ad voluptatum quasi sapiente soluta, nemo praesentium cum molestias
-            in exercitationem.
-          </p>
-          <div className={styles.buttonContainer}>
-            <Link href='#about'>
-              <a className={styles.button1}>Github</a>
-            </Link>
+        <div className={styles.projectText}>
+          <div className={styles.projectInfo}>
+            <h5 className={styles.pSub}>{subheading}</h5>
+            <p className={styles.pDescription}>{description}</p>
+            <p className={styles.pDescriptionSkills}>
+              {skills.map((skill) => (
+                <div className={styles.skill}>{skill}</div>
+              ))}
+            </p>
+            <div className={styles.pLinks}>
+              {sampleUrl && (
+                <Link href={sampleUrl}>
+                  <a className={styles.sampleUrl}>Project Link</a>
+                </Link>
+              )}
+              {gitHubUrl && (
+                <Link href={gitHubUrl}>
+                  <a className={styles.github}>Code on GitHub</a>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

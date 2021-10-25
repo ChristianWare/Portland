@@ -1,31 +1,20 @@
 .pSection {
-    height: 200vh;
+    height: 35vh;
     background-color: transparent;
 }
 
-
-
 .projectCubes {
     padding-left: 1.5rem;
-}
-
-.projectTitle {
-position: relative;
-top: 200px;
-width: 40%;
-
+    margin-top: 400px;
 }
 
 .projectText {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
 .projectInfo {
-    position: relative;
-    position: relative;
-    top: 250px;
-    width: 45%;
+    margin-top: 75px;
 }
 
 .pSub {
@@ -34,37 +23,59 @@ width: 40%;
     margin: 20px 0px;
     font-weight: 500;
     padding-left: 1.5rem;
-    border-left: 2px solid;
+    border-left: 5px solid var(--accent4);
 }
 
-.aDescription {
+.pDescription {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
     padding-left: 1.5rem;
 }
 
+.pDescriptionSkills {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+        padding-left: 1.5rem;
+}
+
+.pLinks {
+    padding-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.sampleUrl {
+    margin-right: 1.5rem;
+         display: inline-block;
+         margin: 1.5rem 1.5rem 1.5rem 0;
+         padding: 0.2rem 1rem;
+         border-radius: 5px;
+         background-color: var(--accent4);
+         font-weight: bold;
+}
+
+.github {
+     margin-right: 1.5rem;
+         display: inline-block;
+         margin: 1.5rem 1.5rem 1.5rem 0;
+         padding: 0.2rem 1rem;
+         border-radius: 5px;
+         background-color: var(--accent4);
+         font-weight: bold;  
+}
+
+ .skill {
+     display: inline-block;
+     margin: 1.5rem 1.5rem 1.5rem 0;
+     padding: 0.2rem 1rem;
+     border-radius: 5px;
+     font-weight: bold;
+ }
+
  .buttonContainer {
      margin-top: 4rem;
      display: flex;
      justify-content: space-between;
-     padding-left: 1.5rem;
- }
-
- .button1 {
-     display: grid;
-     height: 60px;
-     width: 240px;
-     place-items: center;
-     color: var(--dark);
-     background-color: var(--light);
-     font-weight: 500;
-     font-size: 2.5rem;
-     letter-spacing: 1.5px;
-     border-radius: 5px;    
- }
-
- .button1:hover {
-     color: var(--light);
-     background-color: var(--accent4);
+     background-color: transparent;
  }
