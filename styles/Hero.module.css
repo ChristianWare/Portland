@@ -13,6 +13,7 @@ background-color: transparent;
 
 .heroName {
     margin: 20px 0px;
+    letter-spacing: .3rem;
 }
 
 .heroRight {
@@ -28,6 +29,7 @@ background-color: transparent;
  .titleItem {
           display: flex;
           flex-direction: column;
+          letter-spacing: .1rem;
  }
 
  .titleItem h5 {
