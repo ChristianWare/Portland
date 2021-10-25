@@ -36,12 +36,12 @@ function Navbar() {
             </li>
             <li className={styles.navitem}>
               <Link href='#projects'>
-                <a>Projects</a>
+                <a>Skills</a>
               </Link>
             </li>
             <li className={styles.navitem}>
               <Link href='#skills'>
-                <a>Skills</a>
+                <a>Projects</a>
               </Link>
             </li>
             <li className={styles.navitem}>

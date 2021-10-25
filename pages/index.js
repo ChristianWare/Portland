@@ -6,6 +6,7 @@ import About from "../src/components/About";
 import Projects from "../src/components/Projects";
 import Cube from "../src/components/Cubes/Cube";
 import SectionHeader from "../src/components/SectionHeader";
+import Skills from "../src/components/Skills";
 
 const projectData = [
   {
@@ -67,6 +68,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <SectionHeader>Projects</SectionHeader>
       <div id='projects' className={styles.projects}>
         {projectData.map((data) => (

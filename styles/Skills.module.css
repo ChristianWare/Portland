@@ -1,7 +1,7 @@
 .aContainer {
     height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: transparent;
 }
 
@@ -12,7 +12,8 @@
 }
 
 .cubeContainer {
-    margin-top: -90px;
+    margin-top: -30px;
+    margin-left: 100px;
     background-color: transparent;
 }
 
@@ -34,17 +35,19 @@
 
 .aSub {
     margin: 20px 0px;
-    font-weight: 500;
+    font-weight: bold;
     padding-top: 1rem;
     border-top: 2px solid;
     text-align: justify;
     letter-spacing: .1rem;
 }
 
+
 .aDescription {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
+    text-align: justify;
     text-align: justify;
     letter-spacing: .1rem;
 }
