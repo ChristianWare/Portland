@@ -10,14 +10,14 @@
 
 .projectText {
     display: flex;
-    flex-direction: column;  
+    /* flex-direction: column;   */
 }
 
-.projectInfo {
+.projectText .pInfoLeft {
     margin-top: 75px;
 }
 
-.pSub {
+.projectText .pInfoLeft .pSub {
     display: flex;
     justify-content: flex-start;
     margin: 20px 0px;
@@ -67,7 +67,7 @@
 
  .skill {
      display: inline-block;
-     margin: 1.5rem 1.5rem 1.5rem 0;
+     margin: 1.5rem 1.5rem 0 0;
      padding: 0.2rem 1rem;
      border-radius: 5px;
      font-weight: bold;

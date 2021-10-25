@@ -1,9 +1,17 @@
 import styles from "../../styles/Projects.module.css";
 import ProjectsCube from "../components/Cubes/ProjectsCube";
 import Cube from "../../src/components/Cubes/Cube";
-import Link from 'next/link'
+import Link from "next/link";
 
-function Projects({ id, title, subheading, description,skills, gitHubUrl, sampleUrl }) {
+function Projects({
+  id,
+  title,
+  subheading,
+  description,
+  skills,
+  gitHubUrl,
+  sampleUrl,
+}) {
   return (
     <>
       <section className={styles.pSection}>
@@ -11,7 +19,7 @@ function Projects({ id, title, subheading, description,skills, gitHubUrl, sample
           <ProjectsCube>{title}</ProjectsCube>
         </div>
         <div className={styles.projectText}>
-          <div className={styles.projectInfo}>
+          <div className={styles.pInfoLeft}>
             <h5 className={styles.pSub}>{subheading}</h5>
             <p className={styles.pDescription}>{description}</p>
             <p className={styles.pDescriptionSkills}>
@@ -22,14 +30,17 @@ function Projects({ id, title, subheading, description,skills, gitHubUrl, sample
             <div className={styles.pLinks}>
               {sampleUrl && (
                 <Link href={sampleUrl}>
-                  <a className={styles.sampleUrl}>Project Link</a>
+                  <a className={styles.sampleUrl}>Live Site</a>
                 </Link>
               )}
               {gitHubUrl && (
                 <Link href={gitHubUrl}>
-                  <a className={styles.github}>Code on GitHub</a>
+                  <a className={styles.github}>GitHub</a>
                 </Link>
               )}
+              <Link href={gitHubUrl}>
+                <a className={styles.github}>Preview (Hover)</a>
+              </Link>
             </div>
           </div>
         </div>
