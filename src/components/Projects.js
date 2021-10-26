@@ -24,11 +24,11 @@ function Projects({
             <p className={styles.pDescription}>{description}</p>
             <p className={styles.pDescriptionSkills}>
               {skills.map((skill) => (
-                <div className={styles.skill}>{skill}</div>
+                <div key={id} className={styles.skill}>{skill}</div>
               ))}
             </p>
             <div className={styles.pLinks}>
-              {sampleUrl && (
+              {/* {sampleUrl && (
                 <Link href={sampleUrl}>
                   <a className={styles.sampleUrl}>Live Site</a>
                 </Link>
@@ -40,7 +40,15 @@ function Projects({
               )}
               <Link href={gitHubUrl}>
                 <a className={styles.github}>Preview (Hover)</a>
-              </Link>
+              </Link> */}
+              <div className={styles.buttonContainer}>
+                <Link href='#about'>
+                  <a className={styles.button1}>Live Site</a>
+                </Link>
+                <Link href='#about'>
+                  <a className={styles.button2}>GitHub</a>
+                </Link>
+                </div>
             </div>
           </div>
         </div>

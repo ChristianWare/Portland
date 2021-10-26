@@ -34,48 +34,82 @@
 }
 
 .pDescriptionSkills {
-        font-size: 1.8rem;
-        font-weight: 300;
-        margin-bottom: 20px;
-        padding-left: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-left: 1.5rem;
 }
 
 .pLinks {
     padding-left: 1.5rem;
-    text-decoration: underline;
 }
 
 .sampleUrl {
     margin-right: 1.5rem;
-         display: inline-block;
-         margin: 1.5rem 1.5rem 1.5rem 0;
-         padding: 0.2rem 1rem;
-         border-radius: 5px;
-         background-color: var(--accent4);
-         font-weight: bold;
+    display: inline-block;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    background-color: var(--accent4);
+    font-weight: bold;
 }
 
 .github {
-     margin-right: 1.5rem;
-         display: inline-block;
-         margin: 1.5rem 1.5rem 1.5rem 0;
-         padding: 0.2rem 1rem;
-         border-radius: 5px;
-         background-color: var(--accent4);
-         font-weight: bold;  
+    margin-right: 1.5rem;
+    display: inline-block;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    background-color: var(--accent4);
+    font-weight: bold;  
 }
 
  .skill {
-     display: inline-block;
-     margin: 1.5rem 1.5rem 0 0;
-     padding: 0.2rem 1rem;
-     border-radius: 5px;
-     font-weight: bold;
+    display: inline-block;
+    margin: 1.5rem 1.5rem 0 0;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
  }
 
+
  .buttonContainer {
-     margin-top: 4rem;
-     display: flex;
-     justify-content: space-between;
-     background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .button1,
+ .button2 {
+    display: grid;
+    font-size: 2.5rem;
+    height: 60px;
+    width: 240px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    margin-right: 5rem;
+ }
+
+ .button1 {
+    place-items: center;
+    color: var(--light);
+    background-color: var(--accent4);
+ }
+
+ .button2 {
+    place-items: center;
+    border: solid 2px;
+    background-color: transparent;
+ }
+
+.button1:hover {
+    background-color: transparent;
+    border: solid 2px var(--light);
+}
+
+
+
+ .button2:hover {
+     color: var(--light);
+     background-color: var(--accent4);
  }

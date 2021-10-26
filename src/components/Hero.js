@@ -21,6 +21,9 @@ function Hero() {
                 <Link href='#about'>
                   <a className={styles.button1}>Learn More</a>
                 </Link>
+                <Link href='#about'>
+                  <a className={styles.button2}>Contact</a>
+                </Link>
               </div>
             </div>
           </div>

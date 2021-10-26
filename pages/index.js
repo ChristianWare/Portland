@@ -4,9 +4,9 @@ import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
 import About from "../src/components/About";
 import Projects from "../src/components/Projects";
-import Cube from "../src/components/Cubes/Cube";
 import SectionHeader from "../src/components/SectionHeader";
 import Skills from "../src/components/Skills";
+import Contact from "../src/components/Contact";
 
 const projectData = [
   {
@@ -75,6 +75,7 @@ export default function Home() {
           <Projects {...data} />
         ))}
       </div>
+      <Contact />
     </div>
   );
 }

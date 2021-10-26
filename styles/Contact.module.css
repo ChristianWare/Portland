@@ -1,0 +1,51 @@
+.cContainer {
+    height: 100vh;
+    margin-top: 600px;
+    background-color: transparent;
+    position: relative;
+}
+
+.cBg {
+    width: 20px;
+    height: 100%;
+    background-color: var(--accent2);
+    position: absolute;
+}
+
+.cWrapper {
+    padding: 50px;
+    display: flex;
+}
+
+.cLeft {
+    flex: 1
+}
+
+.cRight {
+    flex: 1
+}
+
+.cTitle {
+    width: 80%;
+    
+    /* margin-top: -83px; */
+}
+
+.cInfoItem {
+    display: flex;
+    align-items: center;
+}
+
+.cInfoItem p {
+    font-size: 2.5rem;
+}
+
+.cIcon {
+    margin-right: 20px;
+    font-size: 2.5rem;
+}
+
+.cDescription {
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
