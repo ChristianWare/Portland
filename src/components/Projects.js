@@ -14,7 +14,7 @@ function Projects({
 }) {
   return (
     <>
-      <section className={styles.pSection}>
+      <section id='projects' className={styles.pSection}>
         <div className={styles.projectCubes}>
           <ProjectsCube>{title}</ProjectsCube>
         </div>
@@ -24,7 +24,9 @@ function Projects({
             <p className={styles.pDescription}>{description}</p>
             <p className={styles.pDescriptionSkills}>
               {skills.map((skill) => (
-                <div key={id} className={styles.skill}>{skill}</div>
+                <div key={id} className={styles.skill}>
+                  {skill}
+                </div>
               ))}
             </p>
             <div className={styles.pLinks}>
@@ -48,7 +50,7 @@ function Projects({
                 <Link href='#about'>
                   <a className={styles.button2}>GitHub</a>
                 </Link>
-                </div>
+              </div>
             </div>
           </div>
         </div>

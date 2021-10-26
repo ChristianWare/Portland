@@ -7,6 +7,7 @@ import Projects from "../src/components/Projects";
 import SectionHeader from "../src/components/SectionHeader";
 import Skills from "../src/components/Skills";
 import Contact from "../src/components/Contact";
+import Toggle from "../src/components/Toggle";
 
 const projectData = [
   {
@@ -55,6 +56,7 @@ const projectData = [
 ];
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -65,12 +67,13 @@ export default function Home() {
         />
         <link rel='icon' href='favicon.ico' />
       </Head>
+      {/* <Toggle /> */}
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <SectionHeader>Projects</SectionHeader>
-      <div id='projects' className={styles.projects}>
+      <div className={styles.projects}>
         {projectData.map((data) => (
           <Projects {...data} />
         ))}

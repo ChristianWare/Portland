@@ -1,8 +1,10 @@
 .aContainer {
-    height: 85vh;
+    max-height: 85vh;
+    max-width: 100vw;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+    /* margin-bottom: 300px; */
 }
 
 .aLeft {
