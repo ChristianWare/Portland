@@ -59,7 +59,7 @@
 }
 
 .cube .front:hover{
-    background-color: var(--accent1);
+    background-color: var(--accent2);
 }
 
 .cube .back {

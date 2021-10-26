@@ -9,7 +9,7 @@ function Skills() {
         <p className={styles.aDescription}>HTML, CSS, JavaScript (ES6)</p>
         <h5 className={styles.aSub}>Back End</h5>
         <p className={styles.aDescription}>
-          NodeJS/npm, Express, Mongo Atlas, Strapi, Contentful
+          NodeJS/npm, Express, Mongo Atlas, Firebase, Strapi, Contentful
         </p>
         <h5 className={styles.aSub}>Libraries & Frame Works</h5>
         <p className={styles.aDescription}>
@@ -18,11 +18,12 @@ function Skills() {
         </p>
         <h5 className={styles.aSub}>Design Tools</h5>
         <p className={styles.aDescription}>
-          Figma, Balsalmic, Photoshop, Illustrator
+          Figma, Balsamiq, Photoshop, Illustrator
         </p>
         <h5 className={styles.aSub}>Miscellaneous</h5>
         <p className={styles.aDescription}>
-          VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version Control(Git), Postman, Slack, Zoom
+          VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
+          Control(Git), Postman, Slack, Zoom
         </p>
       </div>
       <div className={styles.aLeft}>

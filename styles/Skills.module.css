@@ -8,7 +8,7 @@
 .aLeft {
     flex: 1;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .cubeContainer {
@@ -47,8 +47,6 @@
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
-    /* text-align: justify; */
-    /* text-align: justify; */
     letter-spacing: .1rem;
     word-spacing: .1rem;
 }

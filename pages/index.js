@@ -15,7 +15,7 @@ const projectData = [
     subheading:
       "My first project is my personal portfolio site, which you are currently viweing. I built it using NextJS and CSS Modules.",
     description:
-      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. to completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
+      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. To completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
     skills: ["react.js", "next.js", "HTML", "CSS"],
     gitHubUrl: "https://github.com/ChristianWare/Portland",
   },
@@ -25,7 +25,7 @@ const projectData = [
     subheading:
       "My first project is my personal portfolio site, which you are currently viweing. I built it using NextJS and CSS Modules.",
     description:
-      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. to completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
+      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. To completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
     skills: ["react.js", "next.js", "HTML", "CSS"],
     gitHubUrl: "https://github.com/ChristianWare/Portland",
     sampleUrl: "https://google.com",
@@ -36,7 +36,7 @@ const projectData = [
     subheading:
       "My first project is my personal portfolio site, which you are currently viweing. I built it using NextJS and CSS Modules.",
     description:
-      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. to completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
+      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. To completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
     skills: ["react.js", "next.js", "HTML", "CSS"],
     gitHubUrl: "https://github.com/ChristianWare/Portland",
     sampleUrl: "https://google.com",
@@ -47,7 +47,7 @@ const projectData = [
     subheading:
       "My first project is my personal portfolio site, which you are currently viweing. I built it using NextJS and CSS Modules.",
     description:
-      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. to completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
+      "This projects was initiated with the create-next-app cli. From here the only dependency used was react-icons. Then I set up my pages, components, and global style sheet. To completed the process, it was tested with gest, and then pushed to github. Finally, the site was deployed on Vercel.",
     skills: ["react.js", "next.js", "HTML", "CSS"],
     gitHubUrl: "https://github.com/ChristianWare/Portland",
     sampleUrl: "https://google.com",

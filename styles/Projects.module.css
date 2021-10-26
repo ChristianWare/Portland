@@ -23,7 +23,7 @@
     margin: 20px 0px;
     font-weight: 500;
     padding-left: 1.5rem;
-    border-left: 5px solid var(--accent4);
+    border-left: 5px solid var(--accent2);
 }
 
 .pDescription {
@@ -72,7 +72,6 @@
     font-weight: bold;
  }
 
-
  .buttonContainer {
     display: flex;
     justify-content: space-between;
@@ -84,7 +83,7 @@
     font-size: 2.5rem;
     height: 60px;
     width: 240px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     border-radius: 5px;
     margin-right: 5rem;
@@ -92,24 +91,23 @@
 
  .button1 {
     place-items: center;
-    color: var(--light);
-    background-color: var(--accent4);
+    color: var(--dark);
+    background-color: var(--accent2);
  }
 
  .button2 {
     place-items: center;
-    border: solid 2px;
+    border: solid 1px;
     background-color: transparent;
  }
 
 .button1:hover {
+    color: var(--light);
     background-color: transparent;
-    border: solid 2px var(--light);
+    border: solid 1px var(--light);
 }
 
-
-
  .button2:hover {
-     color: var(--light);
-     background-color: var(--accent4);
+     color: var(--dark);
+     background-color: var(--accent2);
  }
