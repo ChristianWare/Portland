@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    top: 80px;
+    top: 15px;
 }
 
 .cInfoItem p {
@@ -52,7 +52,8 @@
 }
 
 .cDescription {
-    margin-top: 30px;
+    position: relative;
+    bottom: 85px;
     font-size: 2.5rem;
 }
 

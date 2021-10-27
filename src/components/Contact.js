@@ -51,14 +51,7 @@ function Contact() {
               <p>chris.ware.dev@gmail.com</p>
             </div>
             <div className={styles.cInfoItem}>
-              <GoLocation className={styles.cIcon} />
-              <p>
-                {date.toLocaleString("en-US", {
-                  hour: "numeric",
-                  minute: "numeric",
-                  hour12: true,
-                })}_MST
-              </p>
+              
             </div>
             <div className={styles.cInfoItem}>
               <BsGithub className={styles.cIcon} />
@@ -72,10 +65,6 @@ function Contact() {
         </div>
         <div className={styles.cRight}>
           <div className={styles.cDescription}>
-            <p>
-              <b>What's Your Story?</b> Get in touch. Always available for
-              freelancing if the right project comes along.
-            </p>
             <form ref={formRef} onSubmit={handleSubmit}>
               <input type='text' placeholder='Name' name='user_name' /> <br />
               <input type='text' placeholder='Subject' name='user_subject' />

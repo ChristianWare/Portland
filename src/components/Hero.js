@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/Hero.module.css";
 import Link from "next/link";
 import Cube from "../components/Cubes/Cube";
+import { GoLocation } from "react-icons/go";
 
 function Hero() {
   return (
@@ -30,9 +31,7 @@ function Hero() {
         </div>
       </div>
       <div className={styles.heroRight}>
-        <Cube>
-          div
-        </Cube>
+        <Cube>div</Cube>
       </div>
     </header>
   );

@@ -9,6 +9,7 @@ import Skills from "../src/components/Skills";
 import Contact from "../src/components/Contact";
 import Toggle from "../src/components/Toggle";
 import Footer from "../src/components/Footer";
+import Time from "../src/components/Time";
 
 const projectData = [
   {
@@ -68,8 +69,8 @@ export default function Home() {
         />
         <link rel='icon' href='favicon.ico' />
       </Head>
-      {/* <Toggle /> */}
       <Navbar />
+      <Time />
       <Hero />
       <About />
       <Skills />

@@ -17,7 +17,7 @@ function Footer() {
           <Link href='#about'>
             <h3>About</h3>
           </Link>
-          <Link href='/'>
+          <Link href='#about'>
             <a>About Me</a>
           </Link>
         </div>
@@ -26,19 +26,19 @@ function Footer() {
           <Link href='#skills'>
             <h3>Skills</h3>
           </Link>
-          <Link href='/'>
+          <Link href='#frontend'>
             <a>Front End</a>
           </Link>
-          <Link href='/'>
+          <Link href='#backend'>
             <a>Back End</a>
           </Link>
-          <Link href='/'>
+          <Link href='#libfram'>
             <a>Libraries & Frame Works</a>
           </Link>
-          <Link href='/'>
+          <Link href='#design'>
             <a>Design Tools</a>
           </Link>
-          <Link href='/'>
+          <Link href='#misc'>
             <a>Miscellaneous</a>
           </Link>
         </div>
@@ -74,13 +74,13 @@ function Footer() {
               <AiOutlineMail className={styles.fIcon} />
             </a>
           </Link>
-          <Link href='/'>
-            <a>
+          <Link href='https://github.com/ChristianWare'>
+            <a target='_blank'>
               <BsGithub className={styles.fIcon} />
             </a>
           </Link>
-          <Link href='/'>
-            <a>
+          <Link href='https://www.linkedin.com/in/christian-ware/'>
+            <a target='_blank'>
               <BsLinkedin className={styles.fIcon} />
             </a>
           </Link>
