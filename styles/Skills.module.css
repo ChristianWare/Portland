@@ -39,7 +39,7 @@
     margin: 20px 0px;
     font-weight: bold;
     padding-top: 1rem;
-    border-top: 2px solid;
+    border-top: 2px solid var(--accent2);
     text-align: justify;
     letter-spacing: .1rem;
 }

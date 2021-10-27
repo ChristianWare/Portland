@@ -8,6 +8,7 @@ import SectionHeader from "../src/components/SectionHeader";
 import Skills from "../src/components/Skills";
 import Contact from "../src/components/Contact";
 import Toggle from "../src/components/Toggle";
+import Footer from "../src/components/Footer";
 
 const projectData = [
   {
@@ -79,6 +80,7 @@ export default function Home() {
         ))}
       </div>
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,55 @@
+.boxContainer {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem; */
+    border-top: 2px solid var(--accent2);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 375px;
+    
+}
+
+.box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0rem;
+}
+
+.box a {
+    font-size: 1.6rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+.fIcon {
+    font-size: 2rem;
+}
+
+.fCopyright {
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid var(--accent2);
+   padding: 1rem;
+   padding-top: 2.5rem;
+   margin-top: 2rem;
+   font-size: 1.6rem;
+   word-spacing: .2rem;
+}
+
+.logoContainer {
+    cursor: pointer;
+}
+
+.navbarLogo a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+    left: -1.2rem;
+}
+
+.navbarIcon {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 0.3rem;
+    left: -1.2rem;
+}

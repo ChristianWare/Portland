@@ -1,5 +1,5 @@
 .cContainer {
-    height: 100vh;
+    height: vh;
     margin-top: 600px;
     background-color: transparent;
     position: relative;
@@ -38,6 +38,8 @@
 .cInfoItem {
     display: flex;
     align-items: center;
+    position: relative;
+    top: 80px;
 }
 
 .cInfoItem p {
@@ -62,7 +64,7 @@
     width: 50%;
     height: 50px;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid var(--accent2);
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
@@ -74,11 +76,13 @@
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    border: 2px solid var(--accent2);
+    border-radius: 5px;
 }
 
 .cDescription textarea:focus,
 .cDescription input:focus {
-    outline: 1px solid var(--light);
+    outline: 1px solid var(--accent2);
     border-radius: 5px;
 }
 

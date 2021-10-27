@@ -1,13 +1,20 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "../../styles/Contact.module.css";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import emailjs from "emailjs-com";
 
 function Contact() {
   const formRef = useRef();
   const [done, setDone] = useState(false);
+
+  const [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => setDate(new Date()), 30000);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,7 +36,7 @@ function Contact() {
       );
   };
   return (
-    <div className={styles.cContainer}>
+    <section id='contact' className={styles.cContainer}>
       <div className={styles.cBg}></div>
       <div className={styles.cWrapper}>
         <div className={styles.cLeft}>
@@ -45,7 +52,21 @@ function Contact() {
             </div>
             <div className={styles.cInfoItem}>
               <GoLocation className={styles.cIcon} />
-              <p>Dynamic Time Zone/Date</p>
+              <p>
+                {date.toLocaleString("en-US", {
+                  hour: "numeric",
+                  minute: "numeric",
+                  hour12: true,
+                })}_MST
+              </p>
+            </div>
+            <div className={styles.cInfoItem}>
+              <BsGithub className={styles.cIcon} />
+              <p>GitHub</p>
+            </div>
+            <div className={styles.cInfoItem}>
+              <BsLinkedin className={styles.cIcon} />
+              <p>LinkedIn</p>
             </div>
           </div>
         </div>
@@ -57,11 +78,7 @@ function Contact() {
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
               <input type='text' placeholder='Name' name='user_name' /> <br />
-              <input
-                type='text'
-                placeholder='Subject'
-                name='user_subject'
-              />{" "}
+              <input type='text' placeholder='Subject' name='user_subject' />
               <br />
               <input type='text' placeholder='Email' name='user_email' />
               <textarea rows='5' placeholder='Message' name='message' />
@@ -71,7 +88,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

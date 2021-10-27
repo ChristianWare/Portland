@@ -3,7 +3,7 @@ import Cube from "../components/Cubes/Cube";
 
 function Skills() {
   return (
-    <div className={styles.aContainer}>
+    <section id='skills' className={styles.aContainer}>
       <div className={styles.aRight}>
         <h5 className={styles.aSub}>Front End</h5>
         <p className={styles.aDescription}>HTML, CSS, JavaScript (ES6)</p>
@@ -23,7 +23,7 @@ function Skills() {
         <h5 className={styles.aSub}>Miscellaneous</h5>
         <p className={styles.aDescription}>
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
-          Control(Git), Postman, Slack, Zoom
+          Control(Git), Postman, JSON, REST API's, Slack, Zoom
         </p>
       </div>
       <div className={styles.aLeft}>
@@ -33,7 +33,7 @@ function Skills() {
           <Cube>Skills</Cube>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

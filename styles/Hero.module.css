@@ -13,7 +13,7 @@ background-color: transparent;
 }
 
 .heroName {
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     letter-spacing: .3rem;
 }
 
@@ -60,17 +60,20 @@ background-color: transparent;
 .button1 {
     place-items: center;
     color: var(--dark);
-    background-color: var(--light);
+    background-color: var(--accent2);
 }
 
 .button2 {
     place-items: center;
-    border: solid 1px;
+    border: solid 1px var(--accent2);
+    color: var(--accent2);
     background-color: transparent;
   }
 
 .button1:hover {
-    background-color: var(--accent2);
+    background-color: var(--dark);
+    color: var(--accent2);
+    border: solid 1px;
 }
 
 .button2:hover {

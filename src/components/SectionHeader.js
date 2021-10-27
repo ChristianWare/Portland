@@ -3,7 +3,7 @@ import styles from "../../styles/SectionHeader.module.css";
 
 function SectionHeader({ children }) {
   return (
-    <div className={styles.sectionContainer}>
+    <div id='projects' className={styles.sectionContainer}>
       <Cube>{children}</Cube>
       <Cube>{children}</Cube>
       <Cube>{children}</Cube>

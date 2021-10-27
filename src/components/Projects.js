@@ -14,7 +14,7 @@ function Projects({
 }) {
   return (
     <>
-      <section id='projects' className={styles.pSection}>
+      <section className={styles.pSection}>
         <div className={styles.projectCubes}>
           <ProjectsCube>{title}</ProjectsCube>
         </div>

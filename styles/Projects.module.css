@@ -97,14 +97,16 @@
 
  .button2 {
     place-items: center;
-    border: solid 1px;
+    border: solid 1px var(--accent2);
     background-color: transparent;
+    color: var(--accent2);
  }
 
 .button1:hover {
     color: var(--light);
     background-color: transparent;
-    border: solid 1px var(--light);
+    border: solid 1px var(--accent2);
+    color: var(--accent2);
 }
 
  .button2:hover {

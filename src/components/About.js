@@ -3,7 +3,7 @@ import Cube from "../components/Cubes/Cube";
 
 function About() {
   return (
-    <div className={styles.aContainer}>
+    <article id='about' className={styles.aContainer}>
       <div className={styles.aLeft}>
         <div className={styles.cubeContainer}>
           <Cube>About</Cube>
@@ -26,7 +26,7 @@ function About() {
           a Front End Developer.
         </p>
       </div>
-    </div>
+    </article>
   );
 }
 
