@@ -1,7 +1,4 @@
 .boxContainer {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem; */
     border-top: 2px solid var(--accent2);
     display: flex;
     justify-content: space-between;
@@ -12,6 +9,13 @@
 .box h3 {
     font-size: 2.2rem;
     padding: 1rem 0rem;
+    cursor: pointer;
+}
+
+
+.box h3:hover{
+    color: var(--accent2);
+    transition: 0.2s all ease-in;
 }
 
 .box a {
@@ -20,8 +24,18 @@
     padding: 1rem 0;
 }
 
+.box a:hover {
+    color: var(--accent2);
+    transition: 0.2s all ease-in;
+}
+
 .fIcon {
     font-size: 2rem;
+}
+
+.fIcon:hover {
+   color: var(--accent2);
+   transition: 0.2s all ease-in;
 }
 
 .fCopyright {

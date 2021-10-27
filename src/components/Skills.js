@@ -23,7 +23,7 @@ function Skills() {
         <h5 className={styles.aSub}>Miscellaneous</h5>
         <p className={styles.aDescription}>
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
-          Control(Git), Postman, JSON, REST API's, Slack, Zoom
+          Control(Git), Markdown, Postman, JSON, REST API's, Slack, Zoom
         </p>
       </div>
       <div className={styles.aLeft}>

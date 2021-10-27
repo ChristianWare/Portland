@@ -9,14 +9,23 @@ function Footer() {
     <section className={styles.footer}>
       <div className={styles.boxContainer}>
         <div className={styles.box}>
-          <h3>About</h3>
+          <Link href='/'>
+            <h3>Home</h3>
+          </Link>
+        </div>
+        <div className={styles.box}>
+          <Link href='#about'>
+            <h3>About</h3>
+          </Link>
           <Link href='/'>
             <a>About Me</a>
           </Link>
         </div>
 
         <div className={styles.box}>
-          <h3>Skills</h3>
+          <Link href='#skills'>
+            <h3>Skills</h3>
+          </Link>
           <Link href='/'>
             <a>Front End</a>
           </Link>
@@ -35,7 +44,9 @@ function Footer() {
         </div>
 
         <div className={styles.box}>
-          <h3>Projects</h3>
+          <Link href='#projects'>
+            <h3>Projects</h3>
+          </Link>
           <Link href='/'>
             <a>Portfolio</a>
           </Link>
@@ -51,7 +62,10 @@ function Footer() {
         </div>
 
         <div className={styles.box}>
-          <h3>Contact</h3>
+          <Link href='#contact'>
+            <h3>Contact</h3>
+          </Link>
+
           <Link href='/'>
             <a>917-769-1192</a>
           </Link>
