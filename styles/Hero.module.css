@@ -55,10 +55,9 @@ transition: none;
 .button1,
 .button2 {
       display: grid;
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       height: 60px;
       width: 100%;
-      font-weight: 500;
       letter-spacing: 1.5px;
       border-radius: .5rem;
       margin-right: 5rem;
@@ -89,9 +88,9 @@ transition: none;
     background-color: var(--accent2);
 }
 
+/* media Queries */
 
-
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1000px) {
     .hero {
         flex-direction: column-reverse;
         margin-top: 0px;
@@ -105,7 +104,7 @@ transition: none;
     .cubeContainer {
         position: relative;
         right: 7rem;
-        top: 140px;
+        top: -20px;
         transition: none;
         padding-bottom: 10rem;
     }
@@ -117,25 +116,18 @@ transition: none;
     }
 }
 
+/* Cube Media Queries */
 
-@media screen and (min-width:1px) and (max-width: 500px) {
+@media screen and (min-width:1px) and (max-width: 567px) {
         .cubeContainer {
             display: none;
-        }
-}
-
-@media screen and (min-width:501px) and (max-width: 1069px)
-{
-        .cubeContainer {
-            position: relative;
-            top: 15px;
         }
 }
 
 
 /* Mobile Portrait Meda Query */
 
-@media screen and (min-width: 1px) and (max-width: 480px) {
+@media screen and (min-width: 1px) and (max-width: 567px) {
 
     .hero {
        margin-top: -15rem;
@@ -157,7 +149,7 @@ transition: none;
     .button1,
     .button2 {
         display: grid;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         height: 40px;
         letter-spacing: 1.2px;
         margin-right: 3rem;
