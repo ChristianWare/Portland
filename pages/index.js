@@ -7,7 +7,6 @@ import Projects from "../src/components/Projects";
 import SectionHeader from "../src/components/SectionHeader";
 import Skills from "../src/components/Skills";
 import Contact from "../src/components/Contact";
-import Toggle from "../src/components/Toggle";
 import Footer from "../src/components/Footer";
 import Time from "../src/components/Time";
 
@@ -72,7 +71,7 @@ export default function Home() {
       <Navbar />
       <Time />
       <Hero />
-      <About />
+      {/* <About />
       <Skills />
       <SectionHeader>Projects</SectionHeader>
       <div className={styles.projects}>
@@ -81,7 +80,7 @@ export default function Home() {
         ))}
       </div>
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

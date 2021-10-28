@@ -23,7 +23,7 @@
   line-height: 1.8;
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  transition: all 0.3s ease-in;
+  /* transition: all 0.3s ease-in; */
 }
 
 /* Typography Scale */
@@ -81,5 +81,11 @@ p, input{
 @media screen and (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
   }
 }
