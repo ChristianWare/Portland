@@ -1,22 +1,21 @@
 .aContainer {
-    height: 90vh;
-    max-width: 100vw;
+    height: 95vh;
     display: flex;
     justify-content: center;
     background-color: transparent;
-    /* margin-top: 500px; */
 }
 
 .aLeft {
     flex: 1;
     display: flex;
     justify-content: start;
+    background-color: transparent;
 }
 
 .cubeContainer {
-    position: relative;
-    left: -80px;
-    margin-top: -90px;
+    /* position: relative; */
+    /* left: -80px; */
+    margin-top: 90px;
     background-color: transparent;
 }
 
@@ -29,7 +28,6 @@
     font-weight: 500;
     padding-top: 1rem;
     border-top: 2px solid var(--accent2);
-    /* text-align: justify; */
     letter-spacing: .1rem;
 }
 
@@ -37,7 +35,28 @@
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
-    text-align: justify;
        letter-spacing: .1rem;
        word-spacing: .1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .aContainer {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    .cubeContainer {
+        margin-right: 200px;
+        margin-bottom: 100px;
+    }
+
+    .aRight {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-height: 823px), screen  and (max-width: 320px) {
+    .aContainer {
+        margin-top: 200px;
+    }
 }

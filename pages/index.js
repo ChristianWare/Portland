@@ -71,8 +71,8 @@ export default function Home() {
       <Navbar />
       <Time />
       <Hero />
-      {/* <About />
-      <Skills />
+       <About />
+      {/* <Skills />
       <SectionHeader>Projects</SectionHeader>
       <div className={styles.projects}>
         {projectData.map((data) => (

@@ -23,7 +23,7 @@
   line-height: 1.8;
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  /* transition: all 0.3s ease-in; */
+  transition: all 0.3s ease-in;
 }
 
 /* Typography Scale */

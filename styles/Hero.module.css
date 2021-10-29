@@ -1,7 +1,7 @@
 .hero {
 display: flex;
 justify-content: space-between;
-height: 95vh;
+height: 100vh;
 max-width: 1000px;
 margin-top: 10rem;
 background-color: transparent;
@@ -88,7 +88,7 @@ transition: none;
     background-color: var(--accent2);
 }
 
-/* media Queries */
+/* media Queries ****************/
 
 @media screen and (max-width: 1000px) {
     .hero {
@@ -104,7 +104,7 @@ transition: none;
     .cubeContainer {
         position: relative;
         right: 7rem;
-        top: -20px;
+        top: -10px;
         transition: none;
         padding-bottom: 10rem;
     }
@@ -124,10 +124,9 @@ transition: none;
         }
 }
 
-
 /* Mobile Portrait Meda Query */
 
-@media screen and (min-width: 1px) and (max-width: 567px) {
+@media screen and (max-width: 567px) {
 
     .hero {
        margin-top: -15rem;
