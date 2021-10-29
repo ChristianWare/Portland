@@ -1,61 +1,26 @@
 import styles from "../../styles/Projects.module.css";
-import ProjectsCube from "../components/Cubes/ProjectsCube";
-import Cube from "../../src/components/Cubes/Cube";
-import Link from "next/link";
-
-function Projects({
-  id,
-  title,
-  subheading,
-  description,
-  skills,
-  gitHubUrl,
-  sampleUrl,
-}) {
+import image1 from "../../public/images/image3.jpg";
+import Image from 'next/image'
+ 
+function Projects() {
   return (
-    <>
-      <section className={styles.pSection}>
-        <div className={styles.projectCubes}>
-          <ProjectsCube>{title}</ProjectsCube>
-        </div>
-        <div className={styles.projectText}>
-          <div className={styles.pInfoLeft}>
-            <h5 className={styles.pSub}>{subheading}</h5>
-            <p className={styles.pDescription}>{description}</p>
-            <p className={styles.pDescriptionSkills}>
-              {skills.map((skill) => (
-                <div key={id} className={styles.skill}>
-                  {skill}
-                </div>
-              ))}
-            </p>
-            <div className={styles.pLinks}>
-              {/* {sampleUrl && (
-                <Link href={sampleUrl}>
-                  <a className={styles.sampleUrl}>Live Site</a>
-                </Link>
-              )}
-              {gitHubUrl && (
-                <Link href={gitHubUrl}>
-                  <a className={styles.github}>GitHub</a>
-                </Link>
-              )}
-              <Link href={gitHubUrl}>
-                <a className={styles.github}>Preview (Hover)</a>
-              </Link> */}
-              <div className={styles.buttonContainer}>
-                <Link href='#about'>
-                  <a className={styles.button1}>Live Site</a>
-                </Link>
-                <Link href='#about'>
-                  <a className={styles.button2}>GitHub</a>
-                </Link>
-              </div>
+    <section className={styles.projects}>
+      <h2 className={styles.sectionHeading}>Projects</h2>
+      <div className={styles.allItems}>
+        <div className={styles.item}>
+          <div className={styles.left}>
+            <div className={styles.img}>
+              <Image src={image1} alt='project' width='100' height='100' />
             </div>
           </div>
+          <div className={styles.right}>
+            <h2 className={styles.projectTitle}>Project 1</h2>
+            <h3 className={styles.projectSubTitle}>Project 1 Subtitle</h3>
+            <p className={styles.description}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio culpa in sunt magni eos perspiciatis autem repudiandae unde repellat praesentium, reprehenderit molestiae similique rem debitis dignissimos impedit mollitia vel vitae?</p>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

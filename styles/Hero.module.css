@@ -47,6 +47,10 @@ transition: none;
      font-weight: 500;
  }
 
+ .cubeContainer {
+     background-color: transparent;
+ }
+
  .buttonContainer {
      margin-top: 4rem;
      display: flex;
@@ -103,11 +107,11 @@ transition: none;
     }
 
     .cubeContainer {
-        position: relative;
-        right: 7rem;
-        top: -10px;
-        transition: none;
+        margin-bottom: 300px;
+        margin-right: 100px;
         padding-bottom: 10rem;
+        background-color: transparent;
+        transition: none;
     }
 
     .heroName,

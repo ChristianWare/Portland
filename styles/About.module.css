@@ -2,7 +2,7 @@
     height: 60vh;
     display: flex;
     justify-content: center;
-    margin-top: -200px;
+    /* margin-top: -200px; */
     background-color: transparent;
 }
 
@@ -30,6 +30,7 @@
     padding-top: 1rem;
     border-top: 2px solid var(--accent2);
     letter-spacing: .1rem;
+    z-index: 999;
 }
 
 .aDescription {
@@ -38,6 +39,7 @@
     margin-bottom: 20px;
        letter-spacing: .1rem;
        word-spacing: .1rem;
+       z-index: 999;
 }
 
 @media screen and (max-width: 768px) {
@@ -48,16 +50,21 @@
 
     .cubeContainer {
         margin-right: 200px;
-        margin-bottom: 100px;
     }
 
     .aRight {
         margin-top: 200px;
+        /* margin-bottom: 100px; */
+
     }
 }
 
 @media screen and (max-height: 823px), screen  and (max-width: 320px) {
     .aContainer {
         margin-top: 230px;
+    }
+    .cubeContainer {
+        position: relative;
+        bottom: 50px;
     }
 }

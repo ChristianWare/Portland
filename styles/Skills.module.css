@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+    margin-top: 200px;
     /* margin-bottom: 300px; */
 }
 
@@ -10,20 +11,20 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    position: relative;
+    right: 100px
 }
 
 .cubeContainer {
     margin-top: -200px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     background-color: transparent;
 }
 
 .sLeft {
     flex: 1;
 }
-
-
 
 .sSub {
     margin: 20px 0px;
@@ -54,29 +55,30 @@
     }
 
     .sRight {   
-        position: relative;
-        right: 50px;
-        top: 50px;
+        margin-right: 550px;
+        margin-top: 00px;
     }
 
     .cubeContainer {
-          display: block;
-          margin-left: auto;
+          display: flex;
           margin-right: auto;
-          width: 5%;
+          margin-left: auto;
+          width: 15%;
     }
 
 }
 
+
 @media screen and (max-height: 823px),
-screen and (max-width: 320px) {
+screen and (max-width: 500px) {
     .sContainer {
-        margin-top: 800px;
+        margin-top: 700px;
     }
 
      .sRight {
          position: relative;
-         right: 120px;
+         left: 70px;
+         top: 40px;
      }
 
      .sSub, .aDescription {
@@ -87,12 +89,15 @@ screen and (max-width: 320px) {
 @media screen and (max-height: 568px),
 screen and (max-width: 320px) {
     .sContainer {
-        margin-top: 1000px;
+        margin-top: 900px;
     }
 
      .sRight {
          position: relative;
-         right: 130px;
+         left: 20px;
+         top: 80px
      }
 }
 
+
+/* 321-500 */
