@@ -72,15 +72,15 @@ export default function Home() {
       <Time />
       <Hero />
        <About />
-      {/* <Skills />
-      <SectionHeader>Projects</SectionHeader>
+       <Skills />
+      {/* <SectionHeader>Projects</SectionHeader>
       <div className={styles.projects}>
         {projectData.map((data) => (
           <Projects {...data} />
         ))}
       </div>
       <Contact />
-      <Footer /> */}
+      <Footer />  */}
     </div>
   );
 }

@@ -9,6 +9,7 @@ transition: none;
 }
 
 
+
 .heroLeft {
     flex: 1;
 }
@@ -118,7 +119,7 @@ transition: none;
 
 /* Cube Media Queries */
 
-@media screen and (min-width:1px) and (max-width: 567px) {
+@media screen and (max-width: 567px) {
         .cubeContainer {
             display: none;
         }
