@@ -23,15 +23,7 @@
     flex: 1;
 }
 
-.sCard {
-    width: 60%;
-    height: 70vh;
-}
 
-.sTitle {
-    font-weight: 400;
-    border-bottom: 1px solid var(--light);
-}
 
 .sSub {
     margin: 20px 0px;

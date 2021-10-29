@@ -113,3 +113,10 @@
      color: var(--dark);
      background-color: var(--accent2);
  }
+
+
+ /* @media screen and (max-width: 700px) {
+     .pSection {
+         margin-top: -250px;
+     }
+ } */
