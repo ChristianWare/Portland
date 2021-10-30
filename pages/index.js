@@ -31,7 +31,7 @@ export default function Home() {
        <Skills />
       {/* <SectionHeader>Projects</SectionHeader> */}
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
       {/* <Footer /> */}
     </div>
   );

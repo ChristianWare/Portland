@@ -1,6 +1,4 @@
 .cContainer {
-    height: vh;
-    margin-top: 600px;
     background-color: transparent;
     position: relative;
 }
@@ -55,14 +53,16 @@
     position: relative;
     bottom: 85px;
     font-size: 2.5rem;
+    background-color: transparent;
 }
 
 .cDescription form {
     margin-top: 65px;
+    background-color: transparent;
 }
 
 .cDescription input {
-    width: 50%;
+    width: 100%;
     height: 50px;
     border: none;
     border-bottom: 2px solid var(--accent2);
@@ -91,9 +91,56 @@
 .cDescription button {
     border: none;
     padding: 15px;
+    width: 100%;
     background-color: var(--accent2);
     border-radius: 5px;
     font-weight: 600;
     color: var(--dark);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .cWrapper {
+        flex-direction: column;
+        padding: 0px 0px 0px 50px;
+    }
+
+    .cTitle {
+        font-size: 30px;
+    }
+
+    .cInfoItem {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .cDescription form {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cDescription input {
+        width: 100%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    .cDescription button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cInfoItem p { 
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-height: 568px),
+screen and (max-width: 320px) {
+    .cInfoItem p {
+        font-size: 1.6rem;
+    }
 }

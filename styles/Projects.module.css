@@ -1,3 +1,7 @@
+.projects {
+    padding: 20rem 0;
+}
+
 .buttonContainer {
     margin-top: 4rem;
     display: flex;
@@ -38,9 +42,6 @@
 .button2:hover {
     color: var(--dark);
     background-color: var(--accent2);
-}
-.projects {
-    padding: 20rem 0;
 }
 
 .item {
