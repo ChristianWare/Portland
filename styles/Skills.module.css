@@ -13,13 +13,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    right: 100px
+    right: 100px;
+    background-color: transparent;
 }
 
 .cubeContainer {
     margin-top: -200px;
     /* margin-left: 150px; */
     background-color: transparent;
+    /* margin-left: 100px; */
 }
 
 .sLeft {

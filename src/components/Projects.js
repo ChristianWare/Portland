@@ -1,25 +1,32 @@
 import styles from "../../styles/Projects.module.css";
-import image1 from "../../public/images/image3.jpg";
-import Image from 'next/image'
+import Link from 'next/link';
+import projects from "../data/projects";
+import ProjectsCube from "./Cubes/ProjectsCube";
  
 function Projects() {
   return (
     <section className={styles.projects}>
-      <h2 className={styles.sectionHeading}>Projects</h2>
-      <div className={styles.allItems}>
-        <div className={styles.item}>
-          <div className={styles.left}>
-            <div className={styles.img}>
-              <Image src={image1} alt='project' width='100' height='100' />
+      <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
+
+      {projects.map((project) => (
+        <div className={styles.allItems}>
+          <div className={styles.item}>
+            <div className={styles.right}>
+              <h2 className={styles.projectTitle}>{project.title}</h2>
+              <p className={styles.projectDescription}>{project.description}</p>
+              <div className={styles.buttonContainer}>
+                <Link href='#about'>
+                  <a className={styles.button1}>GitHub</a>
+                </Link>
+                <Link href='#contact'>
+                  <a className={styles.button2}>Live Site</a>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className={styles.right}>
-            <h2 className={styles.projectTitle}>Project 1</h2>
-            <h3 className={styles.projectSubTitle}>Project 1 Subtitle</h3>
-            <p className={styles.description}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio culpa in sunt magni eos perspiciatis autem repudiandae unde repellat praesentium, reprehenderit molestiae similique rem debitis dignissimos impedit mollitia vel vitae?</p>
+            <div className={styles.buttonContainer}></div>
           </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 }

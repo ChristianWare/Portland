@@ -18,6 +18,7 @@ function Navbar() {
             </span>
           </Link>
           <ul
+            onClick={openMenu}
             className={
               isOpen === false
                 ? styles.navmenu

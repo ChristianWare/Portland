@@ -1,0 +1,81 @@
+.buttonContainer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px
+}
+
+.button1,
+.button2 {
+    display: grid;
+    font-size: 2.1rem;
+    height: 60px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+
+.button1 {
+    place-items: center;
+    color: var(--dark);
+    background-color: var(--accent2);
+}
+
+.button2 {
+    place-items: center;
+    border: solid 2px var(--accent2);
+    color: var(--accent2);
+    background-color: transparent;
+}
+
+.button1:hover {
+    background-color: var(--dark);
+    color: var(--accent2);
+    border: solid 1px;
+}
+
+.button2:hover {
+    color: var(--dark);
+    background-color: var(--accent2);
+}
+.projects {
+    padding: 20rem 0;
+}
+
+.item {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.projects .item .right {
+    border: 2px solid var(--accent2);
+    padding: 5rem 2rem;
+    border-radius: 12px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .buttonContainer {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    .button1 {
+        place-items: center;
+        color: var(--dark);
+        background-color: var(--accent2);
+    }
+
+    .projectTitle,
+    .projectDescription {
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 568px),
+screen and (max-width: 320px) {
+    .projectTitle {
+        font-size: 36px;
+    }
+}
