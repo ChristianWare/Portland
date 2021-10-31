@@ -40,7 +40,7 @@ function Contact() {
       <div className={styles.cBg}></div>
       <div className={styles.cWrapper}>
         <div className={styles.cLeft}>
-          <h1 className={styles.cTitle}>Want to Learn More? Let's Talk</h1>
+          <h1 className={styles.cTitle}>Want to Learn More? Let's Talk.</h1>
           <div className={styles.cInfo}>
             <div className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />

@@ -3,8 +3,7 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    margin-top: 200px;
-    /* margin-bottom: 300px; */
+    /* margin-top: 800px; */
 }
 
 .sRight {
@@ -19,9 +18,8 @@
 
 .cubeContainer {
     margin-top: -200px;
-    /* margin-left: 150px; */
+    margin-right: 50px;
     background-color: transparent;
-    /* margin-left: 100px; */
 }
 
 .sLeft {
@@ -71,10 +69,10 @@
 }
 
 
-@media screen and (max-height: 823px),
+/* @media screen and (max-height: 823px),
 screen and (max-width: 500px) {
     .sContainer {
-        margin-top: 700px;
+        margin-top: 600px;
     }
 
      .sRight {
@@ -86,20 +84,28 @@ screen and (max-width: 500px) {
      .sSub, .aDescription {
          text-align: left;
      }
-}
+} */
 
-@media screen and (max-height: 568px),
-screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
     .sContainer {
-        margin-top: 900px;
+        margin-top: 300px;
     }
 
-     .sRight {
-         position: relative;
-         left: 20px;
-         top: 80px
-     }
+    .cubeContainer {
+        margin-left: 75px;
+    }
+
+    .sRight {
+        position: relative;
+        left: 20px;
+        top: 80px
+    }
 }
+/* 
+767-501 */
 
-
-/* 321-500 */
+@media screen and (min-width: 501px) and (max-width:767px) {
+    .cubeContainer {
+        margin-right: 350px;
+    }
+}

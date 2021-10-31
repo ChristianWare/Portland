@@ -2,8 +2,7 @@
     height: 60vh;
     display: flex;
     justify-content: center;
-    /* margin-top: -200px; */
-    margin-bottom: 450px;
+    /* margin-bottom: -650px; */
     background-color: transparent;
 }
 
@@ -47,6 +46,7 @@
     .aContainer {
         flex-direction: column; 
         align-items: center;
+        margin-bottom: -500px ;
     }
 
     .cubeContainer {
@@ -55,9 +55,18 @@
 
     .aRight {
         margin-top: 200px;
-        /* margin-bottom: 100px; */
-
     }
+}
+
+@media screen and (max-width: 500px) {
+    .aContainer {
+        margin-bottom: -400px;
+    }
+
+    .cubeContainer {
+        margin-top: -80px;
+    }
+    
 }
 
 @media screen and (max-height: 823px), screen  and (max-width: 320px) {
@@ -68,4 +77,17 @@
         position: relative;
         bottom: 50px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .aContainer {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .aContainer {
+        margin-top: -200px;
+    }
+
 }

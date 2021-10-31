@@ -3,7 +3,6 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
 import About from "../src/components/About";
-import SectionHeader from "../src/components/SectionHeader";
 import Skills from "../src/components/Skills";
 import Contact from "../src/components/Contact";
 import Footer from "../src/components/Footer";
@@ -29,7 +28,6 @@ export default function Home() {
       <Hero />
        <About />
        <Skills />
-      {/* <SectionHeader>Projects</SectionHeader> */}
       <Projects />
       <Contact />
       {/* <Footer /> */}

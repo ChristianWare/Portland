@@ -1,14 +1,12 @@
 .hero {
 display: flex;
 justify-content: space-between;
-height: 100vh;
+height: 95vh;
 max-width: 1000px;
-margin-top: 10rem;
+/* margin-top: 10rem; */
 background-color: transparent;
 transition: none;
 }
-
-
 
 .heroLeft {
     flex: 1;
@@ -30,6 +28,7 @@ transition: none;
     transition: none;
     background-color: transparent;
 }
+
  .heroLeftWrapper {
      padding: 5rem 5rem 5rem 0px;
      height: 50%;
@@ -98,16 +97,22 @@ transition: none;
 @media screen and (max-width: 1000px) {
     .hero {
         flex-direction: column-reverse;
-        margin-top: 0px;
+        margin-top: 160px;
         transition: none;
+        /* height: 70vh; */
     }
+
+    .heroName {
+        font-size: 5rem;
+    }
+
     .heroLeftWrapper {
-        margin-top: -19rem;
+        margin-top: -16.5rem;
         transition: none;
     }
 
     .cubeContainer {
-        margin-bottom: 300px;
+        margin-bottom: 200px;
         margin-right: 100px;
         padding-bottom: 10rem;
         background-color: transparent;
@@ -121,20 +126,24 @@ transition: none;
     }
 }
 
-/* Cube Media Queries */
-
-@media screen and (max-width: 567px) {
-        .cubeContainer {
-            display: none;
-        }
+@media screen and (max-width: 767px) {
+     .cubeContainer {
+         display: none;
+     }
 }
 
-/* Mobile Portrait Meda Query */
-
 @media screen and (max-width: 567px) {
+    .heroRight {
+        margin-top: -100px;
+    }
+
+    .cubeContainer {
+        display: none;
+    }
 
     .hero {
-       margin-top: -15rem;
+       margin-top: 3px;
+       
     }
 
      .heroLeftWrapper {
@@ -164,7 +173,7 @@ transition: none;
 @media screen and (max-width: 320px)  {
 
     .hero {
-       margin-top: -10rem;
+       margin-top: -5rem;
     }
 
      .heroLeftWrapper {
@@ -194,23 +203,14 @@ transition: none;
 }
 
 
-/* Mobile Landscap */
 
-@media screen and (min-width: 568px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+    .heroRight {
+        margin-top: -500px;
+    }
 
 }
 
 
-/* media queries:
 
-mobile portrait: 
-320px - 480px
-
-mobile landscape :
-568ps - 767px
-
-tablet:
-768px - 1024px
-
-*/
 
