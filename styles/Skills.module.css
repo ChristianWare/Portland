@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    /* margin-top: 800px; */
+    margin-top: 200px;
+    margin-bottom: 150px;
 }
 
 .sRight {
@@ -47,7 +48,7 @@
 @media screen and (max-width: 768px) {
     .sContainer {
         flex-direction: column-reverse;
-        margin-top: 300px;
+        margin-top: 900px;
     }
 
     .sLeft {
@@ -88,7 +89,7 @@ screen and (max-width: 500px) {
 
 @media screen and (max-width: 767px) {
     .sContainer {
-        margin-top: 300px;
+        margin-top: 900px;
     }
 
     .cubeContainer {
