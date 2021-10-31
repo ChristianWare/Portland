@@ -9,7 +9,8 @@ transition: none;
 }
 
 .heroLeft {
-    flex: 1;
+    flex: 2;
+    transition: none;
 }
 
 .heroName {
@@ -202,13 +203,17 @@ transition: none;
     }
 }
 
-
-
 @media screen and (max-width: 767px) {
     .heroRight {
         margin-top: -500px;
     }
+}
 
+@media screen and (max-width: 567px) {
+    .heroLeft {
+        flex: 1;
+        transition: none;
+    }
 }
 
 
