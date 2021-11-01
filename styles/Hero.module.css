@@ -1,7 +1,7 @@
 .hero {
 display: flex;
 justify-content: space-between;
-height: 90vh;
+height: 95vh;
 max-width: 1000px;
 background-color: transparent;
 transition: none;
@@ -9,7 +9,7 @@ margin-top: 50px;
 }
 
 .heroLeft {
-    flex: 2;
+    flex: 3;
 }
 
 .heroName {
@@ -49,7 +49,7 @@ margin-top: 50px;
  .cubeContainer {
      background-color: transparent;
      position: relative;
-     right: 150px;
+     right: 100px;
  }
 
  .buttonContainer {
@@ -99,11 +99,12 @@ margin-top: 50px;
 @media screen and (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;
-        margin-top: 200px;
+        /* margin-top: 200px; */
         position: relative;
-        top: 100px;
+        top: 70px;
         transition: none;
-        /* height: 70vh; */
+        
+
     }
 
     .heroLeft {
@@ -141,10 +142,25 @@ margin-top: 50px;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .hero {
+        margin-top: -150px;
+        margin-bottom: 400px;
+    }
+
+    .heroRight {
+        display: none;
+    }
+
+    .cubeContainer {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 567px) and (max-width: 767px) {
-    /* .hero {
+    .hero {
         height: 70vh;
-    } */
+    }
 
      .cubeContainer {
          margin-right: 500px;
@@ -223,19 +239,7 @@ margin-top: 50px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .hero {
-        margin-top: -150px;
-        margin-bottom: 400px;
-    }
-    
-    .heroRight {
-        display: none;
-    }
-    .cubeContainer {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 567px) {
     .heroLeft {

@@ -36,7 +36,7 @@
 .button1:hover {
     background-color: var(--dark);
     color: var(--accent2);
-    border: solid 1px;
+    border: solid 2px;
 }
 
 .button2:hover {

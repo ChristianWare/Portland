@@ -32,7 +32,6 @@
     font-weight: bold;
     padding-top: 1rem;
     border-top: 2px solid var(--accent2);
-    text-align: justify;
     letter-spacing: .1rem;
 }
 
@@ -48,7 +47,7 @@
 @media screen and (max-width: 768px) {
     .sContainer {
         flex-direction: column-reverse;
-        margin-top: 900px;
+        margin-top: 500px;
     }
 
     .sLeft {
@@ -89,7 +88,7 @@ screen and (max-width: 500px) {
 
 @media screen and (max-width: 767px) {
     .sContainer {
-        margin-top: 900px;
+        margin-top: 500px;
     }
 
     .cubeContainer {
