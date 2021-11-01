@@ -18,6 +18,9 @@ function Footer() {
             Thank you for visiting my personal portfolio website. Feel free to
             reach out to me for more information.
           </p>
+          <Link href='/'>
+            <button>Back to Top</button>
+          </Link>
         </div>
         <div className={styles.col}>
           <h5>Contact</h5>
