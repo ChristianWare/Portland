@@ -1,22 +1,117 @@
 .fContainer {
     border-top: 2px solid var(--accent2);
+    padding: 100px 0 30px;
+    border-top-right-radius: 125px;
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
-.navbarLogo {
+.fLogo {
     cursor: pointer;
+    /* width: 80px; */
+    margin-bottom: 30px;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.navbarLogo a {
+.fLogo a {
     font-size: 2rem;
     font-weight: bold;
     position: relative;
-    left: -1.2rem
+    left: -1.2rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.navbarIcon {
+.fIcon {
     font-size: 2rem;
     margin-right: 1rem;
     position: relative;
     top: 0.3rem;
-    left: -1.2rem
+    left: -1.2rem;
 }
+
+.fSocialIcon {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-right: 3rem;
+}
+
+
+.row {
+    /* width: 85%; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.col p {
+    margin-bottom: 12px;
+}
+
+.fDescription {
+    margin-top: 30px;
+    width: 80%;
+    /* text-align: center; */
+}
+
+.col h5 {
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 2px solid var(--accent2);
+}
+
+
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.fSocialIcons {
+    cursor: pointer;
+}
+
+.bottomBorder {
+    border: 0;
+    border-bottom: 1px solid var(--accent2);
+    margin: 20px auto;
+}
+
+.copyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .fContainer {
+        bottom: unset;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+

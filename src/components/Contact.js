@@ -40,7 +40,9 @@ function Contact() {
       <div className={styles.cBg}></div>
       <div className={styles.cWrapper}>
         <div className={styles.cLeft}>
-          <h1 className={styles.cTitle}>Want to Learn More? Let's Talk.</h1>
+          <h1 className={styles.cTitle}>
+            Here are the best ways to contact me:
+          </h1>
           <div className={styles.cInfo}>
             <div className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
@@ -50,9 +52,7 @@ function Contact() {
               <AiOutlineMail className={styles.cIcon} />
               <p>chris.ware.dev@gmail.com</p>
             </div>
-            <div className={styles.cInfoItem}>
-              
-            </div>
+            <div className={styles.cInfoItem}></div>
             <div className={styles.cInfoItem}>
               <BsGithub className={styles.cIcon} />
               <p>GitHub</p>
