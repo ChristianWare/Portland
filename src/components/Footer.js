@@ -93,7 +93,7 @@ function Footer() {
         <p lassName={styles.fCopy}>
           <span className={styles.fCopyLogo}>
             <SiHackthebox className={styles.fcopyIcon} />
-            <a>Christian Ware</a>
+            <a>Christian Ware {new Date().getFullYear()}</a>
           </span>
           &copy; - All Rights Reserved
         </p>
