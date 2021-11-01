@@ -7,8 +7,6 @@
 }
 
 .fLogo {
-    cursor: pointer;
-    /* width: 80px; */
     margin-bottom: 30px;
     margin-left: 10px;
     overflow: hidden;
@@ -100,6 +98,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fCopyLogo {
+        margin-bottom: 30px;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+.fCopyLogo a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: relative;
+        left: -1.2rem;
+        margin-bottom: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+.fcopyIcon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 0.3rem;
+    left: -1.2rem;
 }
 
 @media (max-width: 700px) {

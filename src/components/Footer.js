@@ -9,12 +9,11 @@ function Footer() {
     <footer className={styles.fContainer}>
       <div className={styles.row}>
         <div className={styles.col}>
-          <Link href='/'>
-            <span className={styles.fLogo}>
-              <SiHackthebox className={styles.fIcon} />
-              <a>Christian Ware</a>
-            </span>
-          </Link>
+          <span className={styles.fLogo}>
+            <SiHackthebox className={styles.fIcon} />
+            <a>Christian Ware</a>
+          </span>
+
           <p className={styles.fDescription}>
             Thank you for visiting my personal portfolio website. Feel free to
             reach out to me for more information.
@@ -26,7 +25,9 @@ function Footer() {
           <p>chris.ware.dev@gmail.com</p>
           <div className={styles.fSocialIcons}>
             <Link href='/'>
-              <BsGithub className={styles.fSocialIcon} />
+              <a>
+                <BsGithub className={styles.fSocialIcon} />
+              </a>
             </Link>
             <Link href='/'>
               <BsLinkedin className={styles.fIcon} />
@@ -87,7 +88,11 @@ function Footer() {
       <hr className={styles.bottomBorder} />
       <div className={styles.copyContainer}>
         <p lassName={styles.fCopy}>
-          Christian Ware &copy; - All Rights Reserved
+          <span className={styles.fCopyLogo}>
+            <SiHackthebox className={styles.fcopyIcon} />
+            <a>Christian Ware</a>
+          </span>
+          &copy; - All Rights Reserved
         </p>
       </div>
     </footer>
