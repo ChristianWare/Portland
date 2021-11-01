@@ -89,6 +89,8 @@
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        border: 2px solid var(--accent2);
+        border-radius: 10px;
 
     }
 

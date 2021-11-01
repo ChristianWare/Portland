@@ -1,75 +1,22 @@
-.boxContainer {
+.fContainer {
     border-top: 2px solid var(--accent2);
-    display: flex;
-    justify-content: space-between;
-    margin-top: 375px;
 }
 
-.box h3 {
-    font-size: 2.2rem;
-    padding: 1rem 0rem;
-    cursor: pointer;
-}
-
-
-.box h3:hover{
-    color: var(--accent2);
-    transition: 0.2s all ease-in;
-}
-
-.box a {
-    font-size: 1.6rem;
-    display: block;
-    padding: 1rem 0;
-}
-
-.box a:hover {
-    color: var(--accent2);
-    transition: 0.2s all ease-in;
-}
-
-.fIcon {
-    font-size: 2rem;
-}
-
-.fIcon:hover {
-   color: var(--accent2);
-   transition: 0.2s all ease-in;
-}
-
-.fCopyright {
-   display: flex;
-   justify-content: space-between;
-   border-top: 1px solid var(--accent2);
-   padding: 1rem;
-   padding-top: 2.5rem;
-   margin-top: 2rem;
-   font-size: 1.6rem;
-   word-spacing: .2rem;
-}
-
-.logoContainer {
+.navbarLogo {
     cursor: pointer;
 }
 
 .navbarLogo a {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     position: relative;
-    left: -1.2rem;
+    left: -1.2rem
 }
 
 .navbarIcon {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-right: 1rem;
     position: relative;
     top: 0.3rem;
-    left: -1.2rem;
-}
-
-@media screen and (max-width: 768px) {
-    .boxContainer {
-        flex-direction: column;
-        align-items: center;
-    }
+    left: -1.2rem
 }

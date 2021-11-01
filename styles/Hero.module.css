@@ -168,6 +168,14 @@ margin-top: 50px;
      }
 }
 
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+    .hero {
+        margin-top: 0px;
+    }
+}
+     
+
 @media screen and (max-width: 567px) {
     .heroRight {
         margin-top: -100px;

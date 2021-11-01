@@ -26,11 +26,6 @@ function Navbar() {
             }
           >
             <li className={styles.navitem}>
-              <Link href='/'>
-                <a onClick={openMenu}>Home</a>
-              </Link>
-            </li>
-            <li className={styles.navitem}>
               <Link href='#about'>
                 <a onClick={openMenu}>About</a>
               </Link>
@@ -48,6 +43,11 @@ function Navbar() {
             <li className={styles.navitem}>
               <Link href='#contact'>
                 <a onClick={openMenu}>Contact</a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href='/'>
+                <a onClick={openMenu}>404</a>
               </Link>
             </li>
           </ul>

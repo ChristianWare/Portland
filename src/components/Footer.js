@@ -6,9 +6,18 @@ import styles from "../../styles/Footer.module.css";
 
 function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer className={styles.fContainer}>
+      <div className={styles.row}>
+        <div className={styles.col}>
+          <Link href='/'>
+            <span className={styles.navbarLogo}>
+              <SiHackthebox className={styles.navbarIcon} />
+              <a>Christian Ware</a>
+            </span>
+          </Link>
+        </div>
+      </div>
+    </footer>
   );
 }
 
