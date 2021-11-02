@@ -51,7 +51,7 @@
 
 .cube .front {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     transform: rotateY(0deg) translateZ(100px);
 }
 
@@ -61,7 +61,7 @@
 
 .cube .back {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     transform: rotateX(180deg) translateZ(100px);
 }
 
@@ -71,7 +71,7 @@
 
 .cube .right {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     transform: rotateY(90deg) translateZ(100px);
 }
 
@@ -81,7 +81,7 @@
 
 .cube .left {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     transform: rotateY(-90deg) translateZ(100px);
 }
 
@@ -91,7 +91,7 @@
 
 .cube .top {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     transform: rotateX(90deg) translateZ(100px);
 }
 
@@ -101,7 +101,7 @@
 
 .cube .bottom {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     transform: rotateX(-90deg) translateZ(100px);
 }
 

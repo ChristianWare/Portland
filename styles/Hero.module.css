@@ -1,7 +1,7 @@
 .hero {
 display: flex;
 justify-content: space-between;
-height: 95vh;
+height: 60vh;
 max-width: 1000px;
 background-color: transparent;
 transition: none;
@@ -10,6 +10,7 @@ margin-top: 50px;
 
 .heroLeft {
     flex: 3;
+    background-color: transparent;
 }
 
 .heroName {
@@ -101,7 +102,7 @@ margin-top: 50px;
         flex-direction: column-reverse;
         /* margin-top: 200px; */
         position: relative;
-        top: 70px;
+        top: 40px;
         transition: none;
         
 

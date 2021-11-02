@@ -17,8 +17,8 @@ function Hero() {
                 </h5>
               </div>
               <div className={styles.buttonContainer}>
-                <Link href='#about'>
-                  <a className={styles.button1}>Learn More</a>
+                <Link href='#projects'>
+                  <a className={styles.button1}>Projects</a>
                 </Link>
                 <Link href='#contact'>
                   <a className={styles.button2}>Contact</a>

@@ -56,7 +56,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     transition: 0.5s;
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     user-select: none;
 }
 
