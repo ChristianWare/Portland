@@ -6,6 +6,11 @@
     line-height: 2rem;
 }
 
+.logoContainer {
+    border-bottom: 2px solid var(--accent2);
+    width: fit-content;
+}
+
 .fLogo {
     margin-bottom: 30px;
     margin-left: 10px;

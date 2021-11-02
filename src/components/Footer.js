@@ -9,10 +9,12 @@ function Footer() {
     <footer className={styles.fContainer}>
       <div className={styles.row}>
         <div className={styles.col}>
-          <span className={styles.fLogo}>
-            <SiHackthebox className={styles.fIcon} />
-            <a>Christian Ware</a>
-          </span>
+          <div className={styles.logoContainer}>
+            <span className={styles.fLogo}>
+              <SiHackthebox className={styles.fIcon} />
+              <a>Christian Ware</a>
+            </span>
+          </div>
 
           <p className={styles.fDescription}>
             Thank you for visiting my personal portfolio website. Feel free to
