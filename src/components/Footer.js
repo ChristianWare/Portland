@@ -54,7 +54,7 @@ function Footer() {
             </Link>
             <Link href='/'>
               <li>
-                <a>Mandalorian</a>
+                <a>48 Laws</a>
               </li>
             </Link>
             <Link href='/'>

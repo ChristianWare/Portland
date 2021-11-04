@@ -8,12 +8,15 @@ import Contact from "../src/components/Contact";
 import Footer from "../src/components/Footer";
 import Projects from "../src/components/Projects";
 import Time from "../src/components/Time";
+import ScrollIndicator from "../src/components/ScrollIndicator";
 
 
 
 export default function Home() {
 
   return (
+    <>
+    <ScrollIndicator />
     <div className={styles.container}>
       <Head>
         <title>Chris Ware's Portfolio</title>
@@ -23,6 +26,7 @@ export default function Home() {
         />
         <link rel='icon' href='favicon.ico' />
       </Head>
+      
       <Navbar />
       <Time />
       <Hero />
@@ -32,5 +36,6 @@ export default function Home() {
       <Contact />
       <Footer />
     </div>
+  </>
   );
 }
