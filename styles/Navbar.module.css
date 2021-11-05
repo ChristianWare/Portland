@@ -110,13 +110,15 @@
         background-color: transparent;
         padding: .5rem 3rem;
         border: solid 2px var(--accent2);
+        background-color: var(--accent2);
+        color: var(--dark);
         border-radius: 5px; 
         transition: all .2s ease-in;
     }
 
     .navmenu a:hover {
-        background-color: var(--accent2);
-        color: var(--dark);
+        background-color: var(--dark);
+        color: var(--accent2);
     }
 
     .navitem {
