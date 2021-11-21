@@ -16,7 +16,7 @@ margin-top: 50px;
 .heroName{
     letter-spacing: .3rem;
     transition: none;
-    letter-spacing: .5rem;
+    /* letter-spacing: .5rem; */
     line-height: 1.5;
     padding-bottom: 1.5rem;
     
@@ -84,7 +84,7 @@ margin-top: 50px;
 
 .button2 {
     place-items: center;
-    border: solid 1px var(--accent2);
+    border: solid 2px var(--accent2);
     color: var(--accent2);
     background-color: transparent;
   }
@@ -92,7 +92,7 @@ margin-top: 50px;
 .button1:hover {
     background-color: var(--dark);
     color: var(--accent2);
-    border: solid 1px;
+    border: solid 2px;
 }
 
 .button2:hover {
