@@ -52,6 +52,8 @@
     align-items: center;
     list-style: none;
     z-index: 999;
+    transition: none;
+    white-space: nowrap;
 }
 
 .navitem {
@@ -62,6 +64,7 @@
         display: inline-block;
         padding-bottom: 0.25rem;
         position: relative;
+        transition: none;
 }
 
 .navitem a::before{
@@ -95,13 +98,13 @@
         background-color: transparent;
         color: var(--dark);
         backdrop-filter: blur(4px);
+        /* transition: none; */
     }
 
     .navitem a:hover::before {
         width: 0%;
     }
     
-
     .navmenu.active {
         left: 0;
     }
@@ -114,6 +117,7 @@
         color: var(--dark);
         border-radius: 5px; 
         transition: all .2s ease-in;
+        transition: none;
     }
 
     .navmenu a:hover {
@@ -124,6 +128,7 @@
     .navitem {
         margin: 2.5rem 0;
         background-color: transparent;
+        transition: none;
     }
 
     .hamburger {

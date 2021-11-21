@@ -13,10 +13,13 @@ margin-top: 50px;
     background-color: transparent;
 }
 
-.heroName {
-    /* margin: 20px 0px; */
+.heroName{
     letter-spacing: .3rem;
     transition: none;
+    letter-spacing: .5rem;
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+    
 }
 
 .heroRight {
@@ -45,6 +48,8 @@ margin-top: 50px;
 
  .titleItem h5 {
      font-weight: 500;
+     margin-bottom: 3rem;
+     font-weight: 500;
  }
 
  .cubeContainer {
@@ -54,7 +59,7 @@ margin-top: 50px;
  }
 
  .buttonContainer {
-     margin-top: 4rem;
+     margin-top: 1rem;
      display: flex;
      justify-content: space-between;
  }

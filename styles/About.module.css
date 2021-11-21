@@ -26,20 +26,26 @@
 
 .aSub {
     margin: 20px 0px;
-    font-weight: 500;
+    font-weight: 700;
     padding-top: 1rem;
     border-top: 2px solid var(--accent2);
     letter-spacing: .1rem;
     z-index: 999;
+    text-align: justify;
 }
 
 .aDescription {
     font-size: 1.8rem;
-    font-weight: 300;
     margin-bottom: 20px;
        letter-spacing: .1rem;
        word-spacing: .1rem;
        z-index: 999;
+       margin-bottom: 3rem;
+       font-weight: 500;
+       text-align: justify;
+       word-break:normal;
+       /* hyphens: auto; */
+       /* word-spacing: .01rem; */
 }
 
 @media screen and (max-width: 768px) {

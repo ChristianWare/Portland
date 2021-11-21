@@ -12,7 +12,7 @@ function About() {
 
       <div className={styles.aRight}>
         <h5 className={styles.aSub}>
-          I am a Front End Developer who specializes in building web
+          I am a Web Developer who specializes in building web
           applications with NextJS and React.
         </h5>
         <p className={styles.aDescription}>
