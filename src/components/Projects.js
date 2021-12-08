@@ -9,7 +9,7 @@ function Projects() {
       <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
 
       {projects.map((project) => (
-        <div className={styles.allItems}>
+        <div key={project.id} className={styles.allItems}>
           <div className={styles.item}>
             <div className={styles.right}>
               <h2 className={styles.projectTitle}>{project.title}</h2>
