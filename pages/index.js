@@ -16,26 +16,26 @@ export default function Home() {
 
   return (
     <>
-    <ScrollIndicator />
-    <div className={styles.container}>
-      <Head>
-        <title>Chris Ware's Portfolio</title>
-        <meta
-          name='description'
-          content="Christian Ware's Portfolio Landing Page"
-        />
-        <link rel='icon' href='favicon.ico' />
-      </Head>
-      
-      <Navbar />
-      <Time />
-      <Hero />
-       <About />
-       <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-  </>
+      <ScrollIndicator />
+      <div className={styles.container}>
+        <Head>
+          <title>Chris Ware&apos;s Portfolio</title>
+          <meta
+            name='description'
+            content="Christian Ware's Portfolio Landing Page"
+          />
+          <link rel='icon' href='favicon.ico' />
+        </Head>
+
+        <Navbar />
+        <Time />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }

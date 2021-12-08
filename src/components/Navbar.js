@@ -11,7 +11,7 @@ function Navbar() {
     <>
       <header className={styles.header}>
         <nav className={styles.navbar}>
-          <Link href='/'>
+          <Link href='/' passHref>
             <span className={styles.navbarLogo}>
               <SiHackthebox className={styles.navbarIcon} />
               <a>Christian Ware</a>

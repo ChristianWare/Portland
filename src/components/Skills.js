@@ -33,7 +33,7 @@ function Skills() {
         </h5>
         <p className={styles.aDescription}>
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
-          Control(Git), Markdown, Postman, JSON, REST API's, Slack, Zoom
+          Control(Git), Markdown, Postman, JSON, REST API&apos;s, Slack, Zoom
         </p>
       </div>
       <div className={styles.sRight}>
