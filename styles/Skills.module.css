@@ -1,28 +1,23 @@
 .sContainer {
-    max-height: 85vh;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    margin-top: 200px;
-    margin-bottom: 150px;
-    
+    padding-bottom: 20rem; 
 }
 
 .sRight {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    right: 100px;
     background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .cubeContainer {
-    margin-top: -200px;
-    margin-right: 50px;
     background-color: transparent;
+    padding-right: 20rem;
 }
+
 
 .sLeft {
     flex: 1;
@@ -44,68 +39,32 @@
     word-spacing: .1rem;
 }
 
-
 @media screen and (max-width: 768px) {
     .sContainer {
+        display: flex;
         flex-direction: column-reverse;
-        margin-top: 500px;
     }
 
     .sLeft {
-        margin-top: 250px;
-    }
-
-    .sRight {   
-        margin-right: 550px;
-        margin-top: 00px;
+        margin-top: 10rem;
     }
 
     .cubeContainer {
-          display: flex;
-          margin-right: auto;
-          margin-left: auto;
-          width: 15%;
-    }
-
-}
-
-
-/* @media screen and (max-height: 823px),
-screen and (max-width: 500px) {
-    .sContainer {
-        margin-top: 600px;
-    }
-
-     .sRight {
-         position: relative;
-         left: 70px;
-         top: 40px;
-     }
-
-     .sSub, .aDescription {
-         text-align: left;
-     }
-} */
-
-@media screen and (max-width: 767px) {
-    .sContainer {
-        margin-top: 500px;
-    }
-
-    .cubeContainer {
-        margin-left: 75px;
-    }
-
-    .sRight {
-        position: relative;
-        left: 20px;
-        top: 80px
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10rem;
     }
 }
 
-
-@media screen and (min-width: 501px) and (max-width:767px) {
+@media screen and (max-width: 580px) {
     .cubeContainer {
-        margin-right: 350px;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cubeContainer {
+        padding-bottom: 4rem;
     }
 }

@@ -1,5 +1,5 @@
 import styles from "../../styles/Skills.module.css";
-import Cube from "../components/Cubes/Cube";
+import SkillsCube from "../components/Cubes/SkillsCube";
 
 function Skills() {
   return (
@@ -38,9 +38,9 @@ function Skills() {
       </div>
       <div className={styles.sRight}>
         <div id='skills' className={styles.cubeContainer}>
-          <Cube>Skills</Cube>
-          <Cube>Skills</Cube>
-          <Cube>Skills</Cube>
+          <SkillsCube>Skills</SkillsCube>
+          <SkillsCube>Skills</SkillsCube>
+          <SkillsCube>Skills</SkillsCube>
         </div>
       </div>
     </section>

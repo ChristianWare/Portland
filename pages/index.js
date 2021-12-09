@@ -31,8 +31,8 @@ export default function Home() {
         <Time />
         <Hero />
         <About />
-        {/* <Skills />
-        <Projects />
+        <Skills />
+        {/* <Projects />
         <Contact />
         <Footer /> */}
       </div>
