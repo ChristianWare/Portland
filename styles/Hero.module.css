@@ -2,9 +2,8 @@
 display: flex; 
 align-items: flex-start;
 justify-content: space-between;
-/* height: 100vh; */
 background-color: transparent;
-transition: none;
+padding-bottom: 30rem;
 }
 
 .heroLeft {
@@ -114,6 +113,8 @@ transition: none;
 
     .titleItem h5 {
         text-align: center;
+        width: 100%;
+        
     }
 
     .cubeContainer {

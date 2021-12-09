@@ -1,19 +1,23 @@
 .aContainer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 350px;
+    padding-bottom: 20rem;
     background-color: transparent;
 }
 
 .aLeft {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
 }
 
 .cubeContainer {
     background-color: transparent;
+    padding-right: 23rem;
+    padding-bottom: 20rem;
 }
 
 .aRight {
@@ -27,61 +31,39 @@
     border-top: 2px solid var(--accent2);
     letter-spacing: .1rem;
     z-index: 999;
-    text-align: justify;
-}
+    text-align: left;
+    hyphens: auto;
+    }
 
 .aDescription {
     font-size: 1.8rem;
     margin-bottom: 20px;
-       letter-spacing: .1rem;
-       word-spacing: .1rem;
-       z-index: 999;
-       margin-bottom: 3rem;
-       font-weight: 500;
-       text-align: justify;
-       word-break:normal;
+    /* letter-spacing: .1rem; */
+    word-spacing: .1rem;
+    z-index: 999;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    text-align: justify;
+    hyphens: auto;
 }
 
 @media screen and (max-width: 768px) {
     .aContainer {
         flex-direction: column; 
         align-items: center;
-        margin-bottom: -500px ;
-    }
-
-    .cubeContainer {
-        margin-right: 200px;
     }
 
     .aRight {
-        margin-top: 200px;
+        margin-top: 9rem;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .aContainer {
-        margin-bottom: -400px;
+@media screen and (max-width: 320px) {
+    .aRight {
+        margin-top: 5rem;
     }
 
     .cubeContainer {
-        margin-top: -80px;
-    }
-    
-}
-
-@media screen and (max-height: 823px), screen  and (max-width: 320px) {
-    .aContainer {
-        margin-top: 230px;
-    }
-    .cubeContainer {
-        position: relative;
-        bottom: 50px;
+        padding-right: 18rem;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .aContainer {
-        margin-bottom: 0px;
-    }
-}
-

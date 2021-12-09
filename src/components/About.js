@@ -11,11 +11,11 @@ function About() {
       </div>
 
       <div className={styles.aRight}>
-        <h5 className={styles.aSub}>
+        <h5 lang='en' className={styles.aSub}>
           I am a Web Developer who specializes in building web applications with
           NextJS and React.
         </h5>
-        <p className={styles.aDescription}>
+        <p lang='en' className={styles.aDescription}>
           Becasue of my background in design, and finance, I understand the
           asthetic and business side to any project. While websites have to make
           good impressions on it&apos;s visitors, they should also motivate them

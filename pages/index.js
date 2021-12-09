@@ -30,8 +30,8 @@ export default function Home() {
         <Navbar />
         <Time />
         <Hero />
-        {/* <About />
-        <Skills />
+        <About />
+        {/* <Skills />
         <Projects />
         <Contact />
         <Footer /> */}
