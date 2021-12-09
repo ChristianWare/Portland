@@ -148,8 +148,7 @@ padding-bottom: 30rem;
      .button1,
      .button2 {
          height: 45px;
-     }
-     
+     }  
 }
 
 @media screen and (max-width: 320px) {
@@ -166,5 +165,4 @@ padding-bottom: 30rem;
     .button2 {
         height: 40px;
     }
-
 }

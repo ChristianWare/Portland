@@ -1,12 +1,12 @@
 .projects {
-    padding: 20rem 0 10rem 0;
+    padding-bottom: 20rem;
 }
 
 .buttonContainer {
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-    gap: 50px
+    gap: 5rem;
 }
 
 .button1,
@@ -54,17 +54,28 @@
     padding: 5rem 2rem;
     border-radius: 12px;
     z-index: 2;
+    
 }
 
 .projectDescription {
     text-align: justify;
     word-break:normal;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 768px) {
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .buttonContainer {
         margin-top: 4rem;
         flex-direction: column;
+        gap: 4rem;
+        width: 100%;
     }
 
     .button1 {
@@ -73,9 +84,13 @@
         background-color: var(--accent2);
     }
 
-    .projectTitle,
-    .projectDescription {
+    .projectTitle {
         text-align: center;
+    }
+
+    .projectDescription {
+        text-align: justify;
+        hyphens: auto;
     }
 }
 
@@ -83,5 +98,19 @@
 screen and (max-width: 320px) {
     .projectTitle {
         font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button1,
+    .button2 {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button1,
+    .button2 {
+        height: 40px;
     }
 }

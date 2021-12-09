@@ -45,11 +45,6 @@ function Navbar() {
                 <a onClick={openMenu}>Contact</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
-              <Link href='/'>
-                <a onClick={openMenu}>404</a>
-              </Link>
-            </li>
           </ul>
           <span
             className={
