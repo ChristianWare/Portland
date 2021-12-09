@@ -123,6 +123,10 @@ padding-bottom: 30rem;
         padding-bottom: 28rem;
         padding-right: 300px;
     }
+    
+    .buttonContainer {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
