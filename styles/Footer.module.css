@@ -67,6 +67,10 @@
     margin-bottom: 12px;
 }
 
+.col a {
+    margin-bottom: 12px;
+}
+
 .col button {
     border: none;
     padding: 10px;

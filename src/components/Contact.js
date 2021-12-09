@@ -46,7 +46,7 @@ function Contact() {
           <div className={styles.cInfo}>
             <div className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
-              <span>917-769-1192</span>
+              <span>602-842-4084</span>
             </div>
             <div className={styles.cInfoItem}>
               <AiOutlineMail className={styles.cIcon} />

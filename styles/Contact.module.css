@@ -28,9 +28,7 @@
 }
 
 .cTitle {
-    width: 80%;
-    
-    /* margin-top: -83px; */
+    width: 80%;    
 }
 
 .cInfoItem {
@@ -48,7 +46,6 @@
     margin-right: 20px;
     font-size: 2.5rem;
 }
-
 
 .cDescription {
     position: relative;
@@ -72,7 +69,6 @@
     padding-left: 10px;
 }
 
-
 .cDescription textarea {
     width: 100%;
     margin: 10px 0px;
@@ -87,7 +83,6 @@
     outline: 1px solid var(--accent2);
     border-radius: 5px;
 }
-
 
 .cDescription button {
     border: none;

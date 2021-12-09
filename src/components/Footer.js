@@ -26,16 +26,18 @@ function Footer() {
         </div>
         <div className={styles.col}>
           <h5>Contact</h5>
-          <p>602-454-7891</p>
-          <p>chris.ware.dev@gmail.com</p>
+          <p>602-842-4048</p>
+          <a href='mailto:chris.ware.dev@gmail.com'>chris.ware.dev@gmail.com</a>
           <div className={styles.fSocialIcons}>
-            <Link href='/'>
-              <a>
+            <Link href='https://github.com/ChristianWare'>
+              <a target='_blank'>
                 <BsGithub className={styles.fSocialIcon} />
               </a>
             </Link>
-            <Link href='/' passHref>
-              <BsLinkedin className={styles.fIcon} />
+            <Link href='https://www.linkedin.com/in/christian-ware/' passHref>
+              <a target='_blank'>
+                <BsLinkedin className={styles.fIcon} />
+              </a>
             </Link>
           </div>
         </div>
