@@ -56,12 +56,7 @@ function Footer() {
             </Link>
             <Link href='/' passHref>
               <li>
-                <a>48 Laws</a>
-              </li>
-            </Link>
-            <Link href='/' passHref>
-              <li>
-                <a>NBA</a>
+                <a>Telements</a>
               </li>
             </Link>
           </ul>
@@ -82,11 +77,6 @@ function Footer() {
             <Link href='/' passHref>
               <li>
                 <a>JavaScript</a>
-              </li>
-            </Link>
-            <Link href='/' passHref>
-              <li>
-                <a>NodeJS</a>
               </li>
             </Link>
           </ul>
