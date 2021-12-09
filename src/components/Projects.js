@@ -21,11 +21,13 @@ function Projects() {
                 {project.tech}
               </p>
               <h3>Preview :</h3>
-              <Image
-                src={project.image}
-                width={project.width}
-                height={project.height}
-              />
+              <div className={styles.imgContainer}>
+                <Image
+                  src={project.image}
+                  width={project.width}
+                  height={project.height}
+                />
+              </div>
               <div className={styles.buttonContainer}>
                 <Link href={project.github}>
                   <a className={styles.button1} target='_blank'>
@@ -33,7 +35,9 @@ function Projects() {
                   </a>
                 </Link>
                 <Link href={project.url}>
-                  <a className={styles.button2}>Live Site</a>
+                  <a className={styles.button2} target='_blank'>
+                    Live Site
+                  </a>
                 </Link>
               </div>
             </div>

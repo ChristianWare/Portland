@@ -24,8 +24,8 @@ const projects = [
     github: "https://github.com/ChristianWare/Periodic-Table-Of-Telements",
     url: "https://telements.co/",
     image: img2,
-    width: 500,
-    height: 414,
+    width: 700,
+    height: 583,
   },
   {
     id: 3,
@@ -36,8 +36,8 @@ const projects = [
     github: "https://github.com/ChristianWare/Taco-Bell",
     url: "https://livemas.io/",
     image: img3,
-    width: 500,
-    height: 434,
+    width: 700,
+    height: 608,
   },
 ];
 

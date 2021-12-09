@@ -4,6 +4,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import Link from "next/link";
 
 function Contact() {
   const formRef = useRef();
@@ -45,20 +46,32 @@ function Contact() {
           <div className={styles.cInfo}>
             <div className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
-              <p>917-769-1192</p>
+              <span>917-769-1192</span>
             </div>
             <div className={styles.cInfoItem}>
               <AiOutlineMail className={styles.cIcon} />
-              <p>chris.ware.dev@gmail.com</p>
+              <span>
+                <a href='mailto:chris.ware.dev@gmail.com'>
+                  chris.ware.dev@gmail.com
+                </a>
+              </span>
             </div>
             <div className={styles.cInfoItem}></div>
             <div className={styles.cInfoItem}>
-              <BsGithub className={styles.cIcon} />
-              <p>GitHub</p>
+              <Link href='https://github.com/ChristianWare'>
+                <a target='_blank'>
+                  <BsGithub className={styles.cIcon} />
+                  <span>GitHub</span>
+                </a>
+              </Link>
             </div>
             <div className={styles.cInfoItem}>
-              <BsLinkedin className={styles.cIcon} />
-              <p>LinkedIn</p>
+              <Link href='https://www.linkedin.com/in/christian-ware/'>
+                <a target='_blank'>
+                  <BsLinkedin className={styles.cIcon} />
+                  <span>LinkedIn</span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

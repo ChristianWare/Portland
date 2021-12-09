@@ -63,6 +63,17 @@
     margin-bottom: 3rem;
 }
 
+.imgContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right h3 {
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .right {
         display: flex;
