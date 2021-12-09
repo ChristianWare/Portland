@@ -7,7 +7,7 @@ function Hero() {
     <header id='#home' className={styles.hero}>
       <div className={styles.heroLeft}>
         <div className={styles.heroLeftWrapper}>
-          <h1 className={styles.heroName}>Hello World, My Name is Chris.</h1>
+          <h1 className={styles.heroName}>Hello World, My Name is Ckjjkhghris.</h1>
           <div className={styles.heroTitle}>
             <div className={styles.titleWrapper}>
               <div className={styles.titleItem}>
