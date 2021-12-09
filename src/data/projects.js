@@ -1,6 +1,6 @@
-import img1 from '../../public/images/img1.png'
-import img2 from '../../public/images/img2.png'
-import img3 from '../../public/images/img3.png'
+import img1 from "../../public/images/img1.png";
+import img2 from "../../public/images/img2.png";
+import img3 from "../../public/images/img3.png";
 
 const projects = [
   {
@@ -8,9 +8,9 @@ const projects = [
     title: "Portland",
     description:
       "The first project is my portfolio landing page, or Portland for short. This is the page you are currently viewing. I built this static site using NextJS. I styled it with CSS Modules. The purpose of this site is to introduce myself to the world, and showcase some of my web developer skills. Feel free to view the source code on GitHub.",
-    tech: "This Single Page Application was built with Next JS and React. The Data for the menu items is being pulled from a headless CMS, Contentful, with the 'getStaticProps' function in NextJs. It is styled using CSS Modules. The dependencies used were react-icons, and the Contentful CLI. The API keys were stored in a .env.local file, to be hidden from the public. The images were optimized for production, and are lazy loaded on the page. This is all possible because of the Image component from Next JS.",
+    tech: "This SPA was built with Next JS and React. It is styled using CSS Modules. The dependencies used were react-icons and email JS.",
     github: "https://github.com/ChristianWare/Portland",
-    url: "chrisware.io",
+    url: "https://chrisware.io/",
     image: img1,
     width: 500,
     height: 308,
