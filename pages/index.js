@@ -30,11 +30,11 @@ export default function Home() {
         <Navbar />
         <Time />
         <Hero />
-        <About />
+        {/* <About />
         <Skills />
         <Projects />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </div>
     </>
   );

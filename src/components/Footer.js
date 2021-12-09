@@ -92,7 +92,7 @@ function Footer() {
       </div>
       <hr className={styles.bottomBorder} />
       <div className={styles.copyContainer}>
-        <p lassName={styles.fCopy}>
+        <p className={styles.fCopy}>
           <span className={styles.fCopyLogo}>
             <SiHackthebox className={styles.fcopyIcon} />
             <a>

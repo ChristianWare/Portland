@@ -11,7 +11,7 @@ function Hero() {
           <div className={styles.heroTitle}>
             <div className={styles.titleWrapper}>
               <div className={styles.titleItem}>
-                <h5>
+                <h5 lang='en'>
                   I build sematically structured web applications by thinking
                   outside the div.
                 </h5>

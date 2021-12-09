@@ -1,6 +1,5 @@
 .box {
     position: relative;
-    padding: 95px;
     cursor: pointer;
     background-color: transparent;
 }
@@ -18,7 +17,7 @@
 .cube div {
     position: absolute;
     width: 200px;
-    /* height: 200px; */
+    height: 200px;
     display: block;
     border: none;
     font-size: 4rem;
@@ -109,8 +108,40 @@
     background-color: var(--accent6);
 }
 
-@media screen and (max-width: 500px) {
-    .box{
-        padding: 0;
+@media screen and (max-width: 480px) {
+    .cube {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cube div {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .cube .front {
+        transform: rotateY(0deg) translateZ(75px);
+    }
+
+    .cube .back {
+        transform: rotateX(180deg) translateZ(75px);
+    }
+
+    .cube .right {
+        transform: rotateY(90deg) translateZ(75px);
+    }
+
+
+    .cube .left {
+        transform: rotateY(-90deg) translateZ(75px);
+    }
+
+    .cube .top {
+        transform: rotateX(90deg) translateZ(75px);
+    }
+
+    .cube .bottom {
+        transform: rotateX(-90deg) translateZ(75px);
     }
 }

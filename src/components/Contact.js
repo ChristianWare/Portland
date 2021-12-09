@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 import styles from "../../styles/Contact.module.css";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import { GoLocation } from "react-icons/go";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import emailjs from "emailjs-com";
 
