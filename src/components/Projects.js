@@ -23,6 +23,7 @@ function Projects() {
               <h3>Preview :</h3>
               <div className={styles.imgContainer}>
                 <Image
+                alt="preview"
                   src={project.image}
                   width={project.width}
                   height={project.height}
