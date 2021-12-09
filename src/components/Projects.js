@@ -6,7 +6,7 @@ import ProjectsCube from "./Cubes/ProjectsCube";
 
 function Projects() {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id='projects'>
       <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
 
       {projects.map((project) => (
@@ -23,7 +23,7 @@ function Projects() {
               <h3>Preview :</h3>
               <div className={styles.imgContainer}>
                 <Image
-                alt="preview"
+                  alt='preview'
                   src={project.image}
                   width={project.width}
                   height={project.height}
