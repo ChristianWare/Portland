@@ -10,22 +10,28 @@ function Footer() {
       <div className={styles.row}>
         <div className={styles.col}>
           <div className={styles.logoContainer}>
-            <span className={styles.fLogo}>
-              <SiHackthebox className={styles.fIcon} />
-              <a>Christian Ware</a>
-            </span>
+            <Link href='/'>
+              <span className={styles.fLogo}>
+                <SiHackthebox className={styles.fIcon} />
+                <a>Christian Ware</a>
+              </span>
+            </Link>
           </div>
 
           <p className={styles.fDescription}>
             Thank you for visiting my personal portfolio website. Feel free to
             reach out to me for more information.
           </p>
-          <Link href='/' passHref>
-            <button>Back to Top</button>
+          <Link href='/'>
+            <a className={styles.btt}>Back to Top</a>
           </Link>
         </div>
         <div className={styles.col}>
-          <h5>Contact</h5>
+          <Link href='#contact' passHref>
+            <a>
+              <h5>Contact</h5>
+            </a>
+          </Link>
           <p>602-842-4048</p>
           <a href='mailto:chris.ware.dev@gmail.com'>chris.ware.dev@gmail.com</a>
           <div className={styles.fSocialIcons}>
@@ -42,43 +48,43 @@ function Footer() {
           </div>
         </div>
         <div className={styles.col}>
-          <h5>Projects</h5>
+          <Link href='#projects' passHref>
+            <a>
+              <h5>Projects</h5>
+            </a>
+          </Link>
           <ul>
-            <Link href='/' passHref>
-              <li>
-                <a>Portland</a>
-              </li>
-            </Link>
-            <Link href='/' passHref>
-              <li>
-                <a>Taco Bell</a>
-              </li>
-            </Link>
-            <Link href='/' passHref>
-              <li>
-                <a>Telements</a>
-              </li>
-            </Link>
+            <li>
+              <a>Portland</a>
+            </li>
+
+            <li>
+              <a>Taco Bell</a>
+            </li>
+
+            <li>
+              <a>Telements</a>
+            </li>
           </ul>
         </div>
         <div className={styles.col}>
-          <h5>Skills</h5>
+          <Link href='#skills'>
+            <a>
+              <h5>Skills</h5>
+            </a>
+          </Link>
           <ul>
-            <Link href='/' passHref>
-              <li>
-                <a>React</a>
-              </li>
-            </Link>
-            <Link href='/' passHref>
-              <li>
-                <a>NextJS</a>
-              </li>
-            </Link>
-            <Link href='/' passHref>
-              <li>
-                <a>JavaScript</a>
-              </li>
-            </Link>
+            <li>
+              <a>React</a>
+            </li>
+
+            <li>
+              <a>NextJS</a>
+            </li>
+
+            <li>
+              <a>JavaScript</a>
+            </li>
           </ul>
         </div>
       </div>
