@@ -54,8 +54,11 @@
     border: 2px solid var(--accent2);
     padding: 5rem 2rem;
     border-radius: 12px;
-    z-index: 2;
-    
+    z-index: 2;  
+}
+
+.projectTitle {
+    text-transform: uppercase;
 }
 
 .projectDescription {

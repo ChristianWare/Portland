@@ -28,6 +28,8 @@
 }
 
 .cTitle {
+    font-size: 6rem;
+    text-transform: uppercase;
     width: 80%;    
 }
 

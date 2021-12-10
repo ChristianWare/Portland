@@ -25,9 +25,11 @@
 
 .sSub {
     margin: 20px 0px;
+    font-size: 2.5rem;
     font-weight: bold;
     padding-top: 1rem;
     border-top: 2px solid var(--accent2);
+    text-transform: uppercase;
     letter-spacing: .1rem;
 }
 

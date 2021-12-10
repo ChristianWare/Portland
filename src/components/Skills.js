@@ -5,32 +5,32 @@ function Skills() {
   return (
     <section className={styles.sContainer}>
       <div className={styles.sLeft}>
-        <h5 className={styles.sSub} id='frontend'>
+        <h3 className={styles.sSub}>
           Front End
-        </h5>
+        </h3>
         <p className={styles.sDescription}>HTML, CSS, JavaScript (ES6)</p>
-        <h5 className={styles.sSub} id='backend'>
+        <h3 className={styles.sSub}>
           Back End
-        </h5>
+        </h3>
         <p className={styles.aDescription}>
           NodeJS/npm, Express, Mongo Atlas, Firebase, Strapi, Contentful
         </p>
-        <h5 className={styles.sSub} id='libfram'>
+        <h3 className={styles.sSub}>
           Libraries & Frame Works
-        </h5>
+        </h3>
         <p className={styles.sDescription}>
           NextJS, React, Styled-Components, SASS, Bootstrap, Material-UI, Framer
           Motion, GSAP, Three.JS
         </p>
-        <h5 className={styles.sSub} id='design'>
+        <h3 className={styles.sSub}>
           Design Tools
-        </h5>
+        </h3>
         <p className={styles.aDescription}>
           Figma, Balsamiq, Photoshop, Illustrator
         </p>
-        <h5 className={styles.sSub} id='misc'>
+        <h3 className={styles.sSub}>
           Miscellaneous
-        </h5>
+        </h3>
         <p className={styles.aDescription}>
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
           Control(Git), Markdown, Postman, JSON, REST API&apos;s, Slack, Zoom

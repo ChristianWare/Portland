@@ -26,11 +26,13 @@
 
 .aSub {
     margin: 20px 0px;
+    font-size: 2.5rem;
     font-weight: 700;
     padding-top: 1rem;
     border-top: 2px solid var(--accent2);
     letter-spacing: .1rem;
     z-index: 999;
+    text-transform: uppercase;
     text-align: left;
     hyphens: auto;
     }

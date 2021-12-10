@@ -40,9 +40,9 @@ function Contact() {
       <div className={styles.cBg}></div>
       <div className={styles.cWrapper}>
         <div className={styles.cLeft}>
-          <h1 className={styles.cTitle}>
+          <h2 className={styles.cTitle}>
             Here are the best ways to contact me:
-          </h1>
+          </h2>
           <div className={styles.cInfo}>
             <div className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
