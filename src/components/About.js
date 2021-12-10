@@ -18,7 +18,7 @@ function About() {
         <p lang='en' className={styles.aDescription}>
           Because of my background in design, and finance, I understand the
           aesthetic and business side to any project. While websites have to
-          make good impressions on it&apos;s visitors, they should also motivate
+          make good impressions on their visitors, they should also motivate
           them to action.
         </p>
         <p className={styles.aDescription}>

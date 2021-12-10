@@ -10,8 +10,6 @@ import Projects from "../src/components/Projects";
 import Time from "../src/components/Time";
 import ScrollIndicator from "../src/components/ScrollIndicator";
 
-
-
 export default function Home() {
 
   return (
