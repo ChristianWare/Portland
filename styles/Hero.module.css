@@ -113,7 +113,7 @@ padding-bottom: 30rem;
         line-height: 1.2;
     }
 
-    .titleItem h5 {
+    .titleItem h2 {
         text-align: center;
         width: 100%;
         
@@ -141,7 +141,7 @@ padding-bottom: 30rem;
         text-align: center;
     }
 
-     .titleItem h5 {
+     .titleItem h2 {
          width: 100%;
          text-align: center;
          hyphens: auto;
@@ -163,7 +163,7 @@ padding-bottom: 30rem;
         padding-bottom: 1.5rem;
     }
 
-    .titleItem h5 {
+    .titleItem h2 {
         margin-bottom: 20px;
     }
 
