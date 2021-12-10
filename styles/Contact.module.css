@@ -69,6 +69,7 @@
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    background-color: transparent;
 }
 
 .cDescription textarea {
@@ -84,6 +85,7 @@
 .cDescription input:focus {
     outline: 1px solid var(--accent2);
     border-radius: 5px;
+    background-color: var(--dark);
 }
 
 .cDescription button {
@@ -95,6 +97,14 @@
     font-weight: 600;
     color: var(--dark);
     cursor: pointer;
+}
+
+
+.forResponse {
+    position: relative;
+    top: -65px;
+    font-size: 1rem;
+
 }
 
 @media screen and (max-width: 768px) {

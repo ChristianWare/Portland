@@ -10,12 +10,6 @@ function Contact() {
   const formRef = useRef();
   const [done, setDone] = useState(false);
 
-  const [date, setDate] = useState(new Date());
-
-  useEffect(() => {
-    setInterval(() => setDate(new Date()), 30000);
-  }, []);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -34,6 +28,7 @@ function Contact() {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
   return (
     <section id='contact' className={styles.cContainer}>
@@ -84,9 +79,11 @@ function Contact() {
               <input type='text' placeholder='Email' name='user_email' />
               <textarea rows='5' placeholder='Message' name='message' />
               <button>Submit</button>
-              {done && "Thank You, I will be in touch with you soon."}
             </form>
           </div>
+            <div className={styles.forResponse}>
+              {done && "Thank You, I will be in touch with you soon."}
+            </div>
         </div>
       </div>
     </section>
