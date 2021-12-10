@@ -14,3 +14,13 @@
     background-color: var(--accent2);
     transition: none;
 }
+
+@media screen and (max-width: 480px) {
+    .progressWrapper {
+        height: 7.5px
+    }
+
+    .progressMainStyle {
+        height: 7.5px;
+    }
+}

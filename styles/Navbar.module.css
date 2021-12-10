@@ -13,7 +13,6 @@
     z-index: 999;
 }
 
-
 .navbar .navbarLogo {
     cursor: pointer;
 }
@@ -83,7 +82,6 @@
   width: 100%;
 }
 
-
 @media only screen and (max-width: 953px) {
     .navmenu {
         position: fixed;
@@ -99,7 +97,6 @@
         background-color: transparent;
         color: var(--dark);
         backdrop-filter: blur(4px);
-        /* transition: none; */
     }
 
     .navitem a:hover::before {

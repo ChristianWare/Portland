@@ -33,14 +33,11 @@
     letter-spacing: .1rem;
     z-index: 999;
     text-transform: uppercase;
-    text-align: left;
-    hyphens: auto;
     }
 
 .aDescription {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    /* letter-spacing: .1rem; */
     word-spacing: .1rem;
     z-index: 999;
     margin-bottom: 3rem;

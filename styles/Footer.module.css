@@ -45,7 +45,6 @@
 
 
 .row {
-    /* width: 85%; */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +87,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
     width: 80%;
-    /* text-align: center; */
 }
 
 .col h5 {
@@ -99,8 +97,6 @@
     position: relative;
     border-bottom: 2px solid var(--accent2);
 }
-
-
 
 .col ul li {
     list-style: none;
