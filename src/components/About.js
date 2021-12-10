@@ -16,10 +16,10 @@ function About() {
           NextJS and React.
         </h3>
         <p lang='en' className={styles.aDescription}>
-          Becasue of my background in design, and finance, I understand the
-          asthetic and business side to any project. While websites have to make
-          good impressions on it&apos;s visitors, they should also motivate them
-          to action.
+          Because of my background in design, and finance, I understand the
+          aesthetic and business side to any project. While websites have to
+          make good impressions on it&apos;s visitors, they should also motivate
+          them to action.
         </p>
         <p className={styles.aDescription}>
           I am looking for an opportunity to apply these principles in a role as
