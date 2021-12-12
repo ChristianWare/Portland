@@ -156,3 +156,9 @@ screen and (max-width: 320px) {
         font-size: 1.6rem;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .cInfoItem span a {
+        font-size: 1.6rem;
+    }
+}

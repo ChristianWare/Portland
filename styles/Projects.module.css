@@ -3,8 +3,6 @@
     padding-top: 4rem;
 }
 
-
-
 .buttonContainer {
     margin-top: 4rem;
     display: flex;
@@ -86,7 +84,6 @@
 
 .imgContainer {
     width: 100%;
-    min-width: 275px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,4 +153,9 @@ screen and (max-width: 320px) {
     .button2 {
         height: 40px;
     }
+
+    .imgContainer {
+    min-width: 225px;
+}
+
 }
