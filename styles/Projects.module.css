@@ -27,6 +27,7 @@
     place-items: center;
     color: var(--dark);
     background-color: var(--accent2);
+    border: solid 2px var(--accent2);
 }
 
 .button2 {
@@ -99,6 +100,9 @@
 @media screen and (max-width: 868px) {
     .descLeft {
         flex-direction: column;
+    }
+    .projectTitle {
+        text-align: center;
     }
 }
 

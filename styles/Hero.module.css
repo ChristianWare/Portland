@@ -72,6 +72,7 @@ padding-bottom: 30rem;
     place-items: center;
     color: var(--dark);
     background-color: var(--accent2);
+    border: solid 2px var(--accent2);
 }
 
 .button2 {
