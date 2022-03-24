@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
 
 :root {
-  --accent1: #54BAB9;
-  --accent2: #E9DAC1;
-  --accent3: #F7ECDE;
-  --accent4: #FBF8F1;
+  --accent1: #323232;
+  --accent2: #295F4E;
+  --accent3: #6DB193;
+  --accent4: #f0e6ce;
 }
 
 
@@ -73,11 +73,6 @@ button {
 p,
 input {
   font-weight: 400;
-}
-
-::selection {
-  color: var(--accent4);
-  background: var(--accent3);
 }
 
 ::-webkit-scrollbar-thumb {

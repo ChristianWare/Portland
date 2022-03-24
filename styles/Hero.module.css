@@ -25,8 +25,6 @@ padding-bottom: 30rem;
     color: var(--accent2); 
 }
 
-
-
  .heroLeftWrapper {
      padding-top: 3rem;
      height: 50%;
@@ -39,6 +37,7 @@ padding-bottom: 30rem;
      font-weight: 500;
      letter-spacing: .1rem;
      width: 80%;
+     color: var(--accent1)
  }
 
  .heroRight {
@@ -67,6 +66,7 @@ padding-bottom: 30rem;
 .button1,
 .button2 {
       display: grid;
+      place-items: center;
       font-size: 2.1rem;
       height: 60px;
       width: 100%;
@@ -76,28 +76,26 @@ padding-bottom: 30rem;
   }
 
 .button1 {
-    place-items: center;
-    color: var(--dark);
+    color: var(--accent4);
     background-color: var(--accent2);
     border: solid 2px var(--accent2);
 }
 
 .button2 {
-    place-items: center;
-    border: solid 2px var(--accent2);
-    color: var(--accent2);
-    background-color: transparent;
+    border: solid 2px var(--accent3);
+    color: var(--accent4);
+    background-color: var(--accent3);
   }
 
 .button1:hover {
-    background-color: var(--dark);
+    background-color: var(--accent4);
     color: var(--accent2);
     border: solid 2px;
 }
 
 .button2:hover {
-    color: var(--dark);
-    background-color: var(--accent2);
+    color: var(--accent3);
+    background-color: var(--accent4);
 }
 
 @media screen and (max-width: 810px) {
