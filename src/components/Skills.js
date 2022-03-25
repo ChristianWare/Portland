@@ -4,9 +4,16 @@ import SkillsCube from "../components/Cubes/SkillsCube";
 function Skills() {
   return (
     <section className={styles.sContainer}>
+      <div className={styles.sRight}>
+        <div id='skills' className={styles.cubeContainer}>
+          <SkillsCube>Skills</SkillsCube>
+          <SkillsCube>Skills</SkillsCube>
+          <SkillsCube>Skills</SkillsCube>
+        </div>
+      </div>
       <div className={styles.sLeft}>
         <h3 className={styles.headingIntro} lang='en'>
-          01. <br /> <br />
+          03. <br /> <br />
           Skills & Technologies
         </h3>
         <h5 className={styles.heading}>Front End</h5>
@@ -27,13 +34,6 @@ function Skills() {
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
           Control(Git), Markdown, Postman, JSON, REST API&apos;s, Slack, Zoom
         </p>
-      </div>
-      <div className={styles.sRight}>
-        <div id='skills' className={styles.cubeContainer}>
-          <SkillsCube>Skills</SkillsCube>
-          <SkillsCube>Skills</SkillsCube>
-          <SkillsCube>Skills</SkillsCube>
-        </div>
       </div>
     </section>
   );

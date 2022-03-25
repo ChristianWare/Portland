@@ -22,9 +22,9 @@ export default function Home() {
         <Layout>
           <Time />
           <Hero />
-          <Skills />
           <About />
           <Projects />
+          <Skills />
           <Contact />
         </Layout>
       </div>

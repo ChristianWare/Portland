@@ -9,7 +9,7 @@ function Projects() {
     <section className={styles.projects}>
       <div className={styles.headingTop}>
         <h3 className={styles.heading} lang='en' id='projects'>
-          03. <br /> <br />
+          02. <br /> <br />
           Projects & Details
         </h3>
         <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
@@ -30,7 +30,7 @@ function Projects() {
                   </p>
                 </div>
                 <div className={styles.imgContainer}>
-                  <Image alt='preview' src={image} />
+                  <Image alt='preview' src={image} className={styles.img} />
                 </div>
               </div>
               <div className={styles.buttonContainer}>

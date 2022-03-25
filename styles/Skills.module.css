@@ -26,14 +26,14 @@
 .headingIntro {
     margin: 20px 0px;
     margin-bottom: 5rem;
-    padding-right: 2rem;
-    border-right: 2px solid var(--accent3);
+    padding-left: 2rem;
+    border-left: 2px solid var(--accent3);
     font-family: "OrbitronExtraBold";
     letter-spacing: .1rem;
     z-index: 999;
     color: var(--accent2);
     hyphens: auto;
-    text-align: right;
+    text-align: left;
 }
 
 .heading {
@@ -49,10 +49,10 @@
     font-size: 1.8rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .sContainer {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .sLeft {
