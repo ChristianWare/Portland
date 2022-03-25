@@ -1,6 +1,7 @@
 import img2 from "../../public/images/img2.png";
 import img3 from "../../public/images/img3.png";
 import img5 from "../../public/images/img5.png";
+import img6 from "../../public/images/6.png";
 
 const projects = [
   {
@@ -12,8 +13,6 @@ const projects = [
     github: "https://github.com/ChristianWare/Portland",
     url: "https://chrisware.io/",
     image: img5,
-    width: 500,
-    height: 308,
   },
   {
     id: 2,
@@ -24,8 +23,6 @@ const projects = [
     github: "https://github.com/ChristianWare/Periodic-Table-Of-Telements",
     url: "https://telements.co/",
     image: img2,
-    width: 500,
-    height: 413,
   },
   {
     id: 3,
@@ -36,8 +33,26 @@ const projects = [
     github: "https://github.com/ChristianWare/Taco-Bell",
     url: "https://livemas.io/",
     image: img3,
-    width: 510,
-    height: 438,
+  },
+  {
+    id: 3,
+    title: "Fonts & Footers",
+    description:
+      "This website is a redesign of Taco Bell's web page. I thought their website could use a refresh so I took it upon myself to take on this challenge. I wanted the main focus on the site to be the menu so that it is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+    tech: "Next JS/React, CMS Contentful, CSS Modules, React-icons.",
+    github: "https://github.com/ChristianWare/Taco-Bell",
+    url: "https://livemas.io/",
+    image: img6,
+  },
+  {
+    id: 3,
+    title: "Razor Edge Studio",
+    description:
+      "This website is a redesign of Taco Bell's web page. I thought their website could use a refresh so I took it upon myself to take on this challenge. I wanted the main focus on the site to be the menu so that it is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+    tech: "Next JS/React, CMS Contentful, CSS Modules, React-icons.",
+    github: "https://github.com/ChristianWare/Taco-Bell",
+    url: "https://livemas.io/",
+    image: img3,
   },
 ];
 

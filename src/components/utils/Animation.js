@@ -45,7 +45,7 @@ export const topContainerAnimation = {
 
 export const slideLeft = {
   hidden: {
-    x: -100,
+    x: -200,
     opacity: 0,
   },
   show: {
@@ -56,7 +56,7 @@ export const slideLeft = {
 
 export const slideRight = {
   hidden: {
-    x: 100,
+    x: 200,
     opacity: 1,
   },
   show: {
