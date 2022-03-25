@@ -5,15 +5,12 @@ import Skills from "../src/components/Skills";
 import Contact from "../src/components/Contact";
 import Projects from "../src/components/Projects";
 import Time from "../src/components/Time";
-import ScrollIndicator from "../src/components/ScrollIndicator";
 import Layout from "../src/components/Layout";
 
 export default function Home() {
 
   return (
-    <>
-      <ScrollIndicator />
-      <div>
+    <>      <div>
         <Head>
           <title>Chris Ware&apos;s Portfolio</title>
           <meta
