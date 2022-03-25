@@ -1,33 +1,17 @@
 import styles from "../../styles/Skills.module.css";
 import SkillsCube from "../components/Cubes/SkillsCube";
-import { slideLeft } from "../components/utils/Animation";
-import { motion } from "framer-motion";
-import { useScroll } from "./utils/useScroll";
 
 function Skills() {
-  const [element, controls] = useScroll();
-
   return (
     <section className={styles.sContainer}>
-      <div className={styles.sRight} ref={element}>
-        <motion.div
-          animate={controls}
-          variants={slideLeft}
-          transition={{ delay: 0.1, stiffness: 300 }}
-          id='skills'
-          className={styles.cubeContainer}
-        >
+      <div className={styles.sRight}>
+        <div id='skills' className={styles.cubeContainer}>
           <SkillsCube>Skills</SkillsCube>
           <SkillsCube>Skills</SkillsCube>
           <SkillsCube>Skills</SkillsCube>
-        </motion.div>
+        </div>
       </div>
-      <motion.div
-        animate={controls}
-        variants={slideLeft}
-        transition={{ delay: 0.1, stiffness: 300 }}
-        className={styles.sLeft}
-      >
+      <div className={styles.sLeft}>
         <h3 className={styles.headingIntro} lang='en'>
           03. <br /> <br />
           Skills & Technologies
@@ -50,7 +34,7 @@ function Skills() {
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
           Control(Git), Markdown, Postman, JSON, REST API&apos;s, Slack, Zoom
         </p>
-      </motion.div>
+      </div>
     </section>
   );
 }
