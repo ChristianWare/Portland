@@ -137,6 +137,7 @@
         z-index: 999;
         border: 2px solid var(--accent2);
         padding: .5rem;
+        border-radius: .5rem;
         background-color: var(--accent2);
     }
 

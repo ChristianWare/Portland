@@ -8,7 +8,8 @@
 .icon {
     position: relative;
     margin-right: .5rem;
-    top: 1.5px
+    top: 1.5px;
+    color: var(--accent1);
 }
 
 .clock{
