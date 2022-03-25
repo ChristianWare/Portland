@@ -86,6 +86,7 @@ function Contact() {
             <a
               href='https://github.com/ChristianWare'
               target='_blank'
+              rel='noreferrer'
               className={styles.cInfoItem}
             >
               <BsGithub className={styles.cIcon} />
@@ -94,6 +95,7 @@ function Contact() {
             <a
               href='https://www.linkedin.com/in/christian-ware/'
               target='_blank'
+              rel='noreferrer'
               className={`${styles.cInfoItem} ${styles.linkedIn}`}
             >
               <BsLinkedin className={styles.cIcon} />
