@@ -4,13 +4,23 @@ import { FaCube } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
+import { fromUp, fromDown, slideRight } from "../components/utils/Animation";
+import { motion } from "framer-motion";
+import { useScroll } from "./utils/useScroll";
 
 function Footer() {
+  const [element, controls] = useScroll();
+
   return (
-    <section className={styles.footerContainer}>
+    <section className={styles.footerContainer} ref={element}>
       <footer className={styles.footerBottom}>
         <div className={styles.footerContent}>
-          <div className={styles.footerLeft}>
+          <motion.div
+            animate={controls}
+            variants={fromUp}
+            transition={{ delay: 0.1, stiffness: 300 }}
+            className={styles.footerLeft}
+          >
             <Link href='/' passHref>
               <span className={styles.navbarLogo}>
                 <FaCube className={styles.navbarIcon} />
@@ -27,8 +37,13 @@ function Footer() {
               <BsInstagram className={styles.icon} />
               <FiYoutube className={styles.icon3} />
             </div>
-          </div>
-          <div className={styles.footerRight}>
+          </motion.div>
+          <motion.div
+            animate={controls}
+            variants={fromDown}
+            transition={{ delay: 0.1, stiffness: 300 }}
+            className={styles.footerRight}
+          >
             <div className={styles.list1}>
               <h6 className={styles.heading}>Skills</h6>
               <ul>
@@ -62,10 +77,15 @@ function Footer() {
                 <li>Insta</li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
         <hr className={styles.hr} />
-        <div className={styles.copyrightContainer}>
+        <motion.div
+          animate={controls}
+          variants={slideRight}
+          transition={{ delay: 0.1, stiffness: 300 }}
+          className={styles.copyrightContainer}
+        >
           <small>
             Christian Ware {new Date().getFullYear()} &copy; - All Rights
             Reserved || Designed/Developed by{" "}
@@ -75,7 +95,7 @@ function Footer() {
               </a>
             </Link>
           </small>
-        </div>
+        </motion.div>
       </footer>
     </section>
   );

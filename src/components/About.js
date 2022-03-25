@@ -1,8 +1,8 @@
 import styles from "../../styles/About.module.css";
 import Cube from "../components/Cubes/Cube";
 import { slideLeft, slideRight } from "../components/utils/Animation";
-import { useScroll } from './utils/useScroll'
 import { motion } from 'framer-motion'
+import { useScroll } from './utils/useScroll'
 
 
 function About() {

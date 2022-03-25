@@ -21,6 +21,10 @@
     hyphens: auto;
 }
 
+.cubeContainer {
+    display: grid;
+}
+
 
 .buttonContainer {
     margin-top: 4rem;

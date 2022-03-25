@@ -4,8 +4,13 @@ import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { slideLeft, slideRight } from "../components/utils/Animation";
+import { motion } from "framer-motion";
+import { useScroll } from "./utils/useScroll";
 
 function Contact() {
+  const [element, controls] = useScroll();
+
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
@@ -65,9 +70,12 @@ function Contact() {
     }
   };
   return (
-    <section id='contact' className={styles.cContainer}>
+    <section id='contact' className={styles.cContainer} ref={element}>
       <div className={styles.cWrapper}>
-        <div className={styles.cLeft}>
+        <motion.div
+        animate={controls}
+        variants={slideLeft}
+        transition={{ delay: 0.1, stiffness: 300 }} className={styles.cLeft}>
           <h2 className={styles.heading}>
             Here are the best ways to contact me:
           </h2>
@@ -102,8 +110,11 @@ function Contact() {
               <span>LinkedIn</span>
             </a>
           </div>
-        </div>
-        <div className={styles.contactForm}>
+        </motion.div>
+        <motion.div
+        animate={controls}
+        variants={slideRight}
+        transition={{ delay: 0.1, stiffness: 300 }} className={styles.contactForm}>
           <h2>Send A Message</h2>
           <form className={styles.formBox} onSubmit={(e) => onSubmitForm(e)}>
             <div className={styles.inputBox50}>
@@ -161,7 +172,7 @@ function Contact() {
               )
             )}
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

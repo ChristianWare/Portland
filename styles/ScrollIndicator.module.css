@@ -10,7 +10,7 @@
 }
 
 .progressMainStyle {
-    height: 5px;
+    height: 4px;
     background-color: var(--accent2);
     transition: none;
 }

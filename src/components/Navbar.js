@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
 import { FaCube } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fromUp } from "../components/utils/Animation";
+import { useScroll } from "./utils/useScroll";
 
 function Navbar() {
+  const [element, controls] = useScroll();
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
 
@@ -20,8 +24,11 @@ function Navbar() {
 
   return (
     <>
-      <header className={styles.header}>
-        <nav className={styles.navbar}>
+      <header className={styles.header} ref={element}>
+        <motion.nav
+          animate={controls}
+          variants={fromUp}
+          transition={{ delay: 0.01, stiffness: 300 }} className={styles.navbar}>
           <Link href='/' passHref>
             <span className={styles.navbarLogo}>
               <FaCube className={styles.navbarIcon} />
@@ -69,7 +76,7 @@ function Navbar() {
             <span className={styles.bar}></span>
             <span className={styles.bar}></span>
           </span>
-        </nav>
+        </motion.nav>
       </header>
     </>
   );
