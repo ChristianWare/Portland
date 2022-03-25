@@ -115,7 +115,7 @@
         border: 5px solid var(--accent2);
         background-color: var(--accent4);
         color: var(--accent2);
-        font-size: 5rem;
+        font-size: 3rem;
         font-family: "OrbitronExtraBold";
         cursor: pointer;
     }

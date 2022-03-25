@@ -1,33 +1,68 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Contact.module.css";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
+import { AiFillCheckCircle } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import emailjs from "emailjs-com";
 
 function Contact() {
-  const formRef = useRef();
-  const [done, setDone] = useState(false);
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-  const handleSubmit = (e) => {
+  const [form, setForm] = useState("");
+
+  const handleChange = (e) => {
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+  };
+
+  const onSubmitForm = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_czwggs7",
-        "template_4gckyfj",
-        formRef.current,
-        "user_CLMhQmZ4MMx2LLZjKzXTH"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
+
+    if (inputs.name && inputs.email && inputs.phone && inputs.message) {
+      setForm({ state: "loading" });
+      try {
+        const res = await fetch(`api/contact`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputs),
+        });
+
+        const { error } = await res.json();
+
+        if (error) {
+          setForm({
+            state: "error",
+            message: error,
+          });
+          return;
         }
-      );
-    e.target.reset();
+
+        setForm({
+          state: "success",
+          message: "Your message was sent successfully.",
+        });
+        setInputs({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } catch (error) {
+        setForm({
+          state: "error",
+          message: "Something went wrong",
+        });
+      }
+    }
   };
   return (
     <section id='contact' className={styles.cContainer}>
@@ -39,19 +74,20 @@ function Contact() {
           <div className={styles.cInfo}>
             <a href='tel:623-335-52514' className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
-              <span>
-                623-335-52514
-              </span>
+              <span>623-335-52514</span>
             </a>
-            <a href='mailto:chris.ware.dev@gmail.com' className={styles.cInfoItem}>
+            <a
+              href='mailto:chris.ware.dev@gmail.com'
+              className={styles.cInfoItem}
+            >
               <AiOutlineMail className={styles.cIcon} />
-              <span>
-                
-                  chris.ware.dev@gmail.com
-                
-              </span>
+              <span>chris.ware.dev@gmail.com</span>
             </a>
-            <a href='https://github.com/ChristianWare' target='_blank' className={styles.cInfoItem}>
+            <a
+              href='https://github.com/ChristianWare'
+              target='_blank'
+              className={styles.cInfoItem}
+            >
               <BsGithub className={styles.cIcon} />
               <span>Github</span>
             </a>
@@ -65,20 +101,64 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div className={styles.cRight}>
-          <div className={styles.cDescription}>
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <input type='text' placeholder='Name' name='user_name' /> <br />
-              <input type='text' placeholder='Subject' name='user_subject' />
-              <br />
-              <input type='text' placeholder='Email' name='user_email' />
-              <textarea rows='5' placeholder='Message' name='message' />
-              <button>Submit</button>
-            </form>
-          </div>
-          <div className={styles.forResponse}>
-            {done && "Thank You, I will be in touch with you soon."}
-          </div>
+        <div className={styles.contactForm}>
+          <h2>Send A Message</h2>
+          <form className={styles.formBox} onSubmit={(e) => onSubmitForm(e)}>
+            <div className={styles.inputBox50}>
+              <input
+                id='name'
+                value={inputs.name}
+                onChange={handleChange}
+                type='text'
+                required
+              />
+              <label htmlFor='first'>Name</label>
+            </div>
+            <div className={styles.inputBox50}>
+              <input
+                id='email'
+                value={inputs.email}
+                onChange={handleChange}
+                type='text'
+                required
+              />
+              <label htmlFor='email'>Email Address</label>
+            </div>
+            <div className={styles.inputBox50}>
+              <input
+                id='phone'
+                value={inputs.phone}
+                onChange={handleChange}
+                type='text'
+                required
+              />
+              <label htmlFor='phone'>Phone #</label>
+            </div>
+            <div className={styles.inputBox100}>
+              <textarea
+                id='message'
+                value={inputs.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+              <label htmlFor='message'>Your Message Here...</label>
+            </div>
+            <div className={styles.btnContainer}>
+              <button className={styles.tertiary}>Submit</button>
+            </div>
+            {form.state === "loading" ? (
+              <div className={styles.msg}>Sending....</div>
+            ) : form.state === "error" ? (
+              <div className={styles.msg}>{form.message}</div>
+            ) : (
+              form.state === "success" && (
+                <div className={styles.msg}>
+                  <AiFillCheckCircle className={styles.icon2} />
+                  Sent successfully!
+                </div>
+              )
+            )}
+          </form>
         </div>
       </div>
     </section>

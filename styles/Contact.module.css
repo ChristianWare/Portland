@@ -6,6 +6,7 @@
 .cWrapper {
     padding: 3rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -30,6 +31,7 @@
 
 .heading {
     text-transform: uppercase;
+    width: 80%;
     font-family: "OrbitronExtraBold";
     letter-spacing: 1px;
     color: var(--accent2);
@@ -119,11 +121,16 @@
     }
 
     .cLeft {
-        align-items: flex-start;
+        align-items: center;
     }
 
     .cTitle {
         font-size: 30px;
+    }
+
+    .cInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cInfoItem {
@@ -157,6 +164,14 @@
     .cInfoItem p { 
         font-size: 2rem;
     }
+
+     .cInfo {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .cLeft {
+         align-items: flex-start;
+     }
 }
 
 @media screen and (max-height: 568px),
@@ -169,5 +184,215 @@ screen and (max-width: 320px) {
 @media screen and (max-width: 370px) {
     .cInfoItem span a {
         font-size: 1.6rem;
+    }
+}
+
+
+
+
+.contactForm {
+    /* position: relative; */
+    padding: 5rem;
+    border: 2px solid var(--accent2);
+    color: var(--accent1);
+}
+
+.contactForm h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.inputBox50 {
+    position: relative;
+    width: 47%;
+}
+
+.inputBox50:nth-child(1),
+.inputBox50:nth-child(2) {
+    margin-bottom: 3.5rem;
+}
+
+.inputBox50:nth-child(3),
+.inputBox50:nth-child(4) {
+    margin-bottom: 2rem;
+}
+
+.inputBox100 {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.inputBox100 textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+}
+
+.inputBox50 input,
+.inputBox100 textarea {
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--accent1);
+    background-color: var(--accent4);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--accent1);
+}
+
+.formBox label {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: 0.3s;
+    color: rgba(57, 54, 49, 0.3);
+}
+
+.inputBox50 input:focus~label,
+.inputBox50 input:valid~label,
+.inputBox100 textarea:focus~label,
+.inputBox100 textarea:valid~label {
+    transform: translateY(-20px);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--accent3);
+    font-weight: 500;
+}
+
+.tertiary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    color: var(--accent4);
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    padding: 15px 45px;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 5;
+    background-color: var(--accent3);
+    border: solid 2px var(--accent3);
+    cursor: pointer;
+}
+
+.icon2 {
+    color: var(--accent3);
+    position: relative;
+    top: 8px;
+    left: -10px;
+    font-size: 2.6rem;
+}
+
+.msg {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--accent3);
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    .contactInfo {
+        top: 0;
+        position: relative;
+    }
+
+    .contactForm {
+        position: relative;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contactForm,
+    .contactInfo {
+        width: 100%;
+        height: auto;
+    }
+
+    .contactInfo {
+        flex-direction: row;
+    }
+
+    .sci {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactForm {
+        padding: 2.5rem;
+    }
+
+    .contactInfo {
+        padding: 2.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sci {
+        margin-top: 4rem;
+    }
+
+    .inputBox50 {
+        width: 100%;
+    }
+
+    .btnContainer {
+        margin-bottom: 3rem;
+        padding: 0 2rem;
+        position: relative;
+        left: -16px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .contactContainer {
+        padding: 2rem;
+    }
+
+    .contactContainer::after {
+        right: 0px;
+    }
+
+    .contactContainer::before {
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .msg {
+        position: relative;
+        left: 10px;
     }
 }
