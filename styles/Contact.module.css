@@ -41,17 +41,18 @@
 
 .cInfo {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;  
-  justify-content: center;
+  justify-content: space-between;
   gap: 3rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .cInfoItem,
 .linkedIn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
     color: var(--accent1)
 }
@@ -115,6 +116,13 @@
     font-size: 1rem;
 }
 
+@media screen and (max-width: 890px) {
+    .cInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 800px) {
     .cWrapper {
         flex-direction: column;
@@ -128,9 +136,8 @@
         font-size: 30px;
     }
 
-    .cInfo {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .heading {
+        width: 100%;
     }
 
     .cInfoItem {
