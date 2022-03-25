@@ -3,20 +3,21 @@
     position: relative;
 }
 
-.cBg {
-    width: 15px;
-    height: 100%;
-    background-color: var(--accent2);
-    position: absolute;
-}
-
 .cWrapper {
-    padding: 50px;
+    padding: 3rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .cLeft {
-    flex: 1
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem
 }
 
 .cRight {
@@ -27,17 +28,28 @@
     justify-content: center;
 }
 
-.cTitle {
-    font-size: 6rem;
+.heading {
     text-transform: uppercase;
-    width: 80%;    
+    font-family: "OrbitronExtraBold";
+    letter-spacing: 1px;
+    color: var(--accent2);
+    border-left: 2px solid var(--accent3);
+    padding-left: 2rem;
+}
+
+.cInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  justify-content: center;
+  gap: 3rem;
 }
 
 .cInfoItem {
     display: flex;
     align-items: center;
-    position: relative;
-    top: 15px;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .cInfoItem span {
@@ -45,20 +57,11 @@
 }
 
 .cIcon {
-    margin-right: 20px;
     font-size: 2.5rem;
 }
 
 .cDescription {
-    position: relative;
-    bottom: 85px;
     font-size: 2.5rem;
-    background-color: transparent;
-}
-
-.cDescription form {
-    margin-top: 65px;
-    background-color: transparent;
 }
 
 .cDescription input {
@@ -79,6 +82,7 @@
     padding-left: 10px;
     border: 2px solid var(--accent2);
     border-radius: 5px;
+    background-color: transparent
 }
 
 .cDescription textarea:focus,
@@ -99,18 +103,19 @@
     cursor: pointer;
 }
 
-
 .forResponse {
     position: relative;
     top: -65px;
     font-size: 1rem;
-
 }
 
 @media screen and (max-width: 768px) {
     .cWrapper {
         flex-direction: column;
-        padding: 0px 0px 0px 50px;
+    }
+
+    .cLeft {
+        align-items: center;
     }
 
     .cTitle {
@@ -118,8 +123,9 @@
     }
 
     .cInfoItem {
-        margin: 20px 0px;
         width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .cDescription form {

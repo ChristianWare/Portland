@@ -78,6 +78,7 @@
     text-transform: uppercase;
     font-family: "OrbitronExtraBold";
     color: var(--accent2);
+    letter-spacing: 1px;
 }
 
 .text {

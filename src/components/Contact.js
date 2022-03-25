@@ -32,10 +32,9 @@ function Contact() {
   };
   return (
     <section id='contact' className={styles.cContainer}>
-      <div className={styles.cBg}></div>
       <div className={styles.cWrapper}>
         <div className={styles.cLeft}>
-          <h2 className={styles.cTitle}>
+          <h2 className={styles.heading}>
             Here are the best ways to contact me:
           </h2>
           <div className={styles.cInfo}>
@@ -51,22 +50,17 @@ function Contact() {
                 </a>
               </span>
             </div>
-            <div className={styles.cInfoItem}></div>
             <div className={styles.cInfoItem}>
-              <Link href='https://github.com/ChristianWare'>
-                <a target='_blank'>
-                  <BsGithub className={styles.cIcon} />
-                  <span>GitHub</span>
-                </a>
-              </Link>
+              <BsGithub className={styles.cIcon} />
+              <span>Github</span>
             </div>
             <div className={styles.cInfoItem}>
-              <Link href='https://www.linkedin.com/in/christian-ware/'>
-                <a target='_blank'>
-                  <BsLinkedin className={styles.cIcon} />
-                  <span>LinkedIn</span>
+              <BsLinkedin className={styles.cIcon} />
+              <span>
+                <a href='https://www.linkedin.com/in/christian-ware/' target='_blank'>
+                  LinkedIn
                 </a>
-              </Link>
+              </span>
             </div>
           </div>
         </div>
@@ -81,9 +75,9 @@ function Contact() {
               <button>Submit</button>
             </form>
           </div>
-            <div className={styles.forResponse}>
-              {done && "Thank You, I will be in touch with you soon."}
-            </div>
+          <div className={styles.forResponse}>
+            {done && "Thank You, I will be in touch with you soon."}
+          </div>
         </div>
       </div>
     </section>
