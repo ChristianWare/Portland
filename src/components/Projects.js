@@ -54,16 +54,15 @@ function Projects() {
               </div>
               <div className={styles.buttonContainer}>
                 <Link href={github}>
-                  <motion.a
-                    whileTap={{ scale: 0.9 }} className={styles.button1} target='_blank'>
+                  <a className={styles.button1} target='_blank'>
                     GitHub
-                  </motion.a>
+                  </a>
                 </Link>
                 <Link href={url}>
-                  <motion.a
-                    whileTap={{ scale: 0.9 }} className={styles.button2} target='_blank'>
+                  <a
+                    className={styles.button2} target='_blank'>
                     Live Site
-                  </motion.a>
+                  </a>
                 </Link>
               </div>
             </div>
