@@ -1,6 +1,6 @@
-import img1 from "../../public/images/img1.png";
 import img2 from "../../public/images/img2.png";
 import img3 from "../../public/images/img3.png";
+import img5 from "../../public/images/img5.png";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
     tech: "Next JS/React, CSS Modules, React-Icons, Framer Motion, Nodemailer.",
     github: "https://github.com/ChristianWare/Portland",
     url: "https://chrisware.io/",
-    image: img1,
+    image: img5,
     width: 500,
     height: 308,
   },
