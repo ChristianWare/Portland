@@ -57,7 +57,7 @@ function Contact() {
             <div className={styles.cInfoItem}>
               <BsLinkedin className={styles.cIcon} />
               <span>
-                <a href='https://www.linkedin.com/in/christian-ware/' target='_blank'>
+                <a className={styles.linkedIn} href='https://www.linkedin.com/in/christian-ware/' target='_blank'>
                   LinkedIn
                 </a>
               </span>
