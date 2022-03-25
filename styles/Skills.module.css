@@ -22,22 +22,30 @@
     flex: 1;
 }
 
-.sSub {
+.headingIntro {
     margin: 20px 0px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-top: 1rem;
-    border-top: 2px solid var(--accent2);
-    text-transform: uppercase;
+    margin-bottom: 5rem;
+    padding-right: 2rem;
+    border-right: 2px solid var(--accent3);
+    font-family: "OrbitronExtraBold";
     letter-spacing: .1rem;
+    z-index: 999;
+    color: var(--accent2);
+    hyphens: auto;
+    text-align: right;
 }
 
-.sDescription {
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin-bottom: 20px;
+.heading {
+    margin: 2rem 0rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--accent2);
     letter-spacing: .1rem;
-    word-spacing: .1rem;
+    font-family: "OrbitronExtraBold";
+    color: var(--accent2);
+}
+
+.copy {
+    font-size: 1.8rem;
 }
 
 @media screen and (max-width: 768px) {

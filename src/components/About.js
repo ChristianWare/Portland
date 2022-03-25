@@ -12,7 +12,8 @@ function About() {
 
       <div className={styles.aRight}>
         <h3 className={styles.heading} lang='en'>
-          01. <br />I am a Web Developer who specializes in building web applications with
+          01. <br /> <br />
+          I am a Web Developer who specializes in building web applications with
           Next JS and React.
         </h3>
         <p className={styles.copy} lang='en'>

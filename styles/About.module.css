@@ -27,8 +27,9 @@
 .heading {
     margin: 20px 0px;
     padding-left: 2rem;
-    border-left: 2px solid var(--accent2);
+    border-left: 2px solid var(--accent3);
     font-family: "OrbitronExtraBold";
+    letter-spacing: .1rem;
     z-index: 999;
     color: var(--accent2);
     hyphens: auto;
@@ -38,8 +39,6 @@
     font-size: 1.8rem;
     word-spacing: .1rem;
     z-index: 999;
-    /* margin-bottom: 3rem; */
-    /* font-weight: 500; */
     text-align: left;
     hyphens: auto;
 }
