@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^6.2.8",
     "next": "11.1.2",
     "nodemailer": "^6.7.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "react-intersection-observer": "^8.33.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",

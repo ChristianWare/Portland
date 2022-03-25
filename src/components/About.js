@@ -1,5 +1,7 @@
 import styles from "../../styles/About.module.css";
 import Cube from "../components/Cubes/Cube";
+import { reveal, slideLeft, slideRight } from "../components/utils/Animation";
+
 
 function About() {
   return (

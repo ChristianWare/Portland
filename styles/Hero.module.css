@@ -74,6 +74,7 @@ height: 100vh;
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: 600;
+      cursor: pointer;
   }
 
 .button1 {
@@ -88,16 +89,6 @@ height: 100vh;
     background-color: var(--accent4);
   }
 
-.button1:hover {
-    background-color: var(--accent4);
-    color: var(--accent2);
-    border: solid 2px;
-}
-
-.button2:hover {
-    color: var(--accent4);
-    background-color: var(--accent2);
-}
 
 @media screen and (max-width: 810px) {
     .hero {
@@ -164,6 +155,18 @@ height: 100vh;
      .button2 {
          height: 45px;
      }  
+}
+@media screen and (min-width: 481px) {
+    .button1:hover {
+        background-color: var(--accent4);
+        color: var(--accent2);
+        border: solid 2px;
+    }
+
+    .button2:hover {
+        color: var(--accent4);
+        background-color: var(--accent2);
+    }
 }
 
 @media screen and (max-width: 375px) {
