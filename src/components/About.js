@@ -11,19 +11,18 @@ function About() {
       </div>
 
       <div className={styles.aRight}>
-        <h3 lang='en' className={styles.aSub}>
-          I am a Web Developer who specializes in building web applications with
-          NextJS and React.
+        <h3 className={styles.heading} lang='en'>
+          01. <br />I am a Web Developer who specializes in building web applications with
+          Next JS and React.
         </h3>
-        <p lang='en' className={styles.aDescription}>
+        <p className={styles.copy} lang='en'>
           Because of my background in design, and finance, I understand the
           aesthetic and business side to any project. While websites have to
           make good impressions on their visitors, they should also motivate
           them to action.
-        </p>
-        <p className={styles.aDescription}>
-          I am looking for an opportunity to apply these principles in a role as
-          a Front End Developer.
+          <br />
+          <br />I am looking for an opportunity to apply these principles in a
+          role as a Front End Developer.
         </p>
       </div>
     </article>
