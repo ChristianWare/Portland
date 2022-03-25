@@ -11,15 +11,16 @@ function Time() {
 
     return (
       <div className={styles.timeContainer}>
-        <p>
-          {date.toLocaleString("en-US", {
-            timeZone: "US/Arizona",
-            hour: "numeric",
-            minute: "numeric",
-            hour12: true,
-          })}
-          _MST
-        </p>
+          <p className={styles.clock}>
+            <GoLocation className={styles.icon} />
+            {date.toLocaleString("en-US", {
+              timeZone: "US/Arizona",
+              hour: "numeric",
+              minute: "numeric",
+              hour12: true,
+            })}
+            _MST
+          </p>
       </div>
     );
 }

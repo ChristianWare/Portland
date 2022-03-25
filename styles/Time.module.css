@@ -4,3 +4,13 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.icon {
+    position: relative;
+    margin-right: .5rem;
+    top: 1.5px
+}
+
+.clock{
+    color: var(--accent1);
+}
