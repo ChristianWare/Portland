@@ -43,6 +43,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .button1 {
