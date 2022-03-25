@@ -55,6 +55,16 @@
     transform: rotateY(0deg) translateZ(100px);
 }
 
+.cube .front:hover,
+.cube .back:hover,
+.cube .right:hover,
+.cube .left:hover,
+.cube .top:hover,
+.cube .bottom:hover {
+    background-color: rgba(109, 177, 147, 0.7);
+}
+
+
 .cube .back {
     background-color: rgba(41, 95, 78, 0.7);
     border: 2px solid  var(--accent4);

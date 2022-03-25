@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
 import { FaCube } from "react-icons/fa";
@@ -6,6 +6,17 @@ import { FaCube } from "react-icons/fa";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (window.innerWidth <= 953 && isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+    const handleResize = () => setIsOpen(false);
+    window.addEventListener("resize", handleResize);
+  }, [isOpen]);
 
   return (
     <>
