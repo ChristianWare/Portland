@@ -1,6 +1,6 @@
 .cContainer {
     background-color: transparent;
-    position: relative;
+    margin-bottom: 15rem;
 }
 
 .cWrapper {
@@ -100,8 +100,10 @@
     width: 100%;
     background-color: var(--accent2);
     border-radius: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--accent4);
     cursor: pointer;
 }
 
