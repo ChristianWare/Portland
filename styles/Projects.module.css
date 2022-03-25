@@ -3,6 +3,23 @@
     padding-top: 4rem;
 }
 
+.headingTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+
+.heading {
+    margin: 20px 0px;
+    padding-left: 2rem;
+    border-left: 2px solid var(--accent3);
+    font-family: "OrbitronExtraBold";
+    letter-spacing: .1rem;
+    z-index: 999;
+    color: var(--accent2);
+    hyphens: auto;
+}
+
 .buttonContainer {
     margin-top: 4rem;
     display: flex;
@@ -23,7 +40,7 @@
 
 .button1 {
     place-items: center;
-    color: var(--dark);
+    color: var(--accent4);
     background-color: var(--accent2);
     border: solid 2px var(--accent2);
 }
@@ -42,7 +59,7 @@
 }
 
 .button2:hover {
-    color: var(--dark);
+    color: var(--accent4);
     background-color: var(--accent2);
 }
 
@@ -51,15 +68,17 @@
     margin-top: 100px;
 }
 
-.projects .item .right {
+.right {
     border: 2px solid var(--accent2);
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 3rem;
     border-radius: 12px;
     z-index: 2;  
 }
 
 .projectTitle {
     text-transform: uppercase;
+    font-family: "OrbitronExtraBold";
+    color: var(--accent2);
 }
 
 .text {
@@ -70,9 +89,11 @@
 }
 
 .projectDescription {
-    text-align: justify;
-    word-break:normal;
+    font-size: 1.8rem;
+    text-align: left;
+    hyphens: auto;
     margin-bottom: 3rem;
+    color: var(--accent1);
 }
 
 .descLeft {
@@ -95,12 +116,19 @@
 }
 
 @media screen and (max-width: 868px) {
+    .headingTop {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5rem;
+    }
+    
     .descLeft {
         flex-direction: column;
     }
     .projectTitle {
         text-align: center;
     }
+    
 }
 
 @media screen and (max-width: 768px) {

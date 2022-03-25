@@ -22,8 +22,6 @@ export default function Home() {
           />
           <link rel='icon' href='favicon.ico' />
         </Head>
-
-        {/* <Navbar /> */}
         <Layout>
           <Time />
           <Hero />
@@ -31,7 +29,6 @@ export default function Home() {
           <Skills />
           <Projects />
           <Contact />
-          {/* <Footer /> */}
         </Layout>
       </div>
     </>
