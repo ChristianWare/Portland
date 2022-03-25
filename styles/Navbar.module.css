@@ -112,7 +112,7 @@
     .navmenu a {
         background-color: transparent;
         padding: 1rem 3rem;
-        border: 5px solid var(--accent2);
+        border: 2px solid var(--accent2);
         background-color: var(--accent4);
         color: var(--accent2);
         font-size: 3rem;

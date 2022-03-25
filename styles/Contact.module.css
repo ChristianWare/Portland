@@ -195,6 +195,7 @@ screen and (max-width: 320px) {
     padding: 5rem;
     border: 2px solid var(--accent2);
     color: var(--accent1);
+    width: 100%;
 }
 
 .contactForm h2 {
@@ -293,7 +294,7 @@ screen and (max-width: 320px) {
 }
 
 .icon2 {
-    color: var(--accent3);
+    color: var(--accent2);
     position: relative;
     top: 8px;
     left: -10px;
@@ -303,7 +304,7 @@ screen and (max-width: 320px) {
 .msg {
     font-size: 1.6rem;
     font-weight: bold;
-    color: var(--accent3);
+    color: var(--accent2);
 }
 
 
