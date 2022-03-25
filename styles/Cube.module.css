@@ -12,6 +12,7 @@
     animation: rotateCube 10s infinite;
     user-select: none;
     background-color: transparent;
+    color: var(--accent4)
 }
 
 .cube div {
@@ -49,63 +50,39 @@
 }
 
 .cube .front {
-    background-color: var(--dark);
-    border: 2px solid var(--light);
+    background-color: rgba(41, 95, 78, 0.7);
+    border: 2px solid  var(--accent4);
     transform: rotateY(0deg) translateZ(100px);
 }
 
-.cube .front:hover{
-    background-color: var(--accent2);
-}
-
 .cube .back {
-    background-color: var(--dark);
-    border: 2px solid var(--light);
+    background-color: rgba(41, 95, 78, 0.7);
+    border: 2px solid  var(--accent4);
     transform: rotateX(180deg) translateZ(100px);
 }
 
-.cube .back:hover {
-    background-color: var(--accent2);
-}
-
 .cube .right {
-    background-color: var(--dark);
-    border: 2px solid var(--light);
+    background-color: rgba(41, 95, 78, 0.7);
+    border: 2px solid  var(--accent4);
     transform: rotateY(90deg) translateZ(100px);
 }
 
-.cube .right:hover {
-    background-color: var(--accent3);
-}
-
 .cube .left {
-    background-color: var(--dark);
-    border: 2px solid var(--light);
+    background-color: rgba(41, 95, 78, 0.7);
+    border: 2px solid  var(--accent4);
     transform: rotateY(-90deg) translateZ(100px);
 }
 
-.cube .left:hover {
-    background-color: var(--accent4);
-}
-
 .cube .top {
-    background-color: var(--dark);
-    border: 2px solid var(--light);
+    background-color: rgba(41, 95, 78, 0.7);
+    border: 2px solid  var(--accent4);
     transform: rotateX(90deg) translateZ(100px);
 }
 
-.cube .top:hover {
-    background-color: var(--accent5);
-}
-
 .cube .bottom {
-    background-color: var(--dark);
-    border: 2px solid var(--light);
+    background-color: rgba(41, 95, 78, 0.7);
+    border: 2px solid  var(--accent4);
     transform: rotateX(-90deg) translateZ(100px);
-}
-
-.cube .bottom:hover {
-    background-color: var(--accent6);
 }
 
 @media screen and (max-width: 480px) {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
-import { SiHackthebox } from "react-icons/si";
+import { FaCube } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ function Navbar() {
         <nav className={styles.navbar}>
           <Link href='/' passHref>
             <span className={styles.navbarLogo}>
-              <SiHackthebox className={styles.navbarIcon} />
+              <FaCube className={styles.navbarIcon} />
               <a>Christian Ware</a>
             </span>
           </Link>
