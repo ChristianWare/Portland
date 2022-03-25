@@ -25,8 +25,8 @@ export default function Home() {
         <Layout>
           <Time />
           <Hero />
-          <About />
           <Skills />
+          <About />
           <Projects />
           <Contact />
         </Layout>

@@ -9,51 +9,60 @@ function Projects() {
     <section className={styles.projects} id='projects'>
       <div className={styles.headingTop}>
         <h3 className={styles.heading} lang='en'>
-          03. <br /> <br />Projects & Details
+          03. <br /> <br />
+          Projects & Details
         </h3>
         <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
       </div>
 
-      {projects.map((project) => (
-        <div key={project.id} className={styles.allItems}>
-          <div className={styles.item}>
-            <div className={styles.right}>
-              <h2 className={styles.projectTitle}>{project.title}</h2>
-              <div className={styles.descLeft}>
-                <div className={styles.text}>
-                  <p lang='en' className={styles.projectDescription}>
-                    {project.description}
-                  </p>
-                  <p lang='en' className={styles.projectDescription}>
-                    {project.tech}
-                  </p>
+      {projects.map(
+        ({
+          id,
+          description,
+          title,
+          tech,
+          image,
+          github,
+          url,
+        }) => (
+          <div key={id} className={styles.allItems}>
+            <div className={styles.item}>
+              <div className={styles.right}>
+                <div className={styles.descLeft}>
+                  <div className={styles.text}>
+                    <h2 className={styles.projectTitle}>{title}</h2>
+                    <p lang='en' className={styles.projectDescription}>
+                      {description}
+                    </p>
+                    <p lang='en' className={styles.projectDescription}>
+                      {tech}
+                    </p>
+                  </div>
+                  <div className={styles.imgContainer}>
+                    <Image
+                      alt='preview'
+                      src={image}
+                    />
+                  </div>
                 </div>
-                <div className={styles.imgContainer}>
-                  <Image
-                    alt='preview'
-                    src={project.image}
-                    width={project.width}
-                    height={project.height}
-                  />
+                <div className={styles.buttonContainer}>
+                  <Link href={github}>
+                    <a className={styles.button1} target='_blank'>
+                      GitHub
+                    </a>
+                  </Link>
+                  <Link href={url}>
+                    <a className={styles.button2} target='_blank'>
+                      Live Site
+                    </a>
+                  </Link>
                 </div>
               </div>
-              <div className={styles.buttonContainer}>
-                <Link href={project.github}>
-                  <a className={styles.button1} target='_blank'>
-                    GitHub
-                  </a>
-                </Link>
-                <Link href={project.url}>
-                  <a className={styles.button2} target='_blank'>
-                    Live Site
-                  </a>
-                </Link>
-              </div>
+              <div className={styles.buttonContainer}></div>
             </div>
-            <div className={styles.buttonContainer}></div>
           </div>
-        </div>
-      ))}
+        )
+      )}
     </section>
   );
 }

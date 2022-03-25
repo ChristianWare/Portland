@@ -4,7 +4,8 @@ align-items: flex-start;
 justify-content: space-between;
 background-color: transparent;
 z-index: -99;
-padding-bottom: 30rem;
+margin-bottom: 15rem;
+height: 100vh;
 }
 
 .heroLeft {
@@ -154,12 +155,20 @@ padding-bottom: 30rem;
 
      .buttonContainer {
          width: 100%;
+         flex-direction: column;
+         gap: 2rem;
      }
 
      .button1,
      .button2 {
          height: 45px;
      }  
+}
+
+@media screen and (max-width: 375px) {
+    .buttonContainer {
+        margin-top: -1.5rem;
+    }
 }
 
 @media screen and (max-width: 320px) {

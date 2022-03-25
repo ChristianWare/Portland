@@ -6,7 +6,7 @@ function Skills() {
     <section className={styles.sContainer}>
       <div className={styles.sLeft}>
         <h3 className={styles.headingIntro} lang='en'>
-          02. <br /> <br />
+          01. <br /> <br />
           Skills & Technologies
         </h3>
         <h3 className={styles.heading}>Front End</h3>
