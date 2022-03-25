@@ -277,20 +277,18 @@ screen and (max-width: 320px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
-    color: var(--accent4);
+    height: 60px;
+    width: 100%;
     text-transform: uppercase;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
     padding: 15px 45px;
+    border-radius: .5rem;
     position: relative;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 5;
-    background-color: var(--accent3);
-    border: solid 2px var(--accent3);
+    color: var(--accent4);
+    background-color: var(--accent2);
     cursor: pointer;
 }
 
