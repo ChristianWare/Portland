@@ -156,7 +156,8 @@ function Contact() {
               <label htmlFor='message'>Your Message Here...</label>
             </div>
             <div className={styles.btnContainer}>
-              <button className={styles.tertiary}>Submit</button>
+              <motion.button
+                    whileTap={{ scale: 0.9 }} className={styles.tertiary}>Submit</motion.button>
             </div>
             {form.state === "loading" ? (
               <div className={styles.msg}>Sending....</div>
