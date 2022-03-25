@@ -4,7 +4,6 @@ import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import emailjs from "emailjs-com";
-import Link from "next/link";
 
 function Contact() {
   const formRef = useRef();
@@ -38,30 +37,32 @@ function Contact() {
             Here are the best ways to contact me:
           </h2>
           <div className={styles.cInfo}>
-            <div className={styles.cInfoItem}>
+            <a href='tel:623-335-52514' className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
-              <span>602-842-4084</span>
-            </div>
-            <div className={styles.cInfoItem}>
+              <span>
+                623-335-52514
+              </span>
+            </a>
+            <a href='mailto:chris.ware.dev@gmail.com' className={styles.cInfoItem}>
               <AiOutlineMail className={styles.cIcon} />
               <span>
-                <a href='mailto:chris.ware.dev@gmail.com'>
+                
                   chris.ware.dev@gmail.com
-                </a>
+                
               </span>
-            </div>
-            <div className={styles.cInfoItem}>
+            </a>
+            <a href='https://github.com/ChristianWare' target='_blank' className={styles.cInfoItem}>
               <BsGithub className={styles.cIcon} />
               <span>Github</span>
-            </div>
-            <div className={styles.cInfoItem}>
+            </a>
+            <a
+              href='https://www.linkedin.com/in/christian-ware/'
+              target='_blank'
+              className={`${styles.cInfoItem} ${styles.linkedIn}`}
+            >
               <BsLinkedin className={styles.cIcon} />
-              <span>
-                <a className={styles.linkedIn} href='https://www.linkedin.com/in/christian-ware/' target='_blank'>
-                  LinkedIn
-                </a>
-              </span>
-            </div>
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
         <div className={styles.cRight}>

@@ -111,13 +111,13 @@
     font-size: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .cWrapper {
         flex-direction: column;
     }
 
     .cLeft {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .cTitle {
@@ -131,7 +131,6 @@
     }
 
     .cDescription form {
-        margin-top: 100px;
         display: flex;
         flex-wrap: wrap;
     }
