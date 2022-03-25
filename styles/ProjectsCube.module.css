@@ -49,34 +49,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--light);
-    background: var(--dark);
+    color: var(--accent4);
+    background: rgba(41, 95, 78, 0.7);
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 2px;
     transition: 0.5s;
-    border: 2px solid var(--light);
+    border: 2px solid var(--accent4);
     user-select: none;
 }
 
 .container a span:hover:nth-child(1) {
     color: #fff;
-    background: var(--accent5);
+    background: rgba(109, 177, 147, 0.7);
 }
 
 .container a span:hover:nth-child(2) {
     color: #fff;
-    background: var(--accent2);
+    background: rgba(109, 177, 147, 0.7);
 }
 
 .container a span:hover:nth-child(3) {
     color: #fff;
-    background: var(--accent6);
+    background: rgba(109, 177, 147, 0.7);
 }
 
 .container a span:hover:nth-child(4) {
     color: #fff;
-    background: var(--accent4);
+    background: rgba(109, 177, 147, 0.7);
 }
 
 .container a span:nth-child(1) {
