@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .container a {
@@ -53,8 +54,7 @@
     background: rgba(41, 95, 78, 0.7);
     font-size: 4rem;
     font-weight: 700;
-    letter-spacing: 2px;
-    transition: 0.5s;
+    transition: all 0.2s ease-in;
     border: 2px solid var(--accent4);
     user-select: none;
 }
