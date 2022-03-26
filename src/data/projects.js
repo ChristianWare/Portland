@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Fonts & Footers",
     description:
-      "This website is for a digital marketing agency in Phoenix, AZ called Fonts & Footers. The purpose of this site is to introduce themselves to the Phoenix area as the go to scource for all this web related. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+      "This website is for a digital marketing agency in Phoenix, AZ called Fonts & Footers. The purpose of this site is to introduce themselves to the Phoenix area as the go to source for all this web related. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
     tech: "Next JS/React, CSS Modules, React-Icons.",
     github: "https://github.com/ChristianWare/Fonts-and-Footers",
     url: "https://www.fontsandfooters.com/",
@@ -29,7 +29,7 @@ const projects = [
     id: 3,
     title: "Razor Edge Studio",
     description:
-      "My personal barber recently expressed to me that he does not have a website, so I offered to build him one. When he accepted, I gave him a few desighs, and this is the one that he chose. In addition to the home page, it has a galler, about and services details page. It is mobile responsive, and and received high scores on Google's Page Speed Insights.",
+      "My personal barber recently expressed to me that he does not have a website, so I offered to build him one. When he accepted, I gave him a few designs, and this is the one that he chose. In addition to the home page, it has a gallery, an about page, and service details page. It is mobile responsive, and and received high scores on Google's Page Speed Insights.",
     tech: "Next JS/React, CSS Modules, React-Icons, Framer Motion",
     github: "https://github.com/ChristianWare/Razor-Edge",
     url: "https://www.razoredgebarber.com/",
