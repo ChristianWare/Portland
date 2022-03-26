@@ -8,26 +8,24 @@ import Time from "../src/components/Time";
 import Layout from "../src/components/Layout";
 
 export default function Home() {
-
   return (
-    <>      <div>
-        <Head>
-          <title>Chris Ware&apos;s Portfolio</title>
-          <meta
-            name='description'
-            content="Christian Ware's Portfolio Landing Page"
-          />
-          <link rel='icon' href='favicon.ico' />
-        </Head>
-        <Layout>
-          <Time />
-          <Hero />
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
-        </Layout>
-      </div>
+    <>
+      <Head>
+        <title>Chris Ware&apos;s Portfolio</title>
+        <meta
+          name='description'
+          content="Christian Ware's Portfolio Landing Page"
+        />
+        <link rel='icon' href='favicon.ico' />
+      </Head>
+      <Layout>
+        <Time />
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </Layout>
     </>
   );
 }
