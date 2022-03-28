@@ -87,14 +87,14 @@
     padding-left: 10px;
     border: 2px solid var(--accent2);
     border-radius: 5px;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .cDescription textarea:focus,
 .cDescription input:focus {
     outline: 1px solid var(--accent2);
     border-radius: 5px;
-    background-color: var(--dark);
+    background-color: transparent;
 }
 
 .cDescription button {
@@ -252,7 +252,7 @@ screen and (max-width: 320px) {
     font-size: 1.8rem;
     font-weight: 300;
     color: var(--accent1);
-    background-color: var(--accent4);
+    background-color: transparent;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--accent1);
