@@ -5,6 +5,18 @@
     width: 100%;
 }
 
+.background::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    opacity: .03;
+    pointer-events: none;
+    background: url(../public/images/noise.gif);
+}
+
 .layout {
     z-index: 1000;
     max-width: 1400px;
