@@ -1,9 +1,8 @@
 import Link from "next/link";
 import styles from "../../styles/Footer.module.css";
 import { FaCube } from "react-icons/fa";
-import { GrFacebookOption } from "react-icons/gr";
-import { BsInstagram } from "react-icons/bs";
-import { FiYoutube } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { fromUp, fromDown, slideRight } from "../components/utils/Animation";
 import { motion } from "framer-motion";
 import { useScroll } from "./utils/useScroll";
@@ -28,14 +27,28 @@ function Footer() {
               </span>
             </Link>
             <p lang='en'>
-              Expand on the keyword with more keywords and add a list of related
-              services that you do and include the city, state of your service
-              area.
+              Thank you for visiting my personal portfolio website. Feel free to
+              contact me any time. Looking forward to hearing from you soon.
             </p>
             <div className={styles.sci}>
-              <GrFacebookOption className={styles.icon} />
-              <BsInstagram className={styles.icon} />
-              <FiYoutube className={styles.icon3} />
+              <Link href='mailto:chris.ware.dev@gmail.com'>
+                <a>
+                  <AiOutlineMail className={styles.icon} />
+                </a>
+              </Link>
+              <Link href='https://github.com/ChristianWare' rel='noreferrer'>
+                <a target='_blank'>
+                  <BsGithub className={styles.icon} />
+                </a>
+              </Link>
+              <Link
+                href='https://www.linkedin.com/in/christian-ware/'
+                rel='noreferrer'
+              >
+                <a target='_blank'>
+                  <BsLinkedin className={styles.icon} />
+                </a>
+              </Link>
             </div>
           </motion.div>
           <motion.div
@@ -47,34 +60,28 @@ function Footer() {
             <div className={styles.list1}>
               <h6 className={styles.heading}>Skills</h6>
               <ul>
-                <Link href='/' passHref>
-                  <li>Beards</li>
-                </Link>
-                <li>Mustashes</li>
-                <li>Hair Cuts</li>
-                <li>Kids</li>
+                <li>React</li>
+                <li>Next JS</li>
+                <li>Javascript</li>
+                <li>Mongo DB</li>
               </ul>
             </div>
             <div className={styles.list2}>
               <h6 className={styles.heading}>About</h6>
               <ul>
-                <Link href='/' passHref>
-                  <li>Our Story</li>
-                </Link>
-                <li>Barbers</li>
-                <li>Location</li>
-                <li>Prices</li>
+                <li>Web Dev</li>
+                <li>Node JS</li>
+                <li>Three.js</li>
+                <li>GSAP</li>
               </ul>
             </div>
             <div className={styles.list3}>
               <h6 className={styles.heading}>Projects</h6>
               <ul>
-                <Link href='/' passHref>
-                  <li>Address</li>
-                </Link>
-                <li>Email</li>
-                <li>Phone</li>
-                <li>Insta</li>
+                <li>Taco Bell</li>
+                <li>Fonts & Footers</li>
+                <li>Razor Edge</li>
+                <li>Telements</li>
               </ul>
             </div>
           </motion.div>
