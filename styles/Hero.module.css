@@ -8,6 +8,11 @@ margin-bottom: 15rem;
 height: 100vh;
 }
 
+.svg {
+    font-family: "OrbitronExtraBold";
+    text-transform: uppercase;
+}
+
 .heroLeft {
     flex: 1.5;
     background-color: transparent;
@@ -90,6 +95,11 @@ height: 100vh;
     background-color: var(--accent4);
   }
 
+  .circleText {
+      font-weight: 500;
+      background-color: red;
+      color: red
+  }
 
 @media screen and (max-width: 810px) {
     .hero {
