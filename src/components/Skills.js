@@ -33,7 +33,7 @@ function Skills() {
         <p className={styles.copy}>
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
           Control(Git), Markdown, Postman, GraphQL, JSON, REST API&apos;s,
-          Slack, Zoom
+          Slack, Zoom 
         </p>
       </div>
     </section>
