@@ -20,7 +20,7 @@ function Skills() {
         <p className={styles.copy}>HTML, CSS, JavaScript (ES6)</p>
         <h5 className={styles.heading}>Back End</h5>
         <p className={styles.copy}>
-          NodeJS/npm, Express, Mongo Atlas, Firebase, Strapi, Contentful
+          NodeJS/npm, Express, Mongo DB, Firebase, Strapi, Contentful
         </p>
         <h5 className={styles.heading}>Libraries & Frame Works</h5>
         <p className={styles.copy}>
@@ -32,7 +32,8 @@ function Skills() {
         <h5 className={styles.heading}>Miscellaneous</h5>
         <p className={styles.copy}>
           VS Code, Atom, Terminal/Command Line, Chrome Developer Tools, Version
-          Control(Git), Markdown, Postman, JSON, REST API&apos;s, Slack, Zoom
+          Control(Git), Markdown, Postman, GraphQL, JSON, REST API&apos;s,
+          Slack, Zoom
         </p>
       </div>
     </section>
