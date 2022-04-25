@@ -84,7 +84,7 @@ function Contact() {
           <div className={styles.cInfo}>
             <a href='tel:623-335-52514' className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
-              <span>623-335-52514</span>
+              <span>623-335-6955</span>
             </a>
             <a
               href='mailto:chris.ware.dev@gmail.com'
