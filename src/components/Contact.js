@@ -84,7 +84,7 @@ function Contact() {
           <div className={styles.cInfo}>
             <a href='tel:623-335-52514' className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
-              <span>623-335-6955</span>
+              <span>480-808-2054</span>
             </a>
             <a
               href='mailto:chris.ware.dev@gmail.com'
@@ -157,7 +157,11 @@ function Contact() {
             </div>
             <div className={styles.btnContainer}>
               <motion.button
-                    whileTap={{ scale: 0.9 }} className={styles.tertiary}>Submit</motion.button>
+                whileTap={{ scale: 0.9 }}
+                className={styles.tertiary}
+              >
+                Submit
+              </motion.button>
             </div>
             {form.state === "loading" ? (
               <div className={styles.msg}>Sending....</div>
