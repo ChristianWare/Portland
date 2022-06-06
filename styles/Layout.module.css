@@ -14,7 +14,7 @@
     content: '';
     opacity: .03;
     pointer-events: none;
-    background: url(../public/images/noise.gif);
+    /* background: url(../public/images/noise.gif); */
 }
 
 .layout {
