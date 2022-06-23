@@ -44,7 +44,7 @@ function Projects() {
                   <p lang='en' className={styles.projectDescription}>
                     {description}
                   </p>
-                  <p lang='en' className={styles.projectDescription}>
+                  <p lang='en' className={styles.tech}>
                     {tech}
                   </p>
                 </div>

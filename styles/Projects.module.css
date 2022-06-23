@@ -84,11 +84,15 @@
     gap: 3rem;
 }
 
-.projectDescription {
+.projectDescription, .tech {
     font-size: 1.8rem;
     text-align: left;
     hyphens: auto;
     color: var(--accent1);
+}
+
+.tech {
+    font-weight: bold;
 }
 
 .descLeft {

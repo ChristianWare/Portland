@@ -4,13 +4,8 @@ align-items: flex-start;
 justify-content: space-between;
 background-color: transparent;
 z-index: -99;
-margin-bottom: 25rem;
+margin-bottom: 15rem;
 height: 100vh;
-}
-
-.svg {
-    font-family: "OrbitronExtraBold";
-    text-transform: uppercase;
 }
 
 .heroLeft {
