@@ -32,7 +32,7 @@ function Hero() {
                 </h2>
               </div>
               <div className={styles.buttonContainer}>
-                <Link href='#projects'>
+                <Link href='#projects' passHref>
                   <motion.a
                     whileTap={{ scale: 0.9 }}
                     className={styles.button1}
@@ -40,7 +40,7 @@ function Hero() {
                     Projects
                   </motion.a>
                 </Link>
-                <Link href='#contact'>
+                <Link href='#contact' passHref>
                   <motion.a
                     whileTap={{ scale: 0.9 }}
                     className={styles.button2}
