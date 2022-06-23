@@ -6,7 +6,7 @@ import { fromUp, fromDown } from "../components/utils/Animation";
 import { useScroll } from "./utils/useScroll";
 
 function Hero() {
-  const [element, controls] = useScroll()
+  const [element, controls] = useScroll();
 
   return (
     <motion.header
@@ -30,7 +30,6 @@ function Hero() {
                   I build sematically structured web applications by thinking
                   outside the div.
                 </h2>
-                
               </div>
               <div className={styles.buttonContainer}>
                 <Link href='#projects'>
@@ -61,7 +60,7 @@ function Hero() {
           transition={{ delay: 0.1, stiffness: 300 }}
           className={styles.cubeContainer}
         >
-          <Cube>div</Cube>
+          <Cube text='div' />
         </motion.div>
       </div>
     </motion.header>

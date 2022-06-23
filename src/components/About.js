@@ -1,6 +1,6 @@
 import styles from "../../styles/About.module.css";
 import Cube from "../components/Cubes/Cube";
-import { slideLeft, slideRight } from "../components/utils/Animation";
+import { slideLeft, slideRight } from "../components/utils/Animation"
 import { motion } from 'framer-motion'
 import { useScroll } from './utils/useScroll'
 
@@ -17,7 +17,7 @@ function About() {
         className={styles.aLeft}
       >
         <div className={styles.cubeContainer}>
-          <Cube>About</Cube>
+          <Cube text='About' />
         </div>
       </motion.div>
 
@@ -37,8 +37,6 @@ function About() {
           make good impressions on their visitors, they should also motivate
           them to action.
           <br />
-          <br />I am looking for an opportunity to apply these principles in a
-          role as a Front End Developer.
         </p>
       </motion.div>
     </article>
