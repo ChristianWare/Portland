@@ -39,22 +39,22 @@ function Navbar() {
                 : styles.navmenu + " " + styles.active
             }
           >
-            <li className={styles.navitem}>
+            <li className={styles.navItem}>
               <Link href='#about'>
                 <a onClick={openMenu}>About</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
+            <li className={styles.navItem}>
               <Link href='#skills'>
                 <a onClick={openMenu}>Skills</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
+            <li className={styles.navItem}>
               <Link href='#projects'>
                 <a onClick={openMenu}>Projects</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
+            <li className={styles.navItem}>
               <Link href='#contact'>
                 <a onClick={openMenu}>Contact</a>
               </Link>
