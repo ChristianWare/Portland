@@ -3,9 +3,9 @@ import SkillsCube from "../components/Cubes/SkillsCube";
 
 function Skills() {
   return (
-    <section className={styles.sContainer}>
+    <section className={styles.sContainer} id='skills'>
       <div className={styles.sRight}>
-        <div id='skills' className={styles.cubeContainer}>
+        <div className={styles.cubeContainer}>
           <SkillsCube>Skills</SkillsCube>
           <SkillsCube>Skills</SkillsCube>
           <SkillsCube>Skills</SkillsCube>

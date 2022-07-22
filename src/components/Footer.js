@@ -3,21 +3,14 @@ import styles from "../../styles/Footer.module.css";
 import { FaCube } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { fromUp, fromDown, slideRight } from "../components/utils/Animation";
-import { motion } from "framer-motion";
-import { useScroll } from "./utils/useScroll";
 
 function Footer() {
-  const [element, controls] = useScroll();
 
   return (
-    <section className={styles.footerContainer} ref={element}>
+    <section className={styles.footerContainer}>
       <footer className={styles.footerBottom}>
         <div className={styles.footerContent}>
-          <motion.div
-            animate={controls}
-            variants={fromUp}
-            transition={{ delay: 0.1, stiffness: 300 }}
+          <div
             className={styles.footerLeft}
           >
             <Link href='/' passHref>
@@ -50,11 +43,8 @@ function Footer() {
                 </a>
               </Link>
             </div>
-          </motion.div>
-          <motion.div
-            animate={controls}
-            variants={fromDown}
-            transition={{ delay: 0.1, stiffness: 300 }}
+          </div>
+          <div
             className={styles.footerRight}
           >
             <div className={styles.list1}>
@@ -84,13 +74,10 @@ function Footer() {
                 <li>Telements</li>
               </ul>
             </div>
-          </motion.div>
+          </div>
         </div>
         <hr className={styles.hr} />
-        <motion.div
-          animate={controls}
-          variants={slideRight}
-          transition={{ delay: 0.1, stiffness: 300 }}
+        <div
           className={styles.copyrightContainer}
         >
           <small>
@@ -102,7 +89,7 @@ function Footer() {
               </a>
             </Link>
           </small>
-        </motion.div>
+        </div>
       </footer>
     </section>
   );

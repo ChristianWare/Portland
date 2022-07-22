@@ -1,12 +1,14 @@
 .header {
     z-index: 999;
     background-color: transparent;
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding: 1rem 1.5rem;
     z-index: 999;
@@ -58,12 +60,17 @@
 
 .navItem {
     margin-left: 5rem;
-    color: var(--accent1);
+    color: var(--accent1b);
     font-weight: 900;
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 953px) {
+.navItem:hover {
+    color: var(--accent3);
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 868px) {
     .navmenu {
         position: fixed;
         left: -100%;

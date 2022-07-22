@@ -3,35 +3,27 @@ import Link from "next/link";
 import Image from "next/image";
 import projects from "../data/projects";
 import ProjectsCube from "./Cubes/ProjectsCube";
-import { motion } from "framer-motion";
-import { useScroll } from "./utils/useScroll";
-import { slideLeft, slideRight } from "../components/utils/Animation";
 
 function Projects() {
-  const [element, controls] = useScroll();
 
   return (
     <section className={styles.projects}>
-      <div className={styles.headingTop} ref={element}>
-        <motion.h3
-          animate={controls}
-          variants={slideLeft}
-          transition={{ delay: 0.1, stiffness: 300 }}
+      <div className={styles.headingTop}>
+        <h3
+          
           className={styles.heading}
           lang='en'
           id='projects'
         >
           02. <br /> <br />
           Projects & Details
-        </motion.h3>
-        <motion.div
-          animate={controls}
-          variants={slideRight}
-          transition={{ delay: 0.1, stiffness: 300 }}
+        </h3>
+        <div
+         
           className={styles.cubeContainer}
         >
           <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
-        </motion.div>
+        </div>
       </div>
 
       {projects.map(({ id, description, title, tech, image, github, url }) => (
