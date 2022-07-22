@@ -73,6 +73,8 @@
     font-family: "OrbitronExtraBold";
     color: var(--accent2);
     letter-spacing: 1px;
+    position: relative;
+    top: -20px;
 }
 
 .text {
@@ -81,7 +83,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .projectDescription, .tech {
@@ -93,6 +95,11 @@
 
 .tech {
     font-weight: bold;
+}
+
+.tech span {
+    font-weight: normal;
+    color: var(--accent1b);
 }
 
 .descLeft {
@@ -130,7 +137,7 @@
     }
     
     .text {
-        align-items: center;
+        align-items: left;
     }
 }
 

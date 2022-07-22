@@ -8,12 +8,15 @@ const projects = [
   {
     id: 1,
     title: "Fonts & Footers",
-    description:
-      "This website is for a digital marketing agency in Phoenix, AZ called Fonts & Footers. The purpose of this site is to introduce themselves to the Phoenix area as the go to source for all things web related. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
-    tech: "Next JS/React, CSS Modules, React-Icons",
     github: "https://github.com/ChristianWare/Fonts-and-Footers",
     url: "https://www.fontsandfooters.com/",
     image: fonts,
+    frontEnd: "React/Next.js",
+    backEnd: "Node.js",
+    npmDep: "email.js, nodemailer, react-icons",
+    styling: "CSS Modules",
+    description:
+      "This website is for a digital marketing agency in Phoenix, AZ called Fonts & Footers. The purpose of this site is to introduce themselves to the Phoenix area as the go to source for all things web related.",
   },
   {
     id: 2,
@@ -24,6 +27,10 @@ const projects = [
     github: "https://github.com/ChristianWare/Taco-Bell",
     url: "https://livemas.io/",
     image: livemas,
+    frontEnd: "React/Next.js",
+    backEnd: "Node.js",
+    npmDep: "emailjs-com, nodemailer, react-icons",
+    styling: "CSS Modules",
   },
   {
     id: 3,
@@ -34,6 +41,10 @@ const projects = [
     github: "https://github.com/ChristianWare/Razor-Edge",
     url: "https://www.razoredgebarber.com/",
     image: razor,
+    frontEnd: "React/Next.js",
+    backEnd: "Node.js",
+    npmDep: "emailjs-com, nodemailer, react-icons",
+    styling: "CSS Modules",
   },
   {
     id: 4,
@@ -44,6 +55,10 @@ const projects = [
     github: "https://github.com/ChristianWare/Periodic-Table-Of-Telements",
     url: "https://telements.co/",
     image: telements,
+    frontEnd: "React/Next.js",
+    backEnd: "Node.js",
+    npmDep: "emailjs-com, nodemailer, react-icons",
+    styling: "CSS Modules",
   },
   {
     id: 5,
@@ -54,6 +69,10 @@ const projects = [
     github: "https://github.com/ChristianWare/Portland",
     url: "https://chrisware.io/",
     image: portland,
+    frontEnd: "React/Next.js",
+    backEnd: "Node.js",
+    npmDep: "emailjs-com, nodemailer, react-icons",
+    styling: "CSS Modules",
   },
 ];
 

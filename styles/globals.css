@@ -9,11 +9,6 @@
 }
 
 @font-face {
-  font-family: "Smile";
-  src: url("../public/Fonts/Smile.otf");
-}
-
-@font-face {
   font-family: "OrbitronExtraBold";
   src: url("../public/Fonts/OrbitronExtraBold.ttf");
 }
