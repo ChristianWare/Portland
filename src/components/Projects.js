@@ -35,7 +35,7 @@ function Projects() {
                       Back End: <span>{backEnd}</span>
                     </p>
                     <p lang="en" className={styles.tech}>
-                      NPM Dep&apos;s: <span>{npmDep}</span>
+                      NPM Dep's: <span>{npmDep}</span>
                     </p>
                     <p lang="en" className={styles.tech}>
                       Styling: <span>{styling}</span>

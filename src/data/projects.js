@@ -34,7 +34,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Razor Edge Studio",
+    title: "Razor Edge",
     description:
       "My personal barber recently expressed to me that he does not have a website, so I offered to build him one. When he accepted, I gave him a few designs, and this is the one that he chose. In addition to the home page, it has a gallery, an about page, and service details page. It is mobile responsive, and and received high scores on Google's Page Speed Insights.",
     tech: "Next JS/React, CSS Modules, React-Icons, Framer Motion",
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Periodic Table of Telements",
+    title: "Telements",
     description:
       "The Periodic Table of Telements (television + elements = 'tele'ments) is a reference chart showing the most up to date movie data from each major streaming platform. It is organized so that you can quickly get information on individual telements such as their title, a brief overview, the movie runtime, its' release date, and the average viewer rating.",
     tech: "Next JS/React, TMDB API, CSS Modules, React-Icons",
