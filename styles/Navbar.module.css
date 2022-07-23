@@ -65,7 +65,7 @@
     text-transform: uppercase;
 }
 
-.navItem:hover {
+.navItem:hover, .navbarLogo:hover {
     color: var(--accent3);
     transition: all 0.2s ease-in-out;
 }
