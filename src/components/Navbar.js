@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
 import { FaCube } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +9,7 @@ function Navbar() {
 
   useEffect(() => {
     const body = document.querySelector("body");
-    if (window.innerWidth <= 953 && isOpen) {
+    if (window.innerWidth <= 768 && isOpen) {
       body.style.overflow = "hidden";
     } else {
       body.style.overflow = "auto";
@@ -21,11 +20,11 @@ function Navbar() {
 
   return (
     <>
-      <motion.header
-      animate={{ opacity: 1, transition: { duration: 1 } }}
-      initial={{ opacity: 0 }} className={styles.header}>
+      <header
+        className={styles.header}
+      >
         <nav className={styles.navbar}>
-          <Link href='/' passHref>
+          <Link href="/" passHref>
             <span className={styles.navbarLogo}>
               <FaCube className={styles.navbarIcon} />
               <a>Christian Ware</a>
@@ -39,23 +38,23 @@ function Navbar() {
                 : styles.navmenu + " " + styles.active
             }
           >
-            <li className={styles.navitem}>
-              <Link href='#about'>
+            <li className={styles.navItem}>
+              <Link href="#about" passHref>
                 <a onClick={openMenu}>About</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
-              <Link href='#skills'>
-                <a onClick={openMenu}>Skills</a>
-              </Link>
-            </li>
-            <li className={styles.navitem}>
-              <Link href='#projects'>
+            <li className={styles.navItem}>
+              <Link href="#projects" passHref>
                 <a onClick={openMenu}>Projects</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
-              <Link href='#contact'>
+            <li className={styles.navItem} passHref>
+              <Link href="#skills">
+                <a onClick={openMenu}>Skills</a>
+              </Link>
+            </li>
+            <li className={styles.navItem} passHref>
+              <Link href="#contact">
                 <a onClick={openMenu}>Contact</a>
               </Link>
             </li>
@@ -73,7 +72,7 @@ function Navbar() {
             <span className={styles.bar}></span>
           </span>
         </nav>
-      </motion.header>
+      </header>
     </>
   );
 }

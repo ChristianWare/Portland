@@ -4,13 +4,8 @@ import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillCheckCircle } from "react-icons/ai";
-import { slideLeft } from "../components/utils/Animation";
-import { motion } from "framer-motion";
-import { useScroll } from "./utils/useScroll";
 
 function Contact() {
-  const [element, controls] = useScroll();
-
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
@@ -70,12 +65,9 @@ function Contact() {
     }
   };
   return (
-    <section id='contact' className={styles.cContainer} ref={element}>
+    <section id='contact' className={styles.cContainer}>
       <div className={styles.cWrapper}>
-        <motion.div
-          animate={controls}
-          variants={slideLeft}
-          transition={{ delay: 0.1, stiffness: 300 }}
+        <div
           className={styles.cLeft}
         >
           <h2 className={styles.heading}>
@@ -112,7 +104,7 @@ function Contact() {
               <span>LinkedIn</span>
             </a>
           </div>
-        </motion.div>
+        </div>
         <div className={styles.contactForm}>
           <h2>Send A Message</h2>
           <form className={styles.formBox} onSubmit={(e) => onSubmitForm(e)}>
@@ -156,12 +148,12 @@ function Contact() {
               <label htmlFor='message'>Your Message Here...</label>
             </div>
             <div className={styles.btnContainer}>
-              <motion.button
-                whileTap={{ scale: 0.9 }}
+              <button
+               
                 className={styles.tertiary}
               >
                 Submit
-              </motion.button>
+              </button>
             </div>
             {form.state === "loading" ? (
               <div className={styles.msg}>Sending....</div>

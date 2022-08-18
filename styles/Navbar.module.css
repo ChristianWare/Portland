@@ -1,12 +1,14 @@
 .header {
     z-index: 999;
     background-color: transparent;
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding: 1rem 1.5rem;
     z-index: 999;
@@ -56,35 +58,19 @@
     white-space: nowrap;
 }
 
-.navitem {
+.navItem {
     margin-left: 5rem;
-    color: var(--accent1);
+    color: var(--accent1b);
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
-/* hover affects */
-.navitem a {
-        display: inline-block;
-        padding-bottom: 0.25rem;
-        position: relative;
-        transition: none;
+.navItem:hover, .navbarLogo:hover {
+    color: var(--accent3);
+    transition: all 0.2s ease-in-out;
 }
 
-.navitem a::before{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent2);
-    transition: width 0.25s ease-out;
-}
-
-.navitem a:hover::before {
-  width: 100%;
-}
-
-@media only screen and (max-width: 953px) {
+@media only screen and (max-width: 868px) {
     .navmenu {
         position: fixed;
         left: -100%;
@@ -101,7 +87,7 @@
         backdrop-filter: blur(15px);
     }
 
-    .navitem a:hover::before {
+    .navItem a:hover::before {
         width: 0%;
     }
     
@@ -125,7 +111,7 @@
         color: var(--accent4);
     }
 
-    .navitem {
+    .navItem {
         margin: 2.5rem 0;
         background-color: transparent;
         transition: none;
