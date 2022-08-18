@@ -14,7 +14,7 @@ function Time() {
           <p className={styles.clock}>
             <GoLocation className={styles.icon} />
             {date.toLocaleString("en-US", {
-              timeZone: "US/Arizona",
+              timeZone: "America/Phoenix",
               hour: "numeric",
               minute: "numeric",
               hour12: true,
