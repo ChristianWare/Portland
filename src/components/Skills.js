@@ -26,17 +26,17 @@ function Skills() {
         <p className={styles.copy}>Mongo DB/Mongoose, Supabase</p>
         <h5 className={styles.heading}>Headless CMS</h5>
         <p className={styles.copy}>Strapi, Contentful, Sanity, GraphCMS</p>
-        <h5 className={styles.heading}>Style Libraries</h5>
+        <h5 className={styles.heading}>Style/Animation Libraries</h5>
         <p className={styles.copy}>
-          Styled-Components, Tailwind, SASS, Bootstrap, Grommet, Ant Design, Material-UI, CSS Modules, 
-          Framer Motion, GSAP, Three.JS
+          Styled-Components, Tailwind, SASS, Bootstrap, Grommet, Ant Design,
+          Material-UI, CSS Modules, Framer Motion, GSAP, Three.JS
         </p>
         <h5 className={styles.heading}>Design Tools</h5>
         <p className={styles.copy}>Figma, Balsamiq, Photoshop, Illustrator</p>
         <h5 className={styles.heading}>Miscellaneous</h5>
         <p className={styles.copy}>
-          Terminal/Command Line, Git, Markdown, Postman, GraphQL, JWT, Redux, JSON, REST
-          API&apos;s, SEO, Google Analytics, Slack, Zoom,
+          Terminal/Command Line, Git, Markdown, Postman, GraphQL, JWT, Redux,
+          JSON, REST API&apos;s, SEO, Google Analytics, Slack, Zoom,
         </p>
       </div>
     </section>
