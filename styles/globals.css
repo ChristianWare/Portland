@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
-
 :root {
   --accent1: #454444;
   --accent1b: #666262;
@@ -13,8 +11,13 @@
   src: url("../public/Fonts/OrbitronExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../public/Fonts/SpaceGrotesk.ttf");
+}
+
 * {
-  font-family: 'Lato',
+  font-family: 'SpaceGrotesk',
     sans-serif;
   margin: 0;
   padding: 0;

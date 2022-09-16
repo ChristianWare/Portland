@@ -20,14 +20,12 @@ function Navbar() {
 
   return (
     <>
-      <header
-        className={styles.header}
-      >
+      <header className={styles.header}>
         <nav className={styles.navbar}>
-          <Link href="/" passHref>
+          <Link href='/' passHref>
             <span className={styles.navbarLogo}>
               <FaCube className={styles.navbarIcon} />
-              <a>Christian Ware</a>
+              <a>Chris Ware</a>
             </span>
           </Link>
           <ul
@@ -39,22 +37,22 @@ function Navbar() {
             }
           >
             <li className={styles.navItem}>
-              <Link href="#about" passHref>
+              <Link href='#about' passHref>
                 <a onClick={openMenu}>About</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="#projects" passHref>
+              <Link href='#projects' passHref>
                 <a onClick={openMenu}>Projects</a>
               </Link>
             </li>
             <li className={styles.navItem} passHref>
-              <Link href="#skills">
+              <Link href='#skills'>
                 <a onClick={openMenu}>Skills</a>
               </Link>
             </li>
             <li className={styles.navItem} passHref>
-              <Link href="#contact">
+              <Link href='#contact'>
                 <a onClick={openMenu}>Contact</a>
               </Link>
             </li>

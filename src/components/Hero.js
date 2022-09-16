@@ -7,7 +7,7 @@ function Hero() {
     <header id="#home" className={styles.hero}>
       <div className={styles.heroLeft}>
         <div className={styles.heroLeftWrapper}>
-          <h1 className={styles.heroName}>Hello World. My Name is Chris.</h1>
+          <h1 className={styles.heroName}>Hello There. My Name is Chris.</h1>
           <div className={styles.heroTitle}>
             <div className={styles.titleWrapper}>
               <div className={styles.titleItem}>
@@ -18,10 +18,10 @@ function Hero() {
               </div>
               <div className={styles.buttonContainer}>
                 <Link href="#projects" passHref>
-                  <a className={styles.button1}>Projects</a>
+                  <a className={styles.button1}>My Projects</a>
                 </Link>
-                <Link href="#contact" passHref>
-                  <a className={styles.button2}>Contact</a>
+                <Link href="#skills" passHref>
+                  <a className={styles.button2}>My Skills</a>
                 </Link>
               </div>
             </div>
