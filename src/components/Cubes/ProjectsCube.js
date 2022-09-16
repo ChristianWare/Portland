@@ -1,14 +1,14 @@
 import styles from "../../../styles/ProjectsCube.module.css";
 
-function ProjectsCube({ children }) {
+function ProjectsCube({ text }) {
     return (
       <div className={styles.container}>
-          <a>
-            <span>{children}</span>
-            <span>{children}</span> 
-            <span>{children}</span>
-            <span>{children}</span>
-          </a>
+        <a>
+          <span>{text}</span>
+          <span>{text}</span>
+          <span>{text}</span>
+          <span>{text}</span>
+        </a>
       </div>
     );
 }

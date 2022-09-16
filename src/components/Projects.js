@@ -13,7 +13,7 @@ function Projects() {
           Projects & Details
         </h3>
         <div className={styles.cubeContainer}>
-          <ProjectsCube className={styles.cubeContainer}>Projects</ProjectsCube>
+          <ProjectsCube className={styles.cubeContainer} text='Projects'/>
         </div>
       </div>
 

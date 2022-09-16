@@ -1,10 +1,9 @@
 .cContainer {
     background-color: transparent;
-    margin-bottom: 25rem;
+    margin-bottom: 5rem;
 }
 
 .cWrapper {
-    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,9 +15,10 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 3rem
+    align-items: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
 }
 
 .cRight {
@@ -31,12 +31,14 @@
 
 .heading {
     text-transform: uppercase;
-    width: 80%;
+    text-align: center;
+    width: 100%;
     font-family: "OrbitronExtraBold";
     letter-spacing: 1px;
-    color: var(--accent2);
-    border-left: 2px solid var(--accent3);
-    padding-left: 2rem;
+    font-size: 7rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--accent4);
 }
 
 .cInfo {
@@ -45,7 +47,8 @@
   justify-content: space-between;
   gap: 3rem;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
+  color: var(--accent4);
 }
 
 .cInfoItem,
@@ -116,7 +119,7 @@
     font-size: 1rem;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1000px) {
     .cInfo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -163,6 +166,16 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    .cInfo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .cBg {
         width: 7.5px;
@@ -194,13 +207,9 @@ screen and (max-width: 320px) {
     }
 }
 
-
-
-
 .contactForm {
-    /* position: relative; */
     padding: 5rem;
-    border: 2px solid var(--accent2);
+    border: 2px solid var(--accent4);
     color: var(--accent1);
     width: 100%;
 }
@@ -220,7 +229,7 @@ screen and (max-width: 320px) {
 
 .inputBox50 {
     position: relative;
-    width: 47%;
+    width: 47%; 
 }
 
 .inputBox50:nth-child(1),
@@ -255,7 +264,7 @@ screen and (max-width: 320px) {
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--accent1);
+    border-bottom: 1px solid var(--accent4);
 }
 
 .formBox label {
@@ -313,7 +322,6 @@ screen and (max-width: 320px) {
     font-weight: bold;
     color: var(--accent2);
 }
-
 
 @media screen and (max-width: 1020px) {
 

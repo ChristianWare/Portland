@@ -3,16 +3,15 @@ import styles from "../../styles/Footer.module.css";
 import { FaCube } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import Contact from "../components/Contact";
 
 function Footer() {
-
   return (
     <section className={styles.footerContainer}>
       <footer className={styles.footerBottom}>
+        <Contact />
         <div className={styles.footerContent}>
-          <div
-            className={styles.footerLeft}
-          >
+          <div className={styles.footerLeft}>
             <Link href='/' passHref>
               <span className={styles.navbarLogo}>
                 <FaCube className={styles.navbarIcon} />
@@ -44,9 +43,7 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div
-            className={styles.footerRight}
-          >
+          <div className={styles.footerRight}>
             <div className={styles.list1}>
               <h6 className={styles.heading}>Skills</h6>
               <ul>
@@ -77,9 +74,7 @@ function Footer() {
           </div>
         </div>
         <hr className={styles.hr} />
-        <div
-          className={styles.copyrightContainer}
-        >
+        <div className={styles.copyrightContainer}>
           <small>
             Christian Ware {new Date().getFullYear()} &copy; - All Rights
             Reserved || Designed/Developed by{" "}

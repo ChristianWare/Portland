@@ -67,12 +67,8 @@ function Contact() {
   return (
     <section id='contact' className={styles.cContainer}>
       <div className={styles.cWrapper}>
-        <div
-          className={styles.cLeft}
-        >
-          <h2 className={styles.heading}>
-            Here are the best ways to contact me:
-          </h2>
+        <div className={styles.cLeft}>
+          <h2 className={styles.heading}>Contact Details:</h2>
           <div className={styles.cInfo}>
             <a href='tel:623-335-52514' className={styles.cInfoItem}>
               <BiPhoneCall className={styles.cIcon} />
@@ -148,12 +144,7 @@ function Contact() {
               <label htmlFor='message'>Your Message Here...</label>
             </div>
             <div className={styles.btnContainer}>
-              <button
-               
-                className={styles.tertiary}
-              >
-                Submit
-              </button>
+              <button className={styles.tertiary}>Submit</button>
             </div>
             {form.state === "loading" ? (
               <div className={styles.msg}>Sending....</div>
