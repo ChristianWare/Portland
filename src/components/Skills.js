@@ -13,7 +13,7 @@ function Skills() {
       </div>
       <div className={styles.sLeft}>
         <h3 className={styles.headingIntro} lang='en'>
-          03. <br /> <br />
+          <span>03.</span> <br />
           Skills & Technologies
         </h3>
         <h5 className={styles.heading}>Front End</h5>

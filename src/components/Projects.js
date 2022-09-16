@@ -9,7 +9,7 @@ function Projects() {
     <section className={styles.projects}>
       <div className={styles.headingTop}>
         <h3 className={styles.heading} lang="en" id="projects">
-          02. <br /> <br />
+          <span>02.</span> <br />
           Projects & Details
         </h3>
         <div className={styles.cubeContainer}>

@@ -15,6 +15,14 @@
     animation: rotateCube 4s infinite linear;
 }
 
+.container a span {
+    font-family: "OrbitronExtraBold";
+    hyphens: auto;
+    color: transparent !important;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--accent4);
+}
+
 @keyframes rotateCube {
     0% {
         transform: perspective(1000px) rotateX(0deg);

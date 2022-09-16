@@ -12,7 +12,17 @@
     animation: rotateCube 10s infinite;
     user-select: none;
     background-color: transparent;
-    color: var(--accent4)
+    color: var(--accent4);
+    position: relative;
+    border-left: none;
+    padding-left: 0px;
+    font-size: 5rem;
+    font-family: "OrbitronExtraBold";
+    hyphens: auto;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--accent4);
+
 }
 
 .cube div {
@@ -25,6 +35,7 @@
     font-weight: 700;
     text-align: center;
     line-height: 200px;
+    font-family: "OrbitronExtraBold";
 }
 
 @keyframes rotateCube {

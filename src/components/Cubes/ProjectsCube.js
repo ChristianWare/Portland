@@ -5,7 +5,7 @@ function ProjectsCube({ children }) {
       <div className={styles.container}>
           <a>
             <span>{children}</span>
-            <span>{children}</span>
+            <span>{children}</span> 
             <span>{children}</span>
             <span>{children}</span>
           </a>

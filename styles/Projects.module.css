@@ -9,7 +9,7 @@
     margin-bottom: 5rem;
 }
 
-.heading {
+.heading, .heading span {
     margin: 20px 0px;
     padding-right: 2rem;
     border-right: 2px solid var(--accent3);
@@ -19,6 +19,17 @@
     z-index: 999;
     color: var(--accent2);
     hyphens: auto;
+}
+
+.heading span {
+    position: relative;
+    border-right: none;
+    padding-right: 0px;
+    font-size: 5rem;
+    hyphens: auto;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--accent2);
 }
 
 .cubeContainer {

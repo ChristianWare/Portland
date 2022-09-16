@@ -23,7 +23,7 @@
 }
 
 
-.headingIntro {
+.headingIntro, .headingIntro span {
     margin: 20px 0px;
     margin-bottom: 5rem;
     padding-left: 2rem;
@@ -34,6 +34,17 @@
     color: var(--accent2);
     hyphens: auto;
     text-align: left;
+}
+
+.headingIntro span {
+    position: relative;
+    border-left: none;
+    padding-left: 0px;
+    font-size: 5rem;
+    hyphens: auto;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--accent2);
 }
 
 .heading {

@@ -12,7 +12,7 @@ function About() {
 
       <div className={styles.aRight}>
         <h3 className={styles.heading} lang="en">
-          01. <br /> <br />I build web
+          <span>01.</span> <br />I build web
           applications with Next JS and React.
         </h3>
         <p className={styles.copy} lang="en">
