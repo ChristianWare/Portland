@@ -55,24 +55,33 @@
     color: var(--accent1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
     .aContainer {
         flex-direction: column; 
         align-items: center;
     }
 
     .aRight {
-        margin-top: 9rem;
+        margin-top: 5rem;
     }
-}
-
-@media screen and (max-width: 480px) {
+    
     .aSub {
         text-align: center;
     }
 
     .cubeContainer {
-        padding-right: 18rem;
+        padding-bottom: 0rem;
+        padding-right: 0rem;
+    }
+
+    .aLeft, .aRight {
+        flex: 0
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aContainer {
+        height: 100%;
     }
 }
 
