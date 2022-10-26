@@ -57,6 +57,7 @@ function Projects() {
                       alt='preview'
                       src={image}
                       className={styles.img}
+                      objectFit='cover'
                       priority={true}
                     />
                   </div>

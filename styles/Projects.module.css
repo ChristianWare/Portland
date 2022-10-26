@@ -41,7 +41,7 @@
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .button1,
@@ -86,6 +86,8 @@
     letter-spacing: 1px;
     position: relative;
     top: -20px;
+    border-bottom: 2px  solid var(--accent2);
+    width: 100%;
 }
 
 .text {
@@ -117,7 +119,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .imgContainer {
@@ -128,10 +130,12 @@
     flex: 1;
     position: relative;
     border-radius: 12px;
+    border: 2px solid var(--accent2);
 }
 
 .img {
-    border-radius: 12px;
+    border-radius: 10px;
+    font-size: 0;
 }
 
 .right h3 {
