@@ -53,7 +53,12 @@ function Projects() {
                     </p>
                   </div>
                   <div className={styles.imgContainer}>
-                    <Image alt='preview' src={image} className={styles.img} />
+                    <Image
+                      alt='preview'
+                      src={image}
+                      className={styles.img}
+                      priority={true}
+                    />
                   </div>
                 </div>
                 <div className={styles.buttonContainer}>
