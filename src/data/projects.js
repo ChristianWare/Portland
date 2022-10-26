@@ -45,7 +45,7 @@ const projects = [
     width: 2868,
     height: 1418,
     frontEnd: "React/Next.js",
-    backEnd: "Node.js to access File System - fs)",
+    backEnd: "Node.js to access File System - fs",
     npmDep:
       "gray-matter, next-mdx-remote, rehype-autolink-headings, rehype-code-titles, rehype-slug",
     styling: "CSS Modules",
