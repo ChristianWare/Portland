@@ -33,9 +33,9 @@ function Projects() {
           <div key={id} className={styles.allItems}>
             <div className={styles.item}>
               <div className={styles.right}>
+                    <h2 className={styles.projectTitle}>{title}</h2>
                 <div className={styles.descLeft}>
                   <div className={styles.text}>
-                    <h2 className={styles.projectTitle}>{title}</h2>
                     <p lang='en' className={styles.projectDescription}>
                       {description}
                     </p>
