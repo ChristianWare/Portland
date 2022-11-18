@@ -1,7 +1,5 @@
 import telements from "../../public/images/telements.png";
-import drone from "../../public/images/drone.png";
 import livemas from "../../public/images/livemas.png";
-import portland from "../../public/images/portland.png";
 import fonts from "../../public/images/fonts.png";
 import laws from "../../public/images/48laws.png";
 import johnnie from "../../public/images/johnnie.png";
