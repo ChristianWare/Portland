@@ -14,7 +14,7 @@ const projects = [
     url: "https://johnniewalks.com/",
     image: johnnie,
     frontEnd: "React/Next.js",
-    backEnd: "Node.js, MongoDB",
+    backEnd: "Node.js, Express, MongoDB",
     npmDep:
       "axios, bcrypt, cloudinary, js-cookie, mongoose, next-auth, react-hook-form, react-toastify",
     styling: "CSS Modules",
