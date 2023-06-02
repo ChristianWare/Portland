@@ -70,10 +70,7 @@ function Contact() {
         <div className={styles.cLeft}>
           <h2 className={styles.heading}>Contact Details:</h2>
           <div className={styles.cInfo}>
-            <a href='tel:623-335-52514' className={styles.cInfoItem}>
-              <BiPhoneCall className={styles.cIcon} />
-              <span>480-808-2054</span>
-            </a>
+            
             <a
               href='mailto:chris.ware.dev@gmail.com'
               className={styles.cInfoItem}

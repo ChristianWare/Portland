@@ -24,9 +24,7 @@ function Time() {
           })}
           : Phoenix, AZ
         </p>
-        <a href='tel:623-335-52514' className={styles.clock}>
-          <BsTelephone /> 480-808-2054
-        </a>
+        
         <a href='mailto:chris.ware.dev@gmail.com' className={styles.clock}>
           <AiOutlineMail className={styles.icon2} /> chris.ware.dev@gmail.com
         </a>
